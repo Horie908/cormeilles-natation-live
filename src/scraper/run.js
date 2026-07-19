@@ -6,8 +6,8 @@ const { findClubCompetitions, getStartlistHtml } = require("./discover");
 const { attachFreestyleOpponents } = require("./attachFreestyleOpponents");
 const store = require("../store");
 
-const MAX_PAST_COMPETITIONS = 3; // on ne remonte pas l'historique complet, juste la saison en cours
-const MONTHS_BACK = 2;
+const MAX_PAST_COMPETITIONS = 20; // toute la saison en cours (depuis mars), pas l'historique des annees precedentes
+const MONTHS_BACK = 5; // couvre mars -> aujourd'hui
 const MONTHS_FORWARD = 1;
 
 async function main() {
