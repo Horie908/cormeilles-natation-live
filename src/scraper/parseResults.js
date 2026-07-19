@@ -77,6 +77,8 @@ function parseClubResultsHtml(html, competitionMeta) {
       const rankRaw = $(tds[0]).text().trim();
       const eventLink = $(tds[1]).find("a").first();
       const event = (eventLink.text() || $(tds[1]).text()).trim();
+      const eprMatch = (eventLink.attr("href") || "").match(/idepr=(\d+)/);
+      const eventId = eprMatch ? eprMatch[1] : null;
       const round = $(tds[2]).text().trim();
       const finalCellText = $(tds[4]).text().trim();
 
@@ -105,6 +107,7 @@ function parseClubResultsHtml(html, competitionMeta) {
           date: competitionMeta.date,
           location: competitionMeta.location,
           event,
+          eventId,
           session: round,
           time,
           timeCentiemes: timeToCentiemes(time),
@@ -119,4 +122,73 @@ function parseClubResultsHtml(html, competitionMeta) {
   return Array.from(swimmers.values());
 }
 
-module.exports = { parseClubResultsHtml, parseCompetitionMeta, frenchDateToIso };
+// Parse la page resultats.php?idact=nat&idcpt={id}&go=epr&idepr={id} : le classement complet
+// (tous clubs confondus) d'une competition. Cette page regroupe en fait TOUTES les epreuves
+// d'une categorie/session (ex: toutes les epreuves "Dames") en plusieurs blocs <thead>/<tbody>,
+// un bloc par epreuve — meme structure alternee que parseClubResultsHtml, mais ici chaque
+// <thead> represente une EPREUVE (ex: "50 Nage Libre Dames - Séries") et non un nageur.
+// On isole le bloc dont le titre commence par `eventName` (ex: "50 Nage Libre Dames").
+// roundHint (ex: "Séries", "Finale A") permet de cibler le bon tableau quand une epreuve a
+// plusieurs tours publies sur la meme page (series ET finale) : sans lui, on prendrait le
+// premier tableau trouve, qui n'est pas forcement celui ou notre nageur a couru.
+function parseLeaderboardRows($, $thead) {
+  const rows = [];
+  const $tbody = $thead.next("tbody");
+  $tbody.children("tr").each((__, trEl) => {
+    const $node = $(trEl);
+    const tds = $node.find("td");
+    if (tds.length < 4) return;
+
+    const rankRaw = $(tds[0]).text().trim();
+    const rankMatch = rankRaw.match(/^\d+/);
+    const rank = rankMatch ? parseInt(rankMatch[0], 10) : null;
+
+    const swimmerLink = $(tds[1]).find("a").first();
+    const swimmerHref = swimmerLink.attr("href") || "";
+    const swimmerNameRaw = swimmerLink.text().trim();
+    const nameMatch = swimmerNameRaw.match(/^(.*?)\s*\(/);
+    const name = nameMatch ? nameMatch[1].trim() : swimmerNameRaw;
+    const swimmerClubIdMatch = swimmerHref.match(/idclb=(\d+)/);
+    const idnatMatch = swimmerHref.match(/#(\d+)/);
+
+    const clubLink = $(tds[2]).find("a").first();
+    const clubName = clubLink.text().trim();
+
+    const time = tds.length > 3 ? $(tds[3]).text().trim() : null;
+
+    if (name) {
+      rows.push({
+        rank,
+        id: idnatMatch ? idnatMatch[1] : null,
+        name,
+        clubId: swimmerClubIdMatch ? swimmerClubIdMatch[1] : null,
+        club: clubName || null,
+        time: TIME_RE.test(time) ? time : null,
+        timeCentiemes: TIME_RE.test(time) ? timeToCentiemes(time) : null,
+      });
+    }
+  });
+  return rows;
+}
+
+function parseEventLeaderboard(html, eventName, roundHint) {
+  const $ = cheerio.load(html);
+  let exactMatch = null; // { title, $thead } — tableau dont le titre correspond a eventName + roundHint
+  let firstMatch = null; // meilleur repli si aucune correspondance exacte de tour n'est trouvee
+
+  $("thead").each((_, theadEl) => {
+    const $thead = $(theadEl);
+    const t = $thead.find("td > div > div").eq(0).text().trim();
+    if (!t || !t.toLowerCase().startsWith(eventName.toLowerCase())) return;
+    if (!firstMatch) firstMatch = { title: t, $thead };
+    if (roundHint && t.toLowerCase() === `${eventName} - ${roundHint}`.toLowerCase() && !exactMatch) {
+      exactMatch = { title: t, $thead };
+    }
+  });
+
+  const chosen = exactMatch || firstMatch;
+  if (!chosen) return { title: null, entries: [] };
+  return { title: chosen.title, entries: parseLeaderboardRows($, chosen.$thead) };
+}
+
+module.exports = { parseClubResultsHtml, parseCompetitionMeta, parseEventLeaderboard, frenchDateToIso };

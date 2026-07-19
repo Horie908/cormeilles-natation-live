@@ -2,7 +2,7 @@
   "club": {
     "id": 733,
     "name": "ACS Cormeilles Natation",
-    "lastUpdated": "2026-07-19T20:23:37.898Z"
+    "lastUpdated": "2026-07-19T20:41:36.643Z"
   },
   "swimmers": [
     {
@@ -17,6 +17,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Dos Dames",
+          "eventId": "11",
           "session": "Séries",
           "time": "00:51.31",
           "timeCentiemes": 5131,
@@ -30,6 +31,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:51.85",
           "timeCentiemes": 11185,
@@ -43,6 +45,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "03:02.71",
           "timeCentiemes": 18271,
@@ -56,6 +59,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:27.21",
           "timeCentiemes": 20721,
@@ -78,12 +82,549 @@
           "date": "2026-06-28",
           "location": "TAVERNY",
           "event": "50 Nage Libre Dames",
+          "eventId": "1",
           "session": "Séries",
           "time": "00:35.64",
           "timeCentiemes": 3564,
           "rank": 87,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "opponents": [
+            {
+              "name": "YU Shuier",
+              "club": "CNO ST-GERMAIN-EN-LAYE",
+              "time": "00:28.67",
+              "rank": 1
+            },
+            {
+              "name": "NEMDALI Ambrine",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:29.23",
+              "rank": 2
+            },
+            {
+              "name": "CAVES Soline",
+              "club": "ES SUCY-EN-BRIE",
+              "time": "00:29.62",
+              "rank": 3
+            },
+            {
+              "name": "IDJABOU Liah",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:29.66",
+              "rank": 4
+            },
+            {
+              "name": "LABINSKY Meryl",
+              "club": "CA L'HAY-LES-ROSES",
+              "time": "00:29.73",
+              "rank": 5
+            },
+            {
+              "name": "BIARD Lili-Rose",
+              "club": "AC VILLEPINTE",
+              "time": "00:29.96",
+              "rank": 6
+            },
+            {
+              "name": "SINAPAH Tara",
+              "club": "RACING CLUB DE FRANCE",
+              "time": "00:30.15",
+              "rank": 7
+            },
+            {
+              "name": "ZOU Jeanne",
+              "club": "CNO ST-GERMAIN-EN-LAYE",
+              "time": "00:30.25",
+              "rank": 8
+            },
+            {
+              "name": "VERON-OKAMOTO Mana",
+              "club": "UAS ST-CLOUD",
+              "time": "00:30.29",
+              "rank": 9
+            },
+            {
+              "name": "KEBIR Jenna",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:30.35",
+              "rank": 10
+            },
+            {
+              "name": "OLIVARES MILLEREUX Alana",
+              "club": "CN ASNIÈRES",
+              "time": "00:30.37",
+              "rank": 11
+            },
+            {
+              "name": "DANG Emma",
+              "club": "CN BRUNOY-ESSONNE",
+              "time": "00:30.40",
+              "rank": 12
+            },
+            {
+              "name": "ASSOGBA NSA Kimberly",
+              "club": "ES MASSY NATATION",
+              "time": "00:30.53",
+              "rank": 13
+            },
+            {
+              "name": "COMBALUZIER Rose",
+              "club": "SN VERSAILLES",
+              "time": "00:30.55",
+              "rank": 14
+            },
+            {
+              "name": "BERTHELOT Louise",
+              "club": "NOGENT NATATION 94",
+              "time": "00:30.55",
+              "rank": 14
+            },
+            {
+              "name": "POIGNANT-JAMMES Fanny",
+              "club": "SN MONTGERON",
+              "time": "00:30.58",
+              "rank": 16
+            },
+            {
+              "name": "LEBEGUE Yasmina",
+              "club": "CS CLICHY 92",
+              "time": "00:30.64",
+              "rank": 17
+            },
+            {
+              "name": "DESMAZIÈRES Aria",
+              "club": "CLAMART NATATION 92",
+              "time": "00:30.66",
+              "rank": 18
+            },
+            {
+              "name": "DIAS DE BARROS Julia",
+              "club": "CNO ST-GERMAIN-EN-LAYE",
+              "time": "00:30.70",
+              "rank": 19
+            },
+            {
+              "name": "GUIRO Ismahan",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:30.94",
+              "rank": 20
+            },
+            {
+              "name": "RIVIÈRE Moana",
+              "club": "AS CORBEIL-ESSONNE",
+              "time": "00:31.06",
+              "rank": 21
+            },
+            {
+              "name": "VENTURA RODRIGUES Eva",
+              "club": "CN VIRY-CHÂTILLON",
+              "time": "00:31.08",
+              "rank": 22
+            },
+            {
+              "name": "CLAM ROULET Leonie",
+              "club": "CN EPINETTES PARIS",
+              "time": "00:31.08",
+              "rank": 22
+            },
+            {
+              "name": "MIQUELESTORENA Théa",
+              "club": "ES MASSY NATATION",
+              "time": "00:31.22",
+              "rank": 24
+            },
+            {
+              "name": "HAIFI Léa",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:31.28",
+              "rank": 25
+            },
+            {
+              "name": "DIOULE Manel",
+              "club": "CN POISSY",
+              "time": "00:31.29",
+              "rank": 26
+            },
+            {
+              "name": "MACLET GRUNDMAN Anouk",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:31.29",
+              "rank": 26
+            },
+            {
+              "name": "FRATUS Aurore",
+              "club": "CN 95 EZANVILLE",
+              "time": "00:31.30",
+              "rank": 28
+            },
+            {
+              "name": "DAVID Gilliane",
+              "club": "CNO ST-GERMAIN-EN-LAYE",
+              "time": "00:31.32",
+              "rank": 29
+            },
+            {
+              "name": "HUNEAU Emy",
+              "club": "LES PHOENIX D'ANTONY",
+              "time": "00:31.32",
+              "rank": 29
+            },
+            {
+              "name": "LABRIDY Maelyne",
+              "club": "ASS SPORTIVE BOUVINES",
+              "time": "00:31.34",
+              "rank": 31
+            },
+            {
+              "name": "AITOUALI Racha",
+              "club": "CNO ST-GERMAIN-EN-LAYE",
+              "time": "00:31.55",
+              "rank": 32
+            },
+            {
+              "name": "LEST ROLLIER Juliette",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:31.56",
+              "rank": 33
+            },
+            {
+              "name": "BAUR Illy",
+              "club": "CN ASNIÈRES",
+              "time": "00:31.66",
+              "rank": 34
+            },
+            {
+              "name": "PERGE Manon",
+              "club": "LES PHOENIX D'ANTONY",
+              "time": "00:31.73",
+              "rank": 35
+            },
+            {
+              "name": "YAO BADOUX Andréa",
+              "club": "EN STE-GENEVIÈVE-DES-BOIS",
+              "time": "00:31.77",
+              "rank": 36
+            },
+            {
+              "name": "ADDALA Kenza",
+              "club": "STADE DE VANVES",
+              "time": "00:31.78",
+              "rank": 37
+            },
+            {
+              "name": "FERHAT JAPPINI Coulthoum",
+              "club": "MONTEREAU NATATION",
+              "time": "00:31.79",
+              "rank": 38
+            },
+            {
+              "name": "BEREAU Lisa",
+              "club": "CANETON CLUB DE BEAUMONT",
+              "time": "00:31.87",
+              "rank": 39
+            },
+            {
+              "name": "MOGENET Garance",
+              "club": "ES SUCY-EN-BRIE",
+              "time": "00:31.90",
+              "rank": 40
+            },
+            {
+              "name": "HADJ SLIMANE Insaf",
+              "club": "AS HERBLAY NATATION",
+              "time": "00:31.91",
+              "rank": 41
+            },
+            {
+              "name": "DELLERIE Mélia",
+              "club": "VAL D'ESSONNE MENNECY AQUA CLUB",
+              "time": "00:31.94",
+              "rank": 42
+            },
+            {
+              "name": "PARENTE Garance",
+              "club": "CN BRUNOY-ESSONNE",
+              "time": "00:31.98",
+              "rank": 43
+            },
+            {
+              "name": "ANSQUER Noëlie",
+              "club": "U.S CRETEIL NATATION",
+              "time": "00:32.07",
+              "rank": 44
+            },
+            {
+              "name": "AUBIN DAUPHIN Eline",
+              "club": "VILLEMONBLE SPORTS NATATION",
+              "time": "00:32.12",
+              "rank": 45
+            },
+            {
+              "name": "MORICE Noa",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:32.13",
+              "rank": 46
+            },
+            {
+              "name": "RAVELOJAONA Marie-Luce",
+              "club": "CN EPINETTES PARIS",
+              "time": "00:32.14",
+              "rank": 47
+            },
+            {
+              "name": "ISTASSE Laurine",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:32.15",
+              "rank": 48
+            },
+            {
+              "name": "AYOUAZ Elea",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:32.16",
+              "rank": 49
+            },
+            {
+              "name": "MANKASSA Telia",
+              "club": "CLUB NAUTIQUE DE SEVRAN",
+              "time": "00:32.29",
+              "rank": 50
+            },
+            {
+              "name": "CORNET Inès",
+              "club": "RED STAR CLUB CHAMPIGNY",
+              "time": "00:32.32",
+              "rank": 51
+            },
+            {
+              "name": "LABORDE Naé",
+              "club": "CLUB NAUTIQUE DE L'ARPAJONNAIS",
+              "time": "00:32.33",
+              "rank": 52
+            },
+            {
+              "name": "SUSPENE Cassandre",
+              "club": "CA ORSAY",
+              "time": "00:32.35",
+              "rank": 53
+            },
+            {
+              "name": "NEDELLEC Jeanne",
+              "club": "VGA ST-MAUR",
+              "time": "00:32.36",
+              "rank": 54
+            },
+            {
+              "name": "ANTONIN CHEVALLIER Clémence",
+              "club": "CN VIRY-CHÂTILLON",
+              "time": "00:32.45",
+              "rank": 55
+            },
+            {
+              "name": "BOULAHIA Manel",
+              "club": "ST-GEORGES ARGENTEUIL",
+              "time": "00:32.51",
+              "rank": 56
+            },
+            {
+              "name": "KARTOUT Maysam",
+              "club": "AS BONDY",
+              "time": "00:32.52",
+              "rank": 57
+            },
+            {
+              "name": "LE MEUR Margot",
+              "club": "CNO ST-GERMAIN-EN-LAYE",
+              "time": "00:32.54",
+              "rank": 58
+            },
+            {
+              "name": "FERNANDEZ-RUBBEN Lola",
+              "club": "SN VERSAILLES",
+              "time": "00:32.55",
+              "rank": 59
+            },
+            {
+              "name": "PAVLOVSKAIA Maria",
+              "club": "RACING CLUB DE FRANCE",
+              "time": "00:32.56",
+              "rank": 60
+            },
+            {
+              "name": "DUFAY Sheraz",
+              "club": "CLUB NAUTIQUE DE SEVRAN",
+              "time": "00:32.56",
+              "rank": 60
+            },
+            {
+              "name": "GOUEREC Inès",
+              "club": "RACING CLUB DE FRANCE",
+              "time": "00:32.66",
+              "rank": 62
+            },
+            {
+              "name": "VIRETTO-CIT Apolline",
+              "club": "VAL D'ESSONNE MENNECY AQUA CLUB",
+              "time": "00:32.67",
+              "rank": 63
+            },
+            {
+              "name": "ALOIR TRILLET Helene",
+              "club": "VILLIERS SPORTS JEUNESSE",
+              "time": "00:32.69",
+              "rank": 64
+            },
+            {
+              "name": "RAMASSAMY Maelya",
+              "club": "AQUATIC CLUB CLAYE-SOUILLY",
+              "time": "00:32.71",
+              "rank": 65
+            },
+            {
+              "name": "MOESTA Juliette",
+              "club": "COM BAGNEUX NATATION",
+              "time": "00:32.84",
+              "rank": 66
+            },
+            {
+              "name": "GONZALEZ Pauline",
+              "club": "AQUACLUB LE PECQ MARLY",
+              "time": "00:32.84",
+              "rank": 66
+            },
+            {
+              "name": "ALBINHAC POCAN Valentina",
+              "club": "CLAMART NATATION 92",
+              "time": "00:32.90",
+              "rank": 68
+            },
+            {
+              "name": "CAUMETTES Marilou",
+              "club": "CS NAUTIQUE NOISY-LE-GRAND",
+              "time": "00:32.99",
+              "rank": 69
+            },
+            {
+              "name": "EYRAUD Océane",
+              "club": "AS HERBLAY NATATION",
+              "time": "00:33.13",
+              "rank": 70
+            },
+            {
+              "name": "ARMAND Ines",
+              "club": "U.S CRETEIL NATATION",
+              "time": "00:33.19",
+              "rank": 71
+            },
+            {
+              "name": "BELLILI Mellina",
+              "club": "AQUA VALLÉE-DE-CHEVREUSE",
+              "time": "00:33.28",
+              "rank": 72
+            },
+            {
+              "name": "FREYSZ VONGSAVATH Leocadie",
+              "club": "CS CLICHY 92",
+              "time": "00:33.34",
+              "rank": 73
+            },
+            {
+              "name": "KADJI Yoli",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:33.38",
+              "rank": 74
+            },
+            {
+              "name": "MERIMI Islame",
+              "club": "AASS AQUATIC CLUB SARCELLES",
+              "time": "00:33.41",
+              "rank": 75
+            },
+            {
+              "name": "SOUNI Maïssa",
+              "club": "CSM PUTEAUX",
+              "time": "00:33.42",
+              "rank": 76
+            },
+            {
+              "name": "LABRUNYE Chiara",
+              "club": "AQUA VALLÉE-DE-CHEVREUSE",
+              "time": "00:33.43",
+              "rank": 77
+            },
+            {
+              "name": "SABULIS Gabriela",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:33.46",
+              "rank": 78
+            },
+            {
+              "name": "BOUGRA Assile",
+              "club": "CS CLICHY 92",
+              "time": "00:33.67",
+              "rank": 79
+            },
+            {
+              "name": "MESSIOUGHI Sana",
+              "club": "U.S CRETEIL NATATION",
+              "time": "00:34.08",
+              "rank": 80
+            },
+            {
+              "name": "CAPOUL Naia",
+              "club": "ES SUCY-EN-BRIE",
+              "time": "00:34.26",
+              "rank": 81
+            },
+            {
+              "name": "NIKOLAEVA Aleksandra",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:34.36",
+              "rank": 82
+            },
+            {
+              "name": "DUEZ Camille",
+              "club": "AQUA VALLÉE-DE-CHEVREUSE",
+              "time": "00:34.93",
+              "rank": 83
+            },
+            {
+              "name": "LEDUC Victoria",
+              "club": "ES MASSY NATATION",
+              "time": "00:35.17",
+              "rank": 84
+            },
+            {
+              "name": "BROUDIC Cassandre",
+              "club": "U.S CRETEIL NATATION",
+              "time": "00:35.20",
+              "rank": 85
+            },
+            {
+              "name": "BULLIARD Chama",
+              "club": "AQUATIC CLUB CLAYE-SOUILLY",
+              "time": "00:35.35",
+              "rank": 86
+            },
+            {
+              "name": "BELHOUAS Lina",
+              "club": "CLUB NAUTIQUE DE SEVRAN",
+              "time": "00:36.00",
+              "rank": 88
+            },
+            {
+              "name": "AVDIENKO Nadezhda",
+              "club": "CN POISSY",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "ZEMMOURI Inès",
+              "club": "ESPADON VÉLIZY-VILLACOUBLAY",
+              "time": null,
+              "rank": null
+            }
+          ]
         },
         {
           "competitionId": "94081",
@@ -91,6 +632,7 @@
           "date": "2026-06-28",
           "location": "TAVERNY",
           "event": "50 Dos Dames",
+          "eventId": "11",
           "session": "Séries",
           "time": "00:39.15",
           "timeCentiemes": 3915,
@@ -104,6 +646,7 @@
           "date": "2026-06-28",
           "location": "TAVERNY",
           "event": "100 Dos Dames",
+          "eventId": "12",
           "session": "Séries",
           "time": "01:22.13",
           "timeCentiemes": 8213,
@@ -117,6 +660,7 @@
           "date": "2026-06-28",
           "location": "TAVERNY",
           "event": "200 Dos Dames",
+          "eventId": "13",
           "session": "Séries",
           "time": "02:54.41",
           "timeCentiemes": 17441,
@@ -139,6 +683,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Papillon Dames",
+          "eventId": "31",
           "session": "Séries",
           "time": "00:47.68",
           "timeCentiemes": 4768,
@@ -152,6 +697,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:39.83",
           "timeCentiemes": 9983,
@@ -165,6 +711,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "03:02.71",
           "timeCentiemes": 18271,
@@ -178,6 +725,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:27.21",
           "timeCentiemes": 20721,
@@ -200,6 +748,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Nage Libre Messieurs",
+          "eventId": "51",
           "session": "Séries",
           "time": "00:39.13",
           "timeCentiemes": 3913,
@@ -213,6 +762,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Messieurs",
+          "eventId": "90",
           "session": "Séries",
           "time": "01:43.50",
           "timeCentiemes": 10350,
@@ -226,6 +776,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Messieurs",
+          "eventId": "97",
           "session": "Séries",
           "time": "02:43.65",
           "timeCentiemes": 16365,
@@ -239,6 +790,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Messieurs",
+          "eventId": "98",
           "session": "Séries",
           "time": "03:11.27",
           "timeCentiemes": 19127,
@@ -261,12 +813,723 @@
           "date": "2026-07-05",
           "location": "TAVERNY",
           "event": "50 Nage Libre Dames",
+          "eventId": "1",
           "session": "Séries",
           "time": "00:31.75",
           "timeCentiemes": 3175,
           "rank": 113,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "opponents": [
+            {
+              "name": "PROUFF Faustine",
+              "club": "MOUETTES DE PARIS",
+              "time": "00:27.27",
+              "rank": 1
+            },
+            {
+              "name": "CAZAL Julie",
+              "club": "AS CORBEIL-ESSONNE",
+              "time": "00:27.43",
+              "rank": 2
+            },
+            {
+              "name": "FALLET Grace",
+              "club": "ES NANTERRE",
+              "time": "00:27.53",
+              "rank": 3
+            },
+            {
+              "name": "RENARD Maëlys",
+              "club": "ES MASSY NATATION",
+              "time": "00:27.63",
+              "rank": 4
+            },
+            {
+              "name": "AIGOUY Léa",
+              "club": "CLAMART NATATION 92",
+              "time": "00:27.65",
+              "rank": 5
+            },
+            {
+              "name": "LABRIDY Léna",
+              "club": "MOUETTES DE PARIS",
+              "time": "00:27.70",
+              "rank": 6
+            },
+            {
+              "name": "GONZALEZ Clara",
+              "club": "TREMBLAY AC",
+              "time": "00:27.77",
+              "rank": 7
+            },
+            {
+              "name": "MONGIN Sthélyna",
+              "club": "CA ORSAY",
+              "time": "00:27.77",
+              "rank": 7
+            },
+            {
+              "name": "DEVOUGE-RUVIRA Violette",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:27.84",
+              "rank": 9
+            },
+            {
+              "name": "JULLIOT Eva",
+              "club": "AS CORBEIL-ESSONNE",
+              "time": "00:27.94",
+              "rank": 10
+            },
+            {
+              "name": "DELATTRE Coline",
+              "club": "ETOILE SAINT-LEU  NATATION",
+              "time": "00:27.98",
+              "rank": 11
+            },
+            {
+              "name": "NGUYEN DUC LONG Rachel",
+              "club": "CN ST-MICHEL-SUR-ORGE",
+              "time": "00:28.00",
+              "rank": 12
+            },
+            {
+              "name": "TAYSSE Léa",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:28.03",
+              "rank": 13
+            },
+            {
+              "name": "DOUILLET Ionnah",
+              "club": "ES MASSY NATATION",
+              "time": "00:28.05",
+              "rank": 14
+            },
+            {
+              "name": "PICH Marie",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:28.08",
+              "rank": 15
+            },
+            {
+              "name": "GOBILLARD Alix",
+              "club": "CNO ST-GERMAIN-EN-LAYE",
+              "time": "00:28.11",
+              "rank": 16
+            },
+            {
+              "name": "CHALENDAR Roxane",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:28.15",
+              "rank": 17
+            },
+            {
+              "name": "LANDREAT Amandine",
+              "club": "U.S CRETEIL NATATION",
+              "time": "00:28.33",
+              "rank": 18
+            },
+            {
+              "name": "SANANIKONE Emma",
+              "club": "CA ORSAY",
+              "time": "00:28.36",
+              "rank": 19
+            },
+            {
+              "name": "DUMAN Neila",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:28.44",
+              "rank": 20
+            },
+            {
+              "name": "CHARRON Maelane",
+              "club": "AS ARGENTEUIL NATATION",
+              "time": "00:28.45",
+              "rank": 21
+            },
+            {
+              "name": "DECOMBLE Maelyss",
+              "club": "CS NAUTIQUE NOISY-LE-GRAND",
+              "time": "00:28.46",
+              "rank": 22
+            },
+            {
+              "name": "DJOUHRI Anae",
+              "club": "MOUETTES DE PARIS",
+              "time": "00:28.47",
+              "rank": 23
+            },
+            {
+              "name": "VATAN Lola",
+              "club": "ESPADON VÉLIZY-VILLACOUBLAY",
+              "time": "00:28.52",
+              "rank": 24
+            },
+            {
+              "name": "BOURI Laura",
+              "club": "CERGY PONTOISE NATATION",
+              "time": "00:28.53",
+              "rank": 25
+            },
+            {
+              "name": "LUNGU Catherine",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:28.59",
+              "rank": 26
+            },
+            {
+              "name": "DUNAND Juliette",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:28.64",
+              "rank": 27
+            },
+            {
+              "name": "MAALAOUI Camilia",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:28.66",
+              "rank": 28
+            },
+            {
+              "name": "MARTIN Lison",
+              "club": "NAUTIC CLUB RAMBOUILLET",
+              "time": "00:28.70",
+              "rank": 29
+            },
+            {
+              "name": "KNOPF Elora",
+              "club": "AS BONDY",
+              "time": "00:28.73",
+              "rank": 30
+            },
+            {
+              "name": "CULIOLI-TRAORE Mahilyna",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:28.74",
+              "rank": 31
+            },
+            {
+              "name": "JARDON Louann",
+              "club": "C.N OZOIR-LA-FERRIERE",
+              "time": "00:28.77",
+              "rank": 32
+            },
+            {
+              "name": "CORNUDET Lucie",
+              "club": "CLAMART NATATION 92",
+              "time": "00:28.79",
+              "rank": 33
+            },
+            {
+              "name": "BOULAOUED Calie",
+              "club": "CS CLICHY 92",
+              "time": "00:28.80",
+              "rank": 34
+            },
+            {
+              "name": "PERRIN Nina",
+              "club": "ESPADON VÉLIZY-VILLACOUBLAY",
+              "time": "00:28.80",
+              "rank": 34
+            },
+            {
+              "name": "ALVES Célia",
+              "club": "AS NATATION RAINCY",
+              "time": "00:28.81",
+              "rank": 36
+            },
+            {
+              "name": "BAO Bonnie",
+              "club": "COLOMBES NATATION",
+              "time": "00:28.84",
+              "rank": 37
+            },
+            {
+              "name": "RAZANATEFY Harena-Soa",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:29.04",
+              "rank": 38
+            },
+            {
+              "name": "GAUGRY GUINTRAND Ana",
+              "club": "CLAMART NATATION 92",
+              "time": "00:29.04",
+              "rank": 38
+            },
+            {
+              "name": "THOLEY Aurelie",
+              "club": "C.N OZOIR-LA-FERRIERE",
+              "time": "00:29.06",
+              "rank": 40
+            },
+            {
+              "name": "HAUVETTE MINOUX Manon",
+              "club": "AQUACLUB LE PECQ MARLY",
+              "time": "00:29.06",
+              "rank": 40
+            },
+            {
+              "name": "DUMESNIL Andréa",
+              "club": "CN FONTAINEBLEAU-AVON",
+              "time": "00:29.10",
+              "rank": 42
+            },
+            {
+              "name": "MAZURE-PEZIVIN Julie",
+              "club": "CLAMART NATATION 92",
+              "time": "00:29.11",
+              "rank": 43
+            },
+            {
+              "name": "SORIA Hisae",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:29.12",
+              "rank": 44
+            },
+            {
+              "name": "BECKER Lola",
+              "club": "CLAMART NATATION 92",
+              "time": "00:29.14",
+              "rank": 45
+            },
+            {
+              "name": "FOUILLET Akura",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:29.14",
+              "rank": 45
+            },
+            {
+              "name": "ELIE Anouk",
+              "club": "ETAMPES NATATION",
+              "time": "00:29.17",
+              "rank": 47
+            },
+            {
+              "name": "NACEIRI Amel",
+              "club": "SCUF PARIS",
+              "time": "00:29.18",
+              "rank": 48
+            },
+            {
+              "name": "TEBIZ Ava",
+              "club": "CS CLICHY 92",
+              "time": "00:29.19",
+              "rank": 49
+            },
+            {
+              "name": "DUMON Elise",
+              "club": "CN VIRY-CHÂTILLON",
+              "time": "00:29.23",
+              "rank": 50
+            },
+            {
+              "name": "HUMPHREYS Camille",
+              "club": "RED STAR CLUB CHAMPIGNY",
+              "time": "00:29.26",
+              "rank": 51
+            },
+            {
+              "name": "PIQUET Lea",
+              "club": "AS EMERAINVILLE",
+              "time": "00:29.27",
+              "rank": 52
+            },
+            {
+              "name": "USANNAZ Yasmine",
+              "club": "ES VITRY",
+              "time": "00:29.28",
+              "rank": 53
+            },
+            {
+              "name": "CHERHAL Priscilla",
+              "club": "US RIS-ORANGIS",
+              "time": "00:29.32",
+              "rank": 54
+            },
+            {
+              "name": "THOREL Ambre",
+              "club": "LES PHOENIX D'ANTONY",
+              "time": "00:29.32",
+              "rank": 54
+            },
+            {
+              "name": "GUITTIER Melina",
+              "club": "SN MONTGERON",
+              "time": "00:29.33",
+              "rank": 56
+            },
+            {
+              "name": "BADRE Rita",
+              "club": "CN EPINETTES PARIS",
+              "time": "00:29.50",
+              "rank": 57
+            },
+            {
+              "name": "HARLE Julie",
+              "club": "RED STAR CLUB CHAMPIGNY",
+              "time": "00:29.52",
+              "rank": 58
+            },
+            {
+              "name": "MARCHAIS PAILLET Aline",
+              "club": "ES MASSY NATATION",
+              "time": "00:29.52",
+              "rank": 58
+            },
+            {
+              "name": "DE BARROS Antonya",
+              "club": "CN FONTAINEBLEAU-AVON",
+              "time": "00:29.53",
+              "rank": 60
+            },
+            {
+              "name": "BEDIN Lucile",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:29.54",
+              "rank": 61
+            },
+            {
+              "name": "DORCHIES Eva",
+              "club": "CN BRUNOY-ESSONNE",
+              "time": "00:29.61",
+              "rank": 62
+            },
+            {
+              "name": "TRAHOT Vilma",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:29.61",
+              "rank": 62
+            },
+            {
+              "name": "OUERFELLI Nesrine",
+              "club": "COURBEVOIE NATATION",
+              "time": "00:29.63",
+              "rank": 64
+            },
+            {
+              "name": "MAUREL-GUERET Chloé",
+              "club": "CLUB NAUTIQUE DOMREMY 13",
+              "time": "00:29.72",
+              "rank": 65
+            },
+            {
+              "name": "VALMAR Camelia",
+              "club": "CS NAUTIQUE NOISY-LE-GRAND",
+              "time": "00:29.78",
+              "rank": 66
+            },
+            {
+              "name": "CONIN Eva",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:29.81",
+              "rank": 67
+            },
+            {
+              "name": "VERBEKE Sophie",
+              "club": "CS MEAUX NATATION",
+              "time": "00:29.86",
+              "rank": 68
+            },
+            {
+              "name": "STINNAKRE Ambre",
+              "club": "CN BRUNOY-ESSONNE",
+              "time": "00:29.86",
+              "rank": 68
+            },
+            {
+              "name": "SEKA Camille",
+              "club": "CLUB NAUTIQUE DE L'ARPAJONNAIS",
+              "time": "00:29.87",
+              "rank": 70
+            },
+            {
+              "name": "FREYSZ VONGSAVATH Louanne",
+              "club": "CS CLICHY 92",
+              "time": "00:29.90",
+              "rank": 71
+            },
+            {
+              "name": "CORDOVAL Leonie",
+              "club": "CN BRUNOY-ESSONNE",
+              "time": "00:29.90",
+              "rank": 71
+            },
+            {
+              "name": "DUBO Mahé",
+              "club": "COLOMBES NATATION",
+              "time": "00:29.91",
+              "rank": 73
+            },
+            {
+              "name": "THOUVENOT Chloé",
+              "club": "RED STAR CLUB CHAMPIGNY",
+              "time": "00:29.96",
+              "rank": 74
+            },
+            {
+              "name": "BOUYAHMED Shainesse",
+              "club": "AASS AQUATIC CLUB SARCELLES",
+              "time": "00:29.96",
+              "rank": 74
+            },
+            {
+              "name": "ZATOUT Ines",
+              "club": "CN ASNIÈRES",
+              "time": "00:29.99",
+              "rank": 76
+            },
+            {
+              "name": "GANDRILLE Lise",
+              "club": "USNSP NEMOURS",
+              "time": "00:30.00",
+              "rank": 77
+            },
+            {
+              "name": "EL FAQRI Ines",
+              "club": "CN EPINETTES PARIS",
+              "time": "00:30.00",
+              "rank": 77
+            },
+            {
+              "name": "MONTETAGAUD Jeanne",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:30.02",
+              "rank": 79
+            },
+            {
+              "name": "CROUIN Lalie",
+              "club": "CA ORSAY",
+              "time": "00:30.10",
+              "rank": 80
+            },
+            {
+              "name": "BACCHIALONI Laureen",
+              "club": "CN FONTAINEBLEAU-AVON",
+              "time": "00:30.12",
+              "rank": 81
+            },
+            {
+              "name": "NEDELEC Camille",
+              "club": "AS EMERAINVILLE",
+              "time": "00:30.12",
+              "rank": 81
+            },
+            {
+              "name": "VAGANYAN Diana",
+              "club": "AS.CHELLES AQUATIQUE",
+              "time": "00:30.16",
+              "rank": 83
+            },
+            {
+              "name": "ANCEL Lucille",
+              "club": "CLUB NAUTIQUE DOMREMY 13",
+              "time": "00:30.18",
+              "rank": 84
+            },
+            {
+              "name": "HETTAK Melea",
+              "club": "US RIS-ORANGIS",
+              "time": "00:30.19",
+              "rank": 85
+            },
+            {
+              "name": "FALLA Prisca",
+              "club": "CN 95 EZANVILLE",
+              "time": "00:30.20",
+              "rank": 86
+            },
+            {
+              "name": "IDJABOU Liah",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:30.21",
+              "rank": 87
+            },
+            {
+              "name": "IGABILLE Leonie",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:30.22",
+              "rank": 88
+            },
+            {
+              "name": "DURAND Lucile",
+              "club": "CN VIRY-CHÂTILLON",
+              "time": "00:30.27",
+              "rank": 89
+            },
+            {
+              "name": "BOOKLAGE-LETELLIER Angéline",
+              "club": "SCUF PARIS",
+              "time": "00:30.34",
+              "rank": 90
+            },
+            {
+              "name": "LE GRAND Mahault",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:30.38",
+              "rank": 91
+            },
+            {
+              "name": "FERHAT JAPPINI Hadija",
+              "club": "MONTEREAU NATATION",
+              "time": "00:30.39",
+              "rank": 92
+            },
+            {
+              "name": "BODEMAR-ROUQUETTE Lisa",
+              "club": "CN FONTAINEBLEAU-AVON",
+              "time": "00:30.41",
+              "rank": 93
+            },
+            {
+              "name": "NEMDALI Ambrine",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:30.45",
+              "rank": 94
+            },
+            {
+              "name": "MARTINEZ Orane",
+              "club": "CN FONTAINEBLEAU-AVON",
+              "time": "00:30.60",
+              "rank": 95
+            },
+            {
+              "name": "THOMASSIN Louise",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:30.71",
+              "rank": 96
+            },
+            {
+              "name": "LARBI-AÏSSA Amira",
+              "club": "CN ASNIÈRES",
+              "time": "00:30.72",
+              "rank": 97
+            },
+            {
+              "name": "GROS-DESORMEAUX Mahelys",
+              "club": "ES VITRY",
+              "time": "00:30.73",
+              "rank": 98
+            },
+            {
+              "name": "LABINSKY Meryl",
+              "club": "CA L'HAY-LES-ROSES",
+              "time": "00:30.81",
+              "rank": 99
+            },
+            {
+              "name": "RIBAUDEAU Léonie",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:30.93",
+              "rank": 100
+            },
+            {
+              "name": "QIAO Olivia",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:30.94",
+              "rank": 101
+            },
+            {
+              "name": "OLIVARES MILLEREUX Alana",
+              "club": "CN ASNIÈRES",
+              "time": "00:30.97",
+              "rank": 102
+            },
+            {
+              "name": "COULIBALY Aicha",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:30.97",
+              "rank": 102
+            },
+            {
+              "name": "GOUEL Juliette",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:30.98",
+              "rank": 104
+            },
+            {
+              "name": "KEBIR Jenna",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:31.03",
+              "rank": 105
+            },
+            {
+              "name": "SEISEN Soléne",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:31.06",
+              "rank": 106
+            },
+            {
+              "name": "RESSEGUIER Romane",
+              "club": "CSM PUTEAUX",
+              "time": "00:31.06",
+              "rank": 106
+            },
+            {
+              "name": "MAUGIS FERNANDES Lucie",
+              "club": "YERRES NATATION",
+              "time": "00:31.32",
+              "rank": 108
+            },
+            {
+              "name": "GILLIET / MARTIN Héléna",
+              "club": "CA L'HAY-LES-ROSES",
+              "time": "00:31.34",
+              "rank": 109
+            },
+            {
+              "name": "LE MAREC Maelys",
+              "club": "COM BAGNEUX NATATION",
+              "time": "00:31.37",
+              "rank": 110
+            },
+            {
+              "name": "VACHER Rose",
+              "club": "VAL D'ESSONNE MENNECY AQUA CLUB",
+              "time": "00:31.40",
+              "rank": 111
+            },
+            {
+              "name": "HANANE Ahlem",
+              "club": "U.S CRETEIL NATATION",
+              "time": "00:31.73",
+              "rank": 112
+            },
+            {
+              "name": "FRENDI Thaninna",
+              "club": "CERGY PONTOISE NATATION",
+              "time": "00:32.11",
+              "rank": 114
+            },
+            {
+              "name": "BEKKARI Hind",
+              "club": "COLOMBES NATATION",
+              "time": "00:32.20",
+              "rank": 115
+            },
+            {
+              "name": "PAVLOVIC Lena",
+              "club": "JEANNE D'ARC DRANCY",
+              "time": "00:32.57",
+              "rank": 116
+            },
+            {
+              "name": "KABIR Dina",
+              "club": "AASS AQUATIC CLUB SARCELLES",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "MARTI Kira",
+              "club": "U.S CRETEIL NATATION",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "BENMANSOUR Ryma",
+              "club": "VILLEJUIF NATATION",
+              "time": null,
+              "rank": null
+            }
+          ]
         },
         {
           "competitionId": "94055",
@@ -274,6 +1537,7 @@
           "date": "2026-07-05",
           "location": "TAVERNY",
           "event": "100 Nage Libre Dames",
+          "eventId": "2",
           "session": "Séries",
           "time": "01:08.46",
           "timeCentiemes": 6846,
@@ -287,6 +1551,7 @@
           "date": "2026-07-05",
           "location": "TAVERNY",
           "event": "200 Nage Libre Dames",
+          "eventId": "3",
           "session": "Séries",
           "time": "02:39.80",
           "timeCentiemes": 15980,
@@ -309,6 +1574,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Brasse Messieurs",
+          "eventId": "71",
           "session": "Séries",
           "time": "00:51.66",
           "timeCentiemes": 5166,
@@ -322,6 +1588,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Messieurs",
+          "eventId": "90",
           "session": "Séries",
           "time": "01:51.37",
           "timeCentiemes": 11137,
@@ -335,6 +1602,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Messieurs",
+          "eventId": "97",
           "session": "Séries",
           "time": "02:43.65",
           "timeCentiemes": 16365,
@@ -348,6 +1616,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Messieurs",
+          "eventId": "98",
           "session": "Séries",
           "time": "03:11.27",
           "timeCentiemes": 19127,
@@ -370,6 +1639,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Dos Messieurs",
+          "eventId": "61",
           "session": "Séries",
           "time": "00:50.51",
           "timeCentiemes": 5051,
@@ -383,6 +1653,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Messieurs",
+          "eventId": "90",
           "session": "Séries",
           "time": "01:50.58",
           "timeCentiemes": 11058,
@@ -396,6 +1667,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Messieurs",
+          "eventId": "97",
           "session": "Séries",
           "time": "02:53.57",
           "timeCentiemes": 17357,
@@ -409,6 +1681,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Messieurs",
+          "eventId": "98",
           "session": "Séries",
           "time": "03:32.69",
           "timeCentiemes": 21269,
@@ -431,6 +1704,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Brasse Messieurs",
+          "eventId": "71",
           "session": "Séries",
           "time": "01:07.77",
           "timeCentiemes": 6777,
@@ -444,6 +1718,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Messieurs",
+          "eventId": "90",
           "session": "Séries",
           "time": "02:10.16",
           "timeCentiemes": 13016,
@@ -457,6 +1732,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Messieurs",
+          "eventId": "97",
           "session": "Séries",
           "time": "02:53.57",
           "timeCentiemes": 17357,
@@ -470,6 +1746,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Messieurs",
+          "eventId": "98",
           "session": "Séries",
           "time": "03:32.69",
           "timeCentiemes": 21269,
@@ -492,6 +1769,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Brasse Dames",
+          "eventId": "21",
           "session": "Séries",
           "time": "00:51.72",
           "timeCentiemes": 5172,
@@ -505,6 +1783,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:57.66",
           "timeCentiemes": 11766,
@@ -518,6 +1797,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "03:02.51",
           "timeCentiemes": 18251,
@@ -531,6 +1811,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:26.89",
           "timeCentiemes": 20689,
@@ -553,12 +1834,57 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Nage Libre Dames",
+          "eventId": "1",
           "session": "Séries",
           "time": "00:45.41",
           "timeCentiemes": 4541,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "opponents": [
+            {
+              "name": "PERDRIX Olivia",
+              "club": "CNVM SOISY",
+              "time": "00:34.78",
+              "rank": 1
+            },
+            {
+              "name": "HILPRON Athénaïs",
+              "club": "ACS CORMEILLES",
+              "time": "00:40.99",
+              "rank": 2
+            },
+            {
+              "name": "HAMMOUT Lina",
+              "club": "ACS CORMEILLES",
+              "time": "00:41.82",
+              "rank": 3
+            },
+            {
+              "name": "ZEGHMICHE Nina",
+              "club": "MONTIGNY NATATION",
+              "time": "00:45.64",
+              "rank": 5
+            },
+            {
+              "name": "ADJAL Lyna",
+              "club": "SN FRANCONVILLE",
+              "time": "00:47.10",
+              "rank": 6
+            },
+            {
+              "name": "BOURIAH Inayah",
+              "club": "ST-GEORGES ARGENTEUIL",
+              "time": "00:47.86",
+              "rank": 7
+            },
+            {
+              "name": "ZAGHBA Ines",
+              "club": "SN FRANCONVILLE",
+              "time": "00:58.52",
+              "rank": 8
+            }
+          ]
         },
         {
           "competitionId": "94109",
@@ -566,6 +1892,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:57.08",
           "timeCentiemes": 11708,
@@ -579,6 +1906,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "03:02.51",
           "timeCentiemes": 18251,
@@ -592,6 +1920,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:26.89",
           "timeCentiemes": 20689,
@@ -614,12 +1943,57 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Nage Libre Dames",
+          "eventId": "1",
           "session": "Séries",
           "time": "00:41.82",
           "timeCentiemes": 4182,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "opponents": [
+            {
+              "name": "PERDRIX Olivia",
+              "club": "CNVM SOISY",
+              "time": "00:34.78",
+              "rank": 1
+            },
+            {
+              "name": "HILPRON Athénaïs",
+              "club": "ACS CORMEILLES",
+              "time": "00:40.99",
+              "rank": 2
+            },
+            {
+              "name": "GRIGUICH Inès",
+              "club": "ACS CORMEILLES",
+              "time": "00:45.41",
+              "rank": 4
+            },
+            {
+              "name": "ZEGHMICHE Nina",
+              "club": "MONTIGNY NATATION",
+              "time": "00:45.64",
+              "rank": 5
+            },
+            {
+              "name": "ADJAL Lyna",
+              "club": "SN FRANCONVILLE",
+              "time": "00:47.10",
+              "rank": 6
+            },
+            {
+              "name": "BOURIAH Inayah",
+              "club": "ST-GEORGES ARGENTEUIL",
+              "time": "00:47.86",
+              "rank": 7
+            },
+            {
+              "name": "ZAGHBA Ines",
+              "club": "SN FRANCONVILLE",
+              "time": "00:58.52",
+              "rank": 8
+            }
+          ]
         },
         {
           "competitionId": "94109",
@@ -627,6 +2001,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:49.02",
           "timeCentiemes": 10902,
@@ -640,6 +2015,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "03:02.71",
           "timeCentiemes": 18271,
@@ -653,6 +2029,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:27.21",
           "timeCentiemes": 20721,
@@ -675,12 +2052,57 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Nage Libre Dames",
+          "eventId": "1",
           "session": "Séries",
           "time": "00:40.99",
           "timeCentiemes": 4099,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "opponents": [
+            {
+              "name": "PERDRIX Olivia",
+              "club": "CNVM SOISY",
+              "time": "00:34.78",
+              "rank": 1
+            },
+            {
+              "name": "HAMMOUT Lina",
+              "club": "ACS CORMEILLES",
+              "time": "00:41.82",
+              "rank": 3
+            },
+            {
+              "name": "GRIGUICH Inès",
+              "club": "ACS CORMEILLES",
+              "time": "00:45.41",
+              "rank": 4
+            },
+            {
+              "name": "ZEGHMICHE Nina",
+              "club": "MONTIGNY NATATION",
+              "time": "00:45.64",
+              "rank": 5
+            },
+            {
+              "name": "ADJAL Lyna",
+              "club": "SN FRANCONVILLE",
+              "time": "00:47.10",
+              "rank": 6
+            },
+            {
+              "name": "BOURIAH Inayah",
+              "club": "ST-GEORGES ARGENTEUIL",
+              "time": "00:47.86",
+              "rank": 7
+            },
+            {
+              "name": "ZAGHBA Ines",
+              "club": "SN FRANCONVILLE",
+              "time": "00:58.52",
+              "rank": 8
+            }
+          ]
         },
         {
           "competitionId": "94109",
@@ -688,6 +2110,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:48.26",
           "timeCentiemes": 10826,
@@ -701,6 +2124,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "02:59.29",
           "timeCentiemes": 17929,
@@ -714,6 +2138,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:28.01",
           "timeCentiemes": 20801,
@@ -736,6 +2161,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Dos Messieurs",
+          "eventId": "61",
           "session": "Séries",
           "time": "00:49.25",
           "timeCentiemes": 4925,
@@ -749,6 +2175,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Messieurs",
+          "eventId": "90",
           "session": "Séries",
           "time": "01:49.06",
           "timeCentiemes": 10906,
@@ -762,6 +2189,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Messieurs",
+          "eventId": "97",
           "session": "Séries",
           "time": "02:43.65",
           "timeCentiemes": 16365,
@@ -775,6 +2203,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Messieurs",
+          "eventId": "98",
           "session": "Séries",
           "time": "03:11.27",
           "timeCentiemes": 19127,
@@ -797,6 +2226,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Brasse Dames",
+          "eventId": "21",
           "session": "Séries",
           "time": "01:07.70",
           "timeCentiemes": 6770,
@@ -810,6 +2240,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "02:28.12",
           "timeCentiemes": 14812,
@@ -823,6 +2254,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "02:59.29",
           "timeCentiemes": 17929,
@@ -836,6 +2268,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:28.01",
           "timeCentiemes": 20801,
@@ -858,6 +2291,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Dos Dames",
+          "eventId": "11",
           "session": "Séries",
           "time": "00:53.23",
           "timeCentiemes": 5323,
@@ -871,6 +2305,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "02:01.08",
           "timeCentiemes": 12108,
@@ -884,6 +2319,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "03:02.51",
           "timeCentiemes": 18251,
@@ -897,6 +2333,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:26.89",
           "timeCentiemes": 20689,
@@ -919,6 +2356,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Brasse Dames",
+          "eventId": "21",
           "session": "Séries",
           "time": "01:15.13",
           "timeCentiemes": 7513,
@@ -932,6 +2370,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "02:32.52",
           "timeCentiemes": 15252,
@@ -945,6 +2384,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "03:02.71",
           "timeCentiemes": 18271,
@@ -958,6 +2398,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:27.21",
           "timeCentiemes": 20721,
@@ -980,6 +2421,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Papillon Dames",
+          "eventId": "31",
           "session": "Séries",
           "time": "00:46.60",
           "timeCentiemes": 4660,
@@ -993,6 +2435,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:43.10",
           "timeCentiemes": 10310,
@@ -1006,6 +2449,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "03:02.51",
           "timeCentiemes": 18251,
@@ -1019,6 +2463,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:26.89",
           "timeCentiemes": 20689,
@@ -1041,6 +2486,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Nage Libre Messieurs",
+          "eventId": "51",
           "session": "Séries",
           "time": "00:40.71",
           "timeCentiemes": 4071,
@@ -1054,6 +2500,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Messieurs",
+          "eventId": "90",
           "session": "Séries",
           "time": "01:43.10",
           "timeCentiemes": 10310,
@@ -1067,6 +2514,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Messieurs",
+          "eventId": "97",
           "session": "Séries",
           "time": "02:53.57",
           "timeCentiemes": 17357,
@@ -1080,6 +2528,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Messieurs",
+          "eventId": "98",
           "session": "Séries",
           "time": "03:32.69",
           "timeCentiemes": 21269,
@@ -1102,6 +2551,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Papillon Messieurs",
+          "eventId": "81",
           "session": "Séries",
           "time": "00:45.22",
           "timeCentiemes": 4522,
@@ -1115,6 +2565,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Messieurs",
+          "eventId": "90",
           "session": "Séries",
           "time": "01:43.39",
           "timeCentiemes": 10339,
@@ -1128,6 +2579,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Messieurs",
+          "eventId": "97",
           "session": "Séries",
           "time": "02:43.65",
           "timeCentiemes": 16365,
@@ -1141,6 +2593,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Messieurs",
+          "eventId": "98",
           "session": "Séries",
           "time": "03:11.27",
           "timeCentiemes": 19127,
@@ -1163,6 +2616,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Dos Dames",
+          "eventId": "11",
           "session": "Séries",
           "time": "00:48.40",
           "timeCentiemes": 4840,
@@ -1176,6 +2630,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:51.37",
           "timeCentiemes": 11137,
@@ -1189,6 +2644,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "02:59.29",
           "timeCentiemes": 17929,
@@ -1202,6 +2658,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:28.01",
           "timeCentiemes": 20801,
@@ -1224,6 +2681,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Papillon Dames",
+          "eventId": "31",
           "session": "Séries",
           "time": "00:43.78",
           "timeCentiemes": 4378,
@@ -1237,6 +2695,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Dames",
+          "eventId": "40",
           "session": "Séries",
           "time": "01:38.86",
           "timeCentiemes": 9886,
@@ -1250,6 +2709,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Dames",
+          "eventId": "47",
           "session": "Séries",
           "time": "02:59.29",
           "timeCentiemes": 17929,
@@ -1263,6 +2723,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Dames",
+          "eventId": "48",
           "session": "Séries",
           "time": "03:28.01",
           "timeCentiemes": 20801,
@@ -1285,6 +2746,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "50 Papillon Messieurs",
+          "eventId": "81",
           "session": "Séries",
           "time": "00:44.88",
           "timeCentiemes": 4488,
@@ -1298,6 +2760,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "100 4 Nages Messieurs",
+          "eventId": "90",
           "session": "Séries",
           "time": "01:35.19",
           "timeCentiemes": 9519,
@@ -1311,6 +2774,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 Nage Libre Messieurs",
+          "eventId": "97",
           "session": "Séries",
           "time": "02:53.57",
           "timeCentiemes": 17357,
@@ -1324,6 +2788,7 @@
           "date": "2026-06-14",
           "location": "MONTIGNY-LES-CORMEILLES",
           "event": "4x50 4 Nages Messieurs",
+          "eventId": "98",
           "session": "Séries",
           "time": "03:32.69",
           "timeCentiemes": 21269,
@@ -1346,12 +2811,1293 @@
           "date": "2026-07-05",
           "location": "TAVERNY",
           "event": "50 Nage Libre Messieurs",
+          "eventId": "51",
           "session": "Séries",
           "time": "00:27.74",
           "timeCentiemes": 2774,
           "rank": 168,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "opponents": [
+            {
+              "name": "MATTIUSSI Erling",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:23.61",
+              "rank": 1
+            },
+            {
+              "name": "BOUSSION Augustin",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:23.82",
+              "rank": 2
+            },
+            {
+              "name": "CASTERA Louis",
+              "club": "CERGY PONTOISE NATATION",
+              "time": "00:23.91",
+              "rank": 3
+            },
+            {
+              "name": "GEOFFROY Axel",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:24.01",
+              "rank": 4
+            },
+            {
+              "name": "SAADE Jad",
+              "club": "CN ASNIÈRES",
+              "time": "00:24.03",
+              "rank": 5
+            },
+            {
+              "name": "DELACROIX Timothee",
+              "club": "LE CHESNAY NATATION",
+              "time": "00:24.03",
+              "rank": 5
+            },
+            {
+              "name": "LE CORNEC Alexandre",
+              "club": "MOUETTES DE PARIS",
+              "time": "00:24.06",
+              "rank": 7
+            },
+            {
+              "name": "KINGUE MOUSSINGA Theodore",
+              "club": "CN ASNIÈRES",
+              "time": "00:24.08",
+              "rank": 8
+            },
+            {
+              "name": "DURAND Loick",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:24.29",
+              "rank": 9
+            },
+            {
+              "name": "GAMEIRO DOS SANTOS Tiago",
+              "club": "AQUACLUB LE PECQ MARLY",
+              "time": "00:24.35",
+              "rank": 10
+            },
+            {
+              "name": "NEMDALI Kemil",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:24.36",
+              "rank": 11
+            },
+            {
+              "name": "MAILLARD VALENTIN Alexis",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:24.38",
+              "rank": 12
+            },
+            {
+              "name": "RENAULT Léandre",
+              "club": "CLAMART NATATION 92",
+              "time": "00:24.46",
+              "rank": 13
+            },
+            {
+              "name": "SROUJI William",
+              "club": "AQUACLUB LE PECQ MARLY",
+              "time": "00:24.47",
+              "rank": 14
+            },
+            {
+              "name": "MOREL Benoit",
+              "club": "AS CORBEIL-ESSONNE",
+              "time": "00:24.50",
+              "rank": 15
+            },
+            {
+              "name": "KOUDIL Samir",
+              "club": "NOGENT NATATION 94",
+              "time": "00:24.50",
+              "rank": 15
+            },
+            {
+              "name": "VISSE Pierre-Zineddine",
+              "club": "CN EPINETTES PARIS",
+              "time": "00:24.51",
+              "rank": 17
+            },
+            {
+              "name": "BARKAT Houmed",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:24.54",
+              "rank": 18
+            },
+            {
+              "name": "BENELHADJ Tom",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:24.55",
+              "rank": 19
+            },
+            {
+              "name": "GONGON Luc",
+              "club": "ES MASSY NATATION",
+              "time": "00:24.55",
+              "rank": 19
+            },
+            {
+              "name": "GAUTHIER Gabriel",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:24.70",
+              "rank": 21
+            },
+            {
+              "name": "LANGE-TELLO Gaëtan",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:24.70",
+              "rank": 21
+            },
+            {
+              "name": "LANOUZIERE Wilhelm",
+              "club": "ES MASSY NATATION",
+              "time": "00:24.72",
+              "rank": 23
+            },
+            {
+              "name": "BARBERO Antoine",
+              "club": "SCUF PARIS",
+              "time": "00:24.74",
+              "rank": 24
+            },
+            {
+              "name": "ZOUGAGH Anas",
+              "club": "CNO ST-GERMAIN-EN-LAYE",
+              "time": "00:24.84",
+              "rank": 25
+            },
+            {
+              "name": "NGUYEN Steven",
+              "club": "CLAMART NATATION 92",
+              "time": "00:24.90",
+              "rank": 26
+            },
+            {
+              "name": "PEUFFIER Arthur",
+              "club": "COURBEVOIE NATATION",
+              "time": "00:24.91",
+              "rank": 27
+            },
+            {
+              "name": "STAN Darius",
+              "club": "CS CLICHY 92",
+              "time": "00:24.95",
+              "rank": 28
+            },
+            {
+              "name": "VAN CAENEGEM Tom",
+              "club": "S.M MONTROUGE",
+              "time": "00:24.99",
+              "rank": 29
+            },
+            {
+              "name": "CANU-BALZANO Luca",
+              "club": "CLAMART NATATION 92",
+              "time": "00:25.02",
+              "rank": 30
+            },
+            {
+              "name": "KHEREDDINE Adam",
+              "club": "LE CHESNAY NATATION",
+              "time": "00:25.06",
+              "rank": 31
+            },
+            {
+              "name": "VIRENQUE Yannis",
+              "club": "GIRONDINS BORDEAUX",
+              "time": "00:25.10",
+              "rank": 32
+            },
+            {
+              "name": "PRADIER Joseph",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:25.10",
+              "rank": 32
+            },
+            {
+              "name": "RAMAROKOTO Tsiky",
+              "club": "CERGY PONTOISE NATATION",
+              "time": "00:25.12",
+              "rank": 34
+            },
+            {
+              "name": "GRANGE Antoine",
+              "club": "RACING CLUB DE FRANCE",
+              "time": "00:25.13",
+              "rank": 35
+            },
+            {
+              "name": "COLOMBOT Eddie",
+              "club": "PROVINS NATATION",
+              "time": "00:25.15",
+              "rank": 36
+            },
+            {
+              "name": "CLEMENT Bastien",
+              "club": "S.M MONTROUGE",
+              "time": "00:25.15",
+              "rank": 36
+            },
+            {
+              "name": "MARRY Léo",
+              "club": "MOUETTES DE PARIS",
+              "time": "00:25.20",
+              "rank": 38
+            },
+            {
+              "name": "HAMADENE Hugo",
+              "club": "COLOMBES NATATION",
+              "time": "00:25.22",
+              "rank": 39
+            },
+            {
+              "name": "CHAMBRAUD Charles",
+              "club": "OLYMPIQUE LA GARENNE-COLOMBES",
+              "time": "00:25.26",
+              "rank": 40
+            },
+            {
+              "name": "KIMBALA Maxence",
+              "club": "ES SUCY-EN-BRIE",
+              "time": "00:25.36",
+              "rank": 41
+            },
+            {
+              "name": "BEDAGUE Clément",
+              "club": "SURESNES SPORTS NAUTIQUES",
+              "time": "00:25.37",
+              "rank": 42
+            },
+            {
+              "name": "GAVELLE Lancelot",
+              "club": "SCUF PARIS",
+              "time": "00:25.37",
+              "rank": 42
+            },
+            {
+              "name": "ROLY Mathis",
+              "club": "USM GAGNY",
+              "time": "00:25.39",
+              "rank": 44
+            },
+            {
+              "name": "GUY Gregoire",
+              "club": "RACING CLUB DE FRANCE",
+              "time": "00:25.40",
+              "rank": 45
+            },
+            {
+              "name": "DAVAIN Gabriel",
+              "club": "CERGY PONTOISE NATATION",
+              "time": "00:25.41",
+              "rank": 46
+            },
+            {
+              "name": "HANI Chahine",
+              "club": "CA ORSAY",
+              "time": "00:25.43",
+              "rank": 47
+            },
+            {
+              "name": "NDOUR Malick-Dayssam",
+              "club": "MOUETTES DE PARIS",
+              "time": "00:25.43",
+              "rank": 47
+            },
+            {
+              "name": "DILARD Sören",
+              "club": "CLUB NAUTIQUE DE L'ARPAJONNAIS",
+              "time": "00:25.44",
+              "rank": 49
+            },
+            {
+              "name": "IACOBOI Vladislav",
+              "club": "MOUETTES DE PARIS",
+              "time": "00:25.44",
+              "rank": 49
+            },
+            {
+              "name": "TRAN Adrien",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:25.48",
+              "rank": 51
+            },
+            {
+              "name": "LA BELLA ARDOINO Mathis",
+              "club": "US JEUNESSE MITRY-MORY",
+              "time": "00:25.49",
+              "rank": 52
+            },
+            {
+              "name": "JARDIN Alexis",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:25.50",
+              "rank": 53
+            },
+            {
+              "name": "GUILLERM Ethan",
+              "club": "CN VIRY-CHÂTILLON",
+              "time": "00:25.53",
+              "rank": 54
+            },
+            {
+              "name": "TÊTU DUBREUIL Samuel",
+              "club": "ES MASSY NATATION",
+              "time": "00:25.54",
+              "rank": 55
+            },
+            {
+              "name": "KERFORN Paul",
+              "club": "CA ORSAY",
+              "time": "00:25.57",
+              "rank": 56
+            },
+            {
+              "name": "PINERO Antoine",
+              "club": "CSN GUYANCOURT",
+              "time": "00:25.57",
+              "rank": 56
+            },
+            {
+              "name": "PHILOMENE ALEXANDRINE Sully",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:25.63",
+              "rank": 58
+            },
+            {
+              "name": "VINATIER Eliott",
+              "club": "ASSO NATATION DE SARTROUVILLE",
+              "time": "00:25.67",
+              "rank": 59
+            },
+            {
+              "name": "OSIPOV Alexey",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:25.67",
+              "rank": 59
+            },
+            {
+              "name": "DIEBOLD Jean-Georges",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:25.67",
+              "rank": 59
+            },
+            {
+              "name": "CHAFFORT Enzo",
+              "club": "AC VILLEPINTE",
+              "time": "00:25.69",
+              "rank": 62
+            },
+            {
+              "name": "FILLON Noé",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:25.72",
+              "rank": 63
+            },
+            {
+              "name": "CUPILLARD Alix",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:25.73",
+              "rank": 64
+            },
+            {
+              "name": "MANY Matteo",
+              "club": "S.M MONTROUGE",
+              "time": "00:25.73",
+              "rank": 64
+            },
+            {
+              "name": "VELASCO-GUTIERREZ Lucas",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:25.76",
+              "rank": 66
+            },
+            {
+              "name": "JUBEA Stefan",
+              "club": "ASSO NATATION DE SARTROUVILLE",
+              "time": "00:25.76",
+              "rank": 66
+            },
+            {
+              "name": "BARIC--KHEANG Axell",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:25.79",
+              "rank": 68
+            },
+            {
+              "name": "LEGOT Gabriel",
+              "club": "SN MONTGERON",
+              "time": "00:25.82",
+              "rank": 69
+            },
+            {
+              "name": "BOISE Amaury",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:25.83",
+              "rank": 70
+            },
+            {
+              "name": "HENRY Valentin",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:25.86",
+              "rank": 71
+            },
+            {
+              "name": "FETTAR Issam",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:25.89",
+              "rank": 72
+            },
+            {
+              "name": "CUVELIER Timothée",
+              "club": "AQUACLUB LE PECQ MARLY",
+              "time": "00:25.89",
+              "rank": 72
+            },
+            {
+              "name": "ROUICHI Louay",
+              "club": "LES PHOENIX D'ANTONY",
+              "time": "00:25.89",
+              "rank": 72
+            },
+            {
+              "name": "CHANTEUR Nathan",
+              "club": "USM VIROFLAY",
+              "time": "00:25.93",
+              "rank": 75
+            },
+            {
+              "name": "LALOI Nathan",
+              "club": "LES PHOENIX D'ANTONY",
+              "time": "00:25.95",
+              "rank": 76
+            },
+            {
+              "name": "CIEPLUCHA Milann",
+              "club": "AQUA CLUB PONTAULT-ROISSY",
+              "time": "00:25.99",
+              "rank": 77
+            },
+            {
+              "name": "BRILLANT Lucas",
+              "club": "EN DRAVEIL",
+              "time": "00:26.00",
+              "rank": 78
+            },
+            {
+              "name": "APRUZZESE Sasha",
+              "club": "CN 95 EZANVILLE",
+              "time": "00:26.03",
+              "rank": 79
+            },
+            {
+              "name": "HUSSEIN Marwan",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:26.03",
+              "rank": 79
+            },
+            {
+              "name": "FAE Matiss",
+              "club": "CN 95 EZANVILLE",
+              "time": "00:26.04",
+              "rank": 81
+            },
+            {
+              "name": "MAZARI Antoine",
+              "club": "EN DRAVEIL",
+              "time": "00:26.04",
+              "rank": 81
+            },
+            {
+              "name": "DJENHIA Aslane",
+              "club": "C.N OZOIR-LA-FERRIERE",
+              "time": "00:26.07",
+              "rank": 83
+            },
+            {
+              "name": "BOULGHARD Ryan",
+              "club": "ETOILE SAINT-LEU  NATATION",
+              "time": "00:26.08",
+              "rank": 84
+            },
+            {
+              "name": "CLINI Luca",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:26.10",
+              "rank": 85
+            },
+            {
+              "name": "DENISE Andrea",
+              "club": "SCUF PARIS",
+              "time": "00:26.10",
+              "rank": 85
+            },
+            {
+              "name": "TRAN Aaron",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:26.10",
+              "rank": 85
+            },
+            {
+              "name": "CROLY-LABOURDETTE Niels",
+              "club": "LE CHESNAY NATATION",
+              "time": "00:26.14",
+              "rank": 88
+            },
+            {
+              "name": "NEMDALI Amine",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:26.16",
+              "rank": 89
+            },
+            {
+              "name": "BORDA Antoine",
+              "club": "MOUETTES DE PARIS",
+              "time": "00:26.17",
+              "rank": 90
+            },
+            {
+              "name": "DOISNEAU Celyen",
+              "club": "AS CORBEIL-ESSONNE",
+              "time": "00:26.19",
+              "rank": 91
+            },
+            {
+              "name": "SCHMITT Hugues",
+              "club": "ASS SPORTIVE BOUVINES",
+              "time": "00:26.19",
+              "rank": 91
+            },
+            {
+              "name": "PAIS Gabriel",
+              "club": "MONTREUIL NATATION - REDS",
+              "time": "00:26.19",
+              "rank": 91
+            },
+            {
+              "name": "GIOP Macéo",
+              "club": "UAS ST-CLOUD",
+              "time": "00:26.21",
+              "rank": 94
+            },
+            {
+              "name": "LAFONT Hugo",
+              "club": "AS CORBEIL-ESSONNE",
+              "time": "00:26.21",
+              "rank": 94
+            },
+            {
+              "name": "CROUIN Timeo",
+              "club": "CA ORSAY",
+              "time": "00:26.22",
+              "rank": 96
+            },
+            {
+              "name": "ALIM Arslan",
+              "club": "CN 95 EZANVILLE",
+              "time": "00:26.24",
+              "rank": 97
+            },
+            {
+              "name": "CHAUMOND Ulysse",
+              "club": "CLUB NAUTIQUE DOMREMY 13",
+              "time": "00:26.32",
+              "rank": 98
+            },
+            {
+              "name": "LEJARS Tom",
+              "club": "CLUB NAUTIQUE DE L'ARPAJONNAIS",
+              "time": "00:26.36",
+              "rank": 99
+            },
+            {
+              "name": "GUERTON Lenny",
+              "club": "ETAMPES NATATION",
+              "time": "00:26.38",
+              "rank": 100
+            },
+            {
+              "name": "ERPELDING Galaad",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:26.39",
+              "rank": 101
+            },
+            {
+              "name": "KAMAL Omar",
+              "club": "CN EPINETTES PARIS",
+              "time": "00:26.39",
+              "rank": 101
+            },
+            {
+              "name": "LANCIANO Antonio",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:26.40",
+              "rank": 103
+            },
+            {
+              "name": "MALEK Yani",
+              "club": "MORSANG ESSONNE NATATION",
+              "time": "00:26.42",
+              "rank": 104
+            },
+            {
+              "name": "CRETY Lucas",
+              "club": "CN BRUNOY-ESSONNE",
+              "time": "00:26.42",
+              "rank": 104
+            },
+            {
+              "name": "ABOUHAMDA Ishaaq",
+              "club": "CN ASNIÈRES",
+              "time": "00:26.44",
+              "rank": 106
+            },
+            {
+              "name": "GUIMBERT Adam",
+              "club": "EN STE-GENEVIÈVE-DES-BOIS",
+              "time": "00:26.47",
+              "rank": 107
+            },
+            {
+              "name": "COUTY Ocean",
+              "club": "COURBEVOIE NATATION",
+              "time": "00:26.48",
+              "rank": 108
+            },
+            {
+              "name": "CONSELIN Gabriel",
+              "club": "SCUF PARIS",
+              "time": "00:26.51",
+              "rank": 109
+            },
+            {
+              "name": "REBEYROL Luca",
+              "club": "CA L'HAY-LES-ROSES",
+              "time": "00:26.53",
+              "rank": 110
+            },
+            {
+              "name": "LARAYEDH Jilani",
+              "club": "ASS SPORTIVE BOUVINES",
+              "time": "00:26.55",
+              "rank": 111
+            },
+            {
+              "name": "LUXEREAU Charles",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:26.57",
+              "rank": 112
+            },
+            {
+              "name": "COULIBALY Isaac",
+              "club": "ASN LOUVRES-ROISSY-SURVILLIERS",
+              "time": "00:26.58",
+              "rank": 113
+            },
+            {
+              "name": "MASCIO Come",
+              "club": "SCUF PARIS",
+              "time": "00:26.58",
+              "rank": 113
+            },
+            {
+              "name": "VAREILLAUD Thomas",
+              "club": "MORSANG ESSONNE NATATION",
+              "time": "00:26.59",
+              "rank": 115
+            },
+            {
+              "name": "LABAUGE Louis",
+              "club": "ASSO NATATION DE SARTROUVILLE",
+              "time": "00:26.60",
+              "rank": 116
+            },
+            {
+              "name": "NGO Michael",
+              "club": "MARNE ET GONDOIRE NATATION",
+              "time": "00:26.61",
+              "rank": 117
+            },
+            {
+              "name": "MALHERBE Matt",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:26.61",
+              "rank": 117
+            },
+            {
+              "name": "CHALU-COYO Joan",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:26.64",
+              "rank": 119
+            },
+            {
+              "name": "DEWAELE Zakari",
+              "club": "CS MEAUX NATATION",
+              "time": "00:26.65",
+              "rank": 120
+            },
+            {
+              "name": "WU Ledi",
+              "club": "ETOILE SAINT-LEU  NATATION",
+              "time": "00:26.70",
+              "rank": 121
+            },
+            {
+              "name": "D'ESPINAY Martin",
+              "club": "CN ASNIÈRES",
+              "time": "00:26.71",
+              "rank": 122
+            },
+            {
+              "name": "PELAGE Ronald",
+              "club": "CN POISSY",
+              "time": "00:26.71",
+              "rank": 122
+            },
+            {
+              "name": "ALAVEZ Will-Yann",
+              "club": "SN MONTGERON",
+              "time": "00:26.72",
+              "rank": 124
+            },
+            {
+              "name": "VELLUET Timothée",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:26.72",
+              "rank": 124
+            },
+            {
+              "name": "ATMANI Zyad",
+              "club": "JEANNE D'ARC DRANCY",
+              "time": "00:26.74",
+              "rank": 126
+            },
+            {
+              "name": "MAJCHER Jonas",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:26.79",
+              "rank": 127
+            },
+            {
+              "name": "SABI Ilyes",
+              "club": "CA L'HAY-LES-ROSES",
+              "time": "00:26.80",
+              "rank": 128
+            },
+            {
+              "name": "GALTIER Hugo",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:26.83",
+              "rank": 129
+            },
+            {
+              "name": "RAMANANTSOA Cedric",
+              "club": "COURBEVOIE NATATION",
+              "time": "00:26.84",
+              "rank": 130
+            },
+            {
+              "name": "VEAUVY-GALET Nino",
+              "club": "ETAMPES NATATION",
+              "time": "00:26.90",
+              "rank": 131
+            },
+            {
+              "name": "PARLY Ilian",
+              "club": "SN FRANCONVILLE",
+              "time": "00:26.93",
+              "rank": 132
+            },
+            {
+              "name": "JEAN Olivier",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:26.93",
+              "rank": 132
+            },
+            {
+              "name": "VILLETTE Robin",
+              "club": "OLYMPIQUE LA GARENNE-COLOMBES",
+              "time": "00:26.94",
+              "rank": 134
+            },
+            {
+              "name": "TIETSE Emmanuel",
+              "club": "AQUACLUB LE PECQ MARLY",
+              "time": "00:26.95",
+              "rank": 135
+            },
+            {
+              "name": "LEONARD Luke",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:26.97",
+              "rank": 136
+            },
+            {
+              "name": "BATISTA Clément",
+              "club": "PROVINS NATATION",
+              "time": "00:26.99",
+              "rank": 137
+            },
+            {
+              "name": "OSIPOV Mikael",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": "00:27.03",
+              "rank": 138
+            },
+            {
+              "name": "JOSSET Thomas",
+              "club": "ST-GEORGES ARGENTEUIL",
+              "time": "00:27.05",
+              "rank": 139
+            },
+            {
+              "name": "RAHMOUNI Adam",
+              "club": "CN EPINETTES PARIS",
+              "time": "00:27.08",
+              "rank": 140
+            },
+            {
+              "name": "CHEDOTAL Natan",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:27.10",
+              "rank": 141
+            },
+            {
+              "name": "SIONG Calvin",
+              "club": "CN VIRY-CHÂTILLON",
+              "time": "00:27.11",
+              "rank": 142
+            },
+            {
+              "name": "LOKMANE Amine",
+              "club": "VGA ST-MAUR",
+              "time": "00:27.11",
+              "rank": 142
+            },
+            {
+              "name": "RAMANANDRAIBE Ny Tinay",
+              "club": "SCA 2000 EVRY",
+              "time": "00:27.11",
+              "rank": 142
+            },
+            {
+              "name": "PROST Maxime",
+              "club": "C.N OZOIR-LA-FERRIERE",
+              "time": "00:27.12",
+              "rank": 145
+            },
+            {
+              "name": "MENDES Robin",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:27.12",
+              "rank": 145
+            },
+            {
+              "name": "DUJEU Kiéran-Yue-Qi",
+              "club": "UAS ST-CLOUD",
+              "time": "00:27.13",
+              "rank": 147
+            },
+            {
+              "name": "LOBRE Maxence",
+              "club": "CS MEAUX NATATION",
+              "time": "00:27.19",
+              "rank": 148
+            },
+            {
+              "name": "ALMEIDA DA SILVA Alexandre",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:27.20",
+              "rank": 149
+            },
+            {
+              "name": "STOIAN Theodor",
+              "club": "CA ORSAY",
+              "time": "00:27.21",
+              "rank": 150
+            },
+            {
+              "name": "JULIEN Baptiste",
+              "club": "SN VERSAILLES",
+              "time": "00:27.22",
+              "rank": 151
+            },
+            {
+              "name": "NIKODIJEVIC Luka",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:27.26",
+              "rank": 152
+            },
+            {
+              "name": "CHEN FROTTE Noah",
+              "club": "EN STE-GENEVIÈVE-DES-BOIS",
+              "time": "00:27.31",
+              "rank": 153
+            },
+            {
+              "name": "RIO Mael",
+              "club": "JEANNE D'ARC DRANCY",
+              "time": "00:27.32",
+              "rank": 154
+            },
+            {
+              "name": "LEGROS Thibaut",
+              "club": "NAUTIC CLUB RAMBOUILLET",
+              "time": "00:27.35",
+              "rank": 155
+            },
+            {
+              "name": "WAFO YAMANI Uriel",
+              "club": "AC VILLEPINTE",
+              "time": "00:27.36",
+              "rank": 156
+            },
+            {
+              "name": "ANCELOT Thomas",
+              "club": "LE CHESNAY NATATION",
+              "time": "00:27.39",
+              "rank": 157
+            },
+            {
+              "name": "DAVID Maxence",
+              "club": "YERRES NATATION",
+              "time": "00:27.45",
+              "rank": 158
+            },
+            {
+              "name": "PETITPAS Hugo",
+              "club": "ES SUCY-EN-BRIE",
+              "time": "00:27.46",
+              "rank": 159
+            },
+            {
+              "name": "LAZZARA Milo",
+              "club": "VAL D'ESSONNE MENNECY AQUA CLUB",
+              "time": "00:27.48",
+              "rank": 160
+            },
+            {
+              "name": "LHUISSIER-CHEVALLIER Raphael",
+              "club": "CLUB DES NAGEURS DE PARIS",
+              "time": "00:27.49",
+              "rank": 161
+            },
+            {
+              "name": "LE BONNIEC Mael",
+              "club": "CN MELUN VAL DE SEINE",
+              "time": "00:27.54",
+              "rank": 162
+            },
+            {
+              "name": "CHERAL TOISON Wesley",
+              "club": "CERGY PONTOISE NATATION",
+              "time": "00:27.55",
+              "rank": 163
+            },
+            {
+              "name": "NHOUYVANISVONG Thomas",
+              "club": "ES MASSY NATATION",
+              "time": "00:27.63",
+              "rank": 164
+            },
+            {
+              "name": "RIGOBERT Victor",
+              "club": "LES PHOENIX D'ANTONY",
+              "time": "00:27.64",
+              "rank": 165
+            },
+            {
+              "name": "POTHET Raphaël",
+              "club": "YERRES NATATION",
+              "time": "00:27.65",
+              "rank": 166
+            },
+            {
+              "name": "HASPOT BETTAYEB Walid",
+              "club": "TREMBLAY AC",
+              "time": "00:27.66",
+              "rank": 167
+            },
+            {
+              "name": "LI Maxime",
+              "club": "RED STAR CLUB CHAMPIGNY",
+              "time": "00:27.74",
+              "rank": 168
+            },
+            {
+              "name": "SAINSON Lucas",
+              "club": "COULOMMIERS NATATION",
+              "time": "00:27.77",
+              "rank": 170
+            },
+            {
+              "name": "GIOP Ugo",
+              "club": "UAS ST-CLOUD",
+              "time": "00:27.84",
+              "rank": 171
+            },
+            {
+              "name": "ROUSSEL Baptiste",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:27.86",
+              "rank": 172
+            },
+            {
+              "name": "HASNAOUI Elyes",
+              "club": "MONTEREAU NATATION",
+              "time": "00:27.87",
+              "rank": 173
+            },
+            {
+              "name": "LIN Vivien",
+              "club": "ES VITRY",
+              "time": "00:27.88",
+              "rank": 174
+            },
+            {
+              "name": "CABARRUS Oscar",
+              "club": "SCUF PARIS",
+              "time": "00:27.91",
+              "rank": 175
+            },
+            {
+              "name": "BOUSSEKINE Juba",
+              "club": "CN VIRY-CHÂTILLON",
+              "time": "00:27.95",
+              "rank": 176
+            },
+            {
+              "name": "PRA VOJNOVIC Novak",
+              "club": "VILLEJUIF NATATION",
+              "time": "00:27.98",
+              "rank": 177
+            },
+            {
+              "name": "BOUDJEMAI Younes",
+              "club": "COM BAGNEUX NATATION",
+              "time": "00:28.04",
+              "rank": 178
+            },
+            {
+              "name": "VIX Edouard",
+              "club": "C.N DU VAL D'EUROPE",
+              "time": "00:28.17",
+              "rank": 179
+            },
+            {
+              "name": "TOUAT DEJARDIN Sacha",
+              "club": "AS HERBLAY NATATION",
+              "time": "00:28.18",
+              "rank": 180
+            },
+            {
+              "name": "BILICI Melih",
+              "club": "AS NATATION RAINCY",
+              "time": "00:28.22",
+              "rank": 181
+            },
+            {
+              "name": "THOMAS Mahé",
+              "club": "PROVINS NATATION",
+              "time": "00:28.25",
+              "rank": 182
+            },
+            {
+              "name": "SEMIDA Nael",
+              "club": "ST-GEORGES ARGENTEUIL",
+              "time": "00:28.27",
+              "rank": 183
+            },
+            {
+              "name": "ALAIS Damien",
+              "club": "CN 95 EZANVILLE",
+              "time": "00:28.28",
+              "rank": 184
+            },
+            {
+              "name": "FAYEZ Mathieu",
+              "club": "CN ASNIÈRES",
+              "time": "00:28.30",
+              "rank": 185
+            },
+            {
+              "name": "ROUDOT Jonathan",
+              "club": "CLUB NAUTIQUE DE L'ARPAJONNAIS",
+              "time": "00:28.31",
+              "rank": 186
+            },
+            {
+              "name": "RAUDIN-ARCOS André-Xavier",
+              "club": "AC BOULOGNE-BILLANCOURT",
+              "time": "00:28.34",
+              "rank": 187
+            },
+            {
+              "name": "COMBALUZIER Noé",
+              "club": "SN VERSAILLES",
+              "time": "00:28.40",
+              "rank": 188
+            },
+            {
+              "name": "BUCAN Nathan",
+              "club": "CLAMART NATATION 92",
+              "time": "00:28.44",
+              "rank": 189
+            },
+            {
+              "name": "ALEGRE Raphael",
+              "club": "AS EMERAINVILLE",
+              "time": "00:28.44",
+              "rank": 189
+            },
+            {
+              "name": "EJARQUE Simon",
+              "club": "CN PLAISIR",
+              "time": "00:28.48",
+              "rank": 191
+            },
+            {
+              "name": "IBRAHIM Khalil",
+              "club": "SN MONTGERON",
+              "time": "00:28.48",
+              "rank": 191
+            },
+            {
+              "name": "DUMORT Jason",
+              "club": "ETOILE SAINT-LEU  NATATION",
+              "time": "00:28.49",
+              "rank": 193
+            },
+            {
+              "name": "BERRAHOUI Adam",
+              "club": "COLOMBES NATATION",
+              "time": "00:28.56",
+              "rank": 194
+            },
+            {
+              "name": "KHERBANE Alexis",
+              "club": "SCUF PARIS",
+              "time": "00:28.65",
+              "rank": 195
+            },
+            {
+              "name": "GADROY Lucas",
+              "club": "NANGIS NATATION",
+              "time": "00:28.65",
+              "rank": 195
+            },
+            {
+              "name": "NAM HEE Arthur",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": "00:28.66",
+              "rank": 197
+            },
+            {
+              "name": "GUERAIT Youssef",
+              "club": "CS CLICHY 92",
+              "time": "00:28.71",
+              "rank": 198
+            },
+            {
+              "name": "AMAMRA Eliott",
+              "club": "AQUA CLUB PONTAULT-ROISSY",
+              "time": "00:28.74",
+              "rank": 199
+            },
+            {
+              "name": "MESSOUAK Adrien",
+              "club": "ASS SPORTIVE BOUVINES",
+              "time": "00:28.83",
+              "rank": 200
+            },
+            {
+              "name": "TASSIN Confucius",
+              "club": "CA ORSAY",
+              "time": "00:29.22",
+              "rank": 201
+            },
+            {
+              "name": "ATTIA Rayen",
+              "club": "CERGY PONTOISE NATATION",
+              "time": "00:29.24",
+              "rank": 202
+            },
+            {
+              "name": "NGUYEN Dich Thîen",
+              "club": "CS NAUTIQUE NOISY-LE-GRAND",
+              "time": "00:29.76",
+              "rank": 203
+            },
+            {
+              "name": "LE GALL Théophile",
+              "club": "S.M MONTROUGE",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "GARRE Antonin",
+              "club": "CN LE PLESSIS-ROBINSON",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "MOREAU Ivan",
+              "club": "TREMBLAY AC",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "FENG Haoran",
+              "club": "CSM PUTEAUX",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "HEBRARD Paul",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "GUANNEL Maelan",
+              "club": "CS CLICHY 92",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "COPIN BELFAN Eden",
+              "club": "CN EPINETTES PARIS",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "KECHIOUCH Anès",
+              "club": "VILLEMONBLE SPORTS NATATION",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "HEBRARD Victor",
+              "club": "NEPTUNE CLUB DE FRANCE",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "MESSAS Ayoub",
+              "club": "CS CLICHY 92",
+              "time": null,
+              "rank": null
+            },
+            {
+              "name": "SHIRAISHI Rihito",
+              "club": "COURBEVOIE NATATION",
+              "time": null,
+              "rank": null
+            }
+          ]
         },
         {
           "competitionId": "94055",
@@ -1359,6 +4105,7 @@
           "date": "2026-07-05",
           "location": "TAVERNY",
           "event": "200 Nage Libre Messieurs",
+          "eventId": "53",
           "session": "Séries",
           "time": "02:18.45",
           "timeCentiemes": 13845,
@@ -1372,6 +4119,7 @@
           "date": "2026-07-05",
           "location": "TAVERNY",
           "event": "100 Papillon Messieurs",
+          "eventId": "82",
           "session": "Séries",
           "time": "01:10.21",
           "timeCentiemes": 7021,

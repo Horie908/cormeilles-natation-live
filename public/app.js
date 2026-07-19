@@ -79,7 +79,53 @@ function formatRank(rank) {
   return String(rank);
 }
 
-function resultRowHtml(r) {
+function opponentsDetailHtml(r, swimmerName) {
+  if (!r.opponents || !r.opponents.length) return "";
+  const self = { name: swimmerName, club: "ACS CORMEILLES", time: r.time, rank: r.rank, isSelf: true };
+  const field = [...r.opponents, self].sort((a, b) => (a.rank ?? 9999) - (b.rank ?? 9999));
+
+  // Podium + une fenetre de contexte autour du nageur (course a champ large : on n'affiche pas
+  // tout le monde, mais son vrai voisinage de classement, avec de vraies personnes/temps).
+  const selfIdx = field.findIndex((e) => e.isSelf);
+  const windowStart = Math.max(0, selfIdx - 2);
+  const windowEnd = Math.min(field.length, selfIdx + 3);
+  const shown = new Map();
+  field.slice(0, 3).forEach((e, i) => shown.set(i, e));
+  for (let i = windowStart; i < windowEnd; i++) shown.set(i, field[i]);
+  const orderedIdx = Array.from(shown.keys()).sort((a, b) => a - b);
+
+  let rowsHtml = "";
+  let prevIdx = null;
+  for (const idx of orderedIdx) {
+    if (prevIdx !== null && idx > prevIdx + 1) {
+      rowsHtml += `<tr class="opp-gap"><td colspan="4">···</td></tr>`;
+    }
+    const e = shown.get(idx);
+    rowsHtml += `
+      <tr class="${e.isSelf ? "opp-self" : ""}">
+        <td class="rank">${escapeHtml(formatRank(e.rank))}</td>
+        <td>${escapeHtml(e.name)}</td>
+        <td class="opp-club">${escapeHtml(e.club || "")}</td>
+        <td class="time">${e.time ? escapeHtml(e.time) : "—"}</td>
+      </tr>`;
+    prevIdx = idx;
+  }
+
+  return `
+    <tr class="opp-details-row">
+      <td colspan="5">
+        <details>
+          <summary>Voir les adversaires de cette course (${field.length} nageurs au départ)</summary>
+          <table class="opp-table">
+            <thead><tr><th>Rang</th><th>Nageur</th><th>Club</th><th>Temps</th></tr></thead>
+            <tbody>${rowsHtml}</tbody>
+          </table>
+        </details>
+      </td>
+    </tr>`;
+}
+
+function resultRowHtml(r, swimmerName) {
   const statusHtml =
     r.status === "OK"
       ? `<span class="status-pill status-ok">OK</span>`
@@ -92,7 +138,7 @@ function resultRowHtml(r) {
       <td class="rank">${escapeHtml(formatRank(r.rank))}</td>
       <td class="time">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
       <td>${statusHtml}</td>
-    </tr>`;
+    </tr>${opponentsDetailHtml(r, swimmerName)}`;
 }
 
 function upcomingRowHtml(u) {
@@ -142,7 +188,7 @@ async function renderSwimmer(id) {
           ? `<div class="results-table-wrap">
                <table class="results">
                  <thead><tr><th>Date</th><th>Épreuve</th><th>Rang</th><th>Temps</th><th>Statut</th></tr></thead>
-                 <tbody>${results.map(resultRowHtml).join("")}</tbody>
+                 <tbody>${results.map((r) => resultRowHtml(r, s.name)).join("")}</tbody>
                </table>
              </div>`
           : `<div class="empty-state">Aucun résultat enregistré pour l'instant.</div>`
