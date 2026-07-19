@@ -6,25 +6,17 @@ const topbarEl = document.querySelector(".topbar");
 // Applique le theme choisi par le viewer (clair/sombre), pas de logique custom necessaire :
 // on s'appuie uniquement sur prefers-color-scheme via le CSS.
 
-// Cache l'entete (recherche incluse) quand on defile vers le bas, la fait reapparaitre des
-// qu'on remonte un peu — surtout utile sur mobile ou l'entete prend une bonne partie de l'ecran.
-// Le comportement visuel (translateY) n'est actif qu'en dessous de 640px via le CSS, mais on
-// laisse tourner la logique partout : inoffensif sur desktop.
+// Cache l'entete (recherche incluse) des qu'on quitte le tout haut de la page, et ne la fait
+// reapparaitre que quand on est revenu tout en haut — surtout utile sur mobile ou l'entete
+// prend une bonne partie de l'ecran. Le comportement visuel (translateY) n'est actif qu'en
+// dessous de 640px via le CSS, mais on laisse tourner la logique partout : inoffensif sur desktop.
 (() => {
-  let lastY = window.scrollY;
   let ticking = false;
   window.addEventListener("scroll", () => {
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(() => {
-      const y = window.scrollY;
-      const goingDown = y > lastY;
-      if (y > 80 && goingDown) {
-        topbarEl.classList.add("header-hidden");
-      } else if (!goingDown) {
-        topbarEl.classList.remove("header-hidden");
-      }
-      lastY = y;
+      topbarEl.classList.toggle("header-hidden", window.scrollY > 24);
       ticking = false;
     });
   }, { passive: true });
@@ -52,6 +44,13 @@ function formatDateTime(iso) {
   } catch {
     return iso;
   }
+}
+
+function normalize(str) {
+  return String(str ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "");
 }
 
 function escapeHtml(str) {
@@ -256,12 +255,30 @@ async function renderCompetition(id) {
         <h1>${escapeHtml(c.name || "Compétition")}</h1>
         <span class="sub">${formatDate(c.date)}${c.location ? ` · ${escapeHtml(c.location)}` : ""}</span>
       </div>
+      <div class="comp-search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+          <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <input id="comp-swimmer-search" type="search" placeholder="Chercher un nageur dans cette compétition…" autocomplete="off" />
+      </div>
       <div class="results-table-wrap">
         <table class="results">
           <thead><tr><th>Nageur</th><th>Épreuve</th><th>Rang</th><th>Temps</th><th>Statut</th></tr></thead>
-          <tbody>${results.map(competitionResultRowHtml).join("")}</tbody>
+          <tbody id="comp-results-body">${results.map(competitionResultRowHtml).join("")}</tbody>
         </table>
-      </div>`);
+      </div>
+      <div id="comp-empty" class="empty-state" style="display:none">Aucun nageur ne correspond à cette recherche.</div>`);
+
+    const searchEl = document.getElementById("comp-swimmer-search");
+    const bodyEl = document.getElementById("comp-results-body");
+    const emptyEl = document.getElementById("comp-empty");
+    searchEl.addEventListener("input", () => {
+      const q = normalize(searchEl.value.trim());
+      const filtered = q ? results.filter((r) => normalize(r.swimmerName).includes(q)) : results;
+      bodyEl.innerHTML = filtered.map(competitionResultRowHtml).join("");
+      emptyEl.style.display = filtered.length ? "none" : "block";
+    });
   } catch (err) {
     setAppHtml(`<a class="back-link" href="#/competitions">&larr; Retour aux compétitions</a><div class="error-state">Compétition introuvable (${escapeHtml(err.message)}).</div>`);
   }

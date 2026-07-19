@@ -250,7 +250,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.85rem;
   color: var(--text-muted);
 }
-.comp-search-wrap { position: relative; flex: 1 1 260px; max-width: 340px; }
+.comp-search-wrap { position: relative; flex: 1 1 260px; max-width: 340px; margin-bottom: 16px; }
 .comp-search-wrap .search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
 .comp-search-wrap input {
   width: 100%;
