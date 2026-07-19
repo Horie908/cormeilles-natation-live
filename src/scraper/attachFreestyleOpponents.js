@@ -22,7 +22,10 @@ async function getLeaderboard(idcpt, idepr, eventName, roundHint, cache) {
 
 // Enrichit `data` (forme club_data.json) en place. Reutilisable depuis run.js pour que chaque
 // actualisation automatique garde cette fonctionnalite, pas seulement le scraping manuel.
-async function attachFreestyleOpponents(data) {
+// `onlyCompetitionIds` (Set optionnel) limite le travail a certaines competitions seulement —
+// utilise par l'actualisation "live" pour ne re-scraper que la competition du jour, sans
+// re-parcourir tout l'historique de la saison a chaque fois.
+async function attachFreestyleOpponents(data, { onlyCompetitionIds } = {}) {
   const cache = new Map();
   let attached = 0;
   let skipped = 0;
@@ -30,6 +33,7 @@ async function attachFreestyleOpponents(data) {
   for (const swimmer of data.swimmers) {
     for (const result of swimmer.results) {
       if (!result.event || !result.event.startsWith("50 Nage Libre") || !result.eventId) continue;
+      if (onlyCompetitionIds && !onlyCompetitionIds.has(result.competitionId)) continue;
 
       const lb = await getLeaderboard(result.competitionId, result.eventId, result.event, result.session, cache);
       if (!lb.title || !lb.entries.length) {

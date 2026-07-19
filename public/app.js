@@ -58,16 +58,47 @@ function swimmerCardHtml(s) {
     </a>`;
 }
 
+let sortMode = "name"; // "name" | "age"
+
+function sortSwimmers(swimmers, mode) {
+  const sorted = [...swimmers];
+  if (mode === "age") {
+    // Plus ages (annee de naissance la plus petite) en premier ; sans annee connue, a la fin.
+    sorted.sort((a, b) => (a.birthYear ?? 9999) - (b.birthYear ?? 9999) || a.name.localeCompare(b.name, "fr"));
+  } else {
+    sorted.sort((a, b) => a.name.localeCompare(b.name, "fr"));
+  }
+  return sorted;
+}
+
 async function renderHome(query) {
-  app.innerHTML = `<h1 class="section-title">Nageurs du club</h1><div id="grid" class="swimmer-grid"><div class="loading">Chargement des nageurs…</div></div>`;
+  app.innerHTML = `
+    <div class="home-header">
+      <h1 class="section-title">Nageurs du club</h1>
+      <label class="sort-control">
+        Trier par
+        <select id="sort-select">
+          <option value="name">Nom</option>
+          <option value="age">Âge (plus grands d'abord)</option>
+        </select>
+      </label>
+    </div>
+    <div id="grid" class="swimmer-grid"><div class="loading">Chargement des nageurs…</div></div>`;
   const grid = document.getElementById("grid");
+  const sortSelect = document.getElementById("sort-select");
+  sortSelect.value = sortMode;
+  sortSelect.addEventListener("change", () => {
+    sortMode = sortSelect.value;
+    renderHome(query);
+  });
+
   try {
     const swimmers = await fetchJson(`/api/swimmers?q=${encodeURIComponent(query || "")}`);
     if (!swimmers.length) {
       grid.innerHTML = `<div class="empty-state">Aucun nageur ne correspond à « ${escapeHtml(query)} ».</div>`;
       return;
     }
-    grid.innerHTML = swimmers.map(swimmerCardHtml).join("");
+    grid.innerHTML = sortSwimmers(swimmers, sortMode).map(swimmerCardHtml).join("");
   } catch (err) {
     grid.innerHTML = `<div class="error-state">Impossible de charger les nageurs (${escapeHtml(err.message)}).</div>`;
   }

@@ -10,3 +10,5 @@ services:
         generateValue: true
       - key: REFRESH_CRON
         value: "0 7,19 * * *"
+      - key: LIVE_REFRESH_CRON
+        value: "*/15 * * * *"

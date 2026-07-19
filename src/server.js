@@ -3,10 +3,12 @@ const express = require("express");
 const cron = require("node-cron");
 const store = require("./store");
 const { main: runScrape } = require("./scraper/run");
+const { main: runLiveRefresh } = require("./scraper/liveRefresh");
 
 const PORT = process.env.PORT || 3000;
 const REFRESH_TOKEN = process.env.REFRESH_TOKEN || null;
-const REFRESH_CRON = process.env.REFRESH_CRON || "*/30 * * * *"; // toutes les 30 min par defaut
+const REFRESH_CRON = process.env.REFRESH_CRON || "0 7,19 * * *"; // 2x/jour par defaut : saison complete
+const LIVE_REFRESH_CRON = process.env.LIVE_REFRESH_CRON || "*/15 * * * *"; // toutes les 15 min : juste la compet du jour
 
 store.load();
 
@@ -60,13 +62,33 @@ app.post("/api/refresh", async (req, res) => {
   }
 });
 
+// Actualisation legere : ne re-scrape que la competition du jour (si le club en a une), pour
+// suivre les temps qui tombent en direct pendant une reunion sans re-scraper toute la saison.
+app.post("/api/refresh-live", async (req, res) => {
+  if (REFRESH_TOKEN && req.query.token !== REFRESH_TOKEN) {
+    return res.status(401).json({ error: "Token invalide" });
+  }
+  try {
+    await runLiveRefresh();
+    res.json({ ok: true, ...store.get().club });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Cormeilles Natation Live sur http://localhost:${PORT}`);
 });
 
 if (REFRESH_CRON) {
   cron.schedule(REFRESH_CRON, () => {
-    console.log("Actualisation programmee des donnees FFN...");
-    runScrape().catch((err) => console.error("Echec actualisation :", err.message));
+    console.log("Actualisation complete programmee des donnees FFN...");
+    runScrape().catch((err) => console.error("Echec actualisation complete :", err.message));
+  });
+}
+
+if (LIVE_REFRESH_CRON) {
+  cron.schedule(LIVE_REFRESH_CRON, () => {
+    runLiveRefresh().catch((err) => console.error("Echec actualisation live :", err.message));
   });
 }

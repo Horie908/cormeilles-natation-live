@@ -20,20 +20,23 @@ npm start        # démarre le site sur http://localhost:3000
 
 ### Garder les données à jour automatiquement
 
-Le serveur ré-actualise les données tout seul toutes les 30 minutes (variable `REFRESH_CRON`) **tant qu'il est éveillé**. Sur le plan gratuit de Render, le site s'endort après 15 minutes sans visite et l'actualisation interne est alors en pause.
+Deux actualisations tournent en parallèle, tant que le serveur est éveillé :
 
-Pour une actualisation vraiment continue même sans visiteurs :
+- **Complète** (`REFRESH_CRON`, 2x/jour par défaut à 7h et 19h) : re-scrape toute la saison, trouve les nouveaux nageurs/compétitions.
+- **Live** (`LIVE_REFRESH_CRON`, toutes les 15 min par défaut) : ne re-scrape que la compétition du jour (si le club en a une), pour suivre les temps qui tombent en direct pendant une réunion — beaucoup plus léger, donc peut tourner souvent sans solliciter excessivement le site de la FFN.
+
+Sur le plan gratuit de Render, le site s'endort après 15 minutes sans visite (les actualisations internes sont alors en pause). Si quelqu'un garde la page ouverte pendant une compétition, le site reste éveillé et se met à jour tout seul toutes les 15 min. Pour une actualisation continue même sans visiteurs :
 1. Va dans le dashboard Render → ton service → **Environment**, note la valeur générée pour `REFRESH_TOKEN`.
 2. Crée un compte gratuit sur https://cron-job.org.
-3. Ajoute une tâche qui appelle toutes les 15-30 minutes :
-   `https://TON-SITE.onrender.com/api/refresh?token=LE_TOKEN` (méthode POST).
+3. Ajoute une tâche qui appelle toutes les 15 minutes (utile surtout les jours de compétition) :
+   `https://TON-SITE.onrender.com/api/refresh-live?token=LE_TOKEN` (méthode POST).
 
-Cela réveille le site et relance le scraping FFN à intervalle régulier, jour et nuit.
+Cela réveille le site et relance l'actualisation légère à intervalle régulier.
 
 ## Structure du projet
 
 - `src/scraper/` — récupération et parsing des pages ffn.extranat.fr (aucune donnée n'est inventée : un champ manquant reste vide).
-- `src/server.js` — API Express (`/api/club`, `/api/swimmers`, `/api/swimmers/:id`, `/api/refresh`) + sert le frontend.
+- `src/server.js` — API Express (`/api/club`, `/api/swimmers`, `/api/swimmers/:id`, `/api/refresh`, `/api/refresh-live`) + sert le frontend.
 - `public/` — frontend (recherche, fiche nageur, historique, compétitions à venir).
 - `data/club_data.json` — dernière donnée scrapée (régénérée automatiquement).
 
