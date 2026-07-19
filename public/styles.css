@@ -93,6 +93,13 @@ a { color: inherit; text-decoration: none; }
    et revient des qu'on remonte un peu - pour laisser toute la place a la liste sur petit ecran. */
 @media (max-width: 640px) {
   .topbar.header-hidden { transform: translateY(-100%); }
+  .topbar-inner { padding: 10px 14px; gap: 10px; }
+  .brand-mark { width: 30px; height: 30px; }
+  .brand-text strong { font-size: 1.2rem; }
+  .brand-text small { display: none; }
+  .tabs { order: 3; flex-basis: 100%; }
+  .tab { padding: 6px 12px; font-size: 0.8rem; }
+  .search-wrap { order: 2; flex: 1 1 auto; margin-left: 0; }
 }
 .topbar-inner {
   display: flex;
@@ -422,6 +429,18 @@ a { color: inherit; text-decoration: none; }
 }
 .swimmer-header .sub { color: var(--text-muted); font-size: 0.9rem; }
 
+@media (max-width: 640px) {
+  .app { padding: 18px 14px 48px; }
+  .swimmer-header h1 { font-size: 1.7rem; }
+  .section-title { font-size: 1.5rem; }
+  .stats-strip { gap: 8px; }
+  .stat { flex-basis: calc(50% - 4px); padding: 10px 12px; }
+  .stat-wide { flex-basis: 100%; }
+  .home-header { gap: 10px; }
+  .comp-search-wrap { max-width: none; flex-basis: 100%; }
+  .swimmer-card .name { font-size: 1.1rem; }
+}
+
 .block-title {
   font-family: var(--font-display);
   font-weight: 400;
@@ -441,6 +460,48 @@ table.results tbody tr:hover { background: color-mix(in srgb, var(--lane) 6%, tr
 td.event, td.date { white-space: normal; min-width: 180px; }
 td.time { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.95rem; }
 td.rank { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--text-muted); }
+
+/* Sur mobile, la table de resultats devient une liste de cartes empilees (une par ligne) au
+   lieu d'un tableau large qu'il faut balayer horizontalement pour tout lire. */
+@media (max-width: 640px) {
+  .results-table-wrap, .upcoming-table-wrap { overflow-x: visible; }
+  table.results { min-width: 0; }
+  table.results thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  table.results, table.results tbody, table.results tr { display: block; width: 100%; }
+  table.results tbody tr {
+    border-bottom: 1px solid var(--border);
+    padding: 10px 14px;
+  }
+  table.results tbody tr:last-child { border-bottom: none; }
+  table.results td {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 14px;
+    padding: 3px 0;
+    border-bottom: none;
+    white-space: normal;
+    min-width: 0;
+  }
+  table.results td[data-label]::before {
+    content: attr(data-label);
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+  table.results td > * { text-align: right; }
+  tr.opp-details-row td { display: block; padding: 0; }
+  tr.opp-details-row td::before { content: none; }
+  tr.opp-details-row details { overflow-x: auto; }
+  table.opp-table { min-width: 420px; }
+  .upcoming-table-wrap table.results td[data-label="Adversaires"] { display: block; }
+  .upcoming-table-wrap table.results td[data-label="Adversaires"]::before { display: block; margin-bottom: 4px; }
+  .upcoming-table-wrap table.results td[data-label="Adversaires"] > * { text-align: left; }
+}
 
 /* ===== Adversaires (details/summary) ===== */
 tr.opp-details-row td { background: var(--paper); padding: 0; white-space: normal; }

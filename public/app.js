@@ -234,11 +234,11 @@ function competitionResultRowHtml(r) {
       : `<span class="status-pill status-bad">${escapeHtml(r.status)}</span>`;
   return `
     <tr>
-      <td><a href="#/nageur/${encodeURIComponent(r.swimmerId)}" class="swimmer-link">${escapeHtml(r.swimmerName)}</a></td>
-      <td class="event">${escapeHtml(r.event)}${r.session ? `<br><small style="color:var(--text-muted)">${escapeHtml(r.session)}</small>` : ""}</td>
-      <td class="rank">${escapeHtml(formatRank(r.rank))}</td>
-      <td class="time">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
-      <td>${statusHtml}</td>
+      <td data-label="Nageur"><a href="#/nageur/${encodeURIComponent(r.swimmerId)}" class="swimmer-link">${escapeHtml(r.swimmerName)}</a></td>
+      <td class="event" data-label="Épreuve">${escapeHtml(r.event)}${r.session ? `<br><small style="color:var(--text-muted)">${escapeHtml(r.session)}</small>` : ""}</td>
+      <td class="rank" data-label="Rang">${escapeHtml(formatRank(r.rank))}</td>
+      <td class="time" data-label="Temps">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
+      <td data-label="Statut">${statusHtml}</td>
     </tr>`;
 }
 
@@ -349,11 +349,11 @@ function resultRowHtml(r, swimmerName) {
   const roundOrSession = r.round || r.session;
   return `
     <tr>
-      <td class="date">${formatDate(r.date)}<br><small style="color:var(--text-muted)">${escapeHtml(r.competitionName || "")}${r.location ? ` · ${escapeHtml(r.location)}` : ""}</small></td>
-      <td class="event">${escapeHtml(r.event)}${roundOrSession ? `<br><small style="color:var(--text-muted)">${escapeHtml(roundOrSession)}</small>` : ""}</td>
-      <td class="rank">${escapeHtml(formatRank(r.rank))}</td>
-      <td class="time">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
-      <td>${statusHtml}</td>
+      <td class="date" data-label="Date">${formatDate(r.date)}<br><small style="color:var(--text-muted)">${escapeHtml(r.competitionName || "")}${r.location ? ` · ${escapeHtml(r.location)}` : ""}</small></td>
+      <td class="event" data-label="Épreuve">${escapeHtml(r.event)}${roundOrSession ? `<br><small style="color:var(--text-muted)">${escapeHtml(roundOrSession)}</small>` : ""}</td>
+      <td class="rank" data-label="Rang">${escapeHtml(formatRank(r.rank))}</td>
+      <td class="time" data-label="Temps">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
+      <td data-label="Statut">${statusHtml}</td>
     </tr>${opponentsDetailHtml(r, swimmerName)}`;
 }
 
@@ -363,11 +363,11 @@ function upcomingRowHtml(u) {
     .join("");
   return `
     <tr>
-      <td>${formatDate(u.date)}</td>
-      <td class="event">${escapeHtml(u.competitionName || "")}${u.location ? `<br><small style="color:var(--text-muted)">${escapeHtml(u.location)}</small>` : ""}</td>
-      <td class="event">${escapeHtml(u.event || "")}${u.session ? `<br><small style="color:var(--text-muted)">${escapeHtml(u.session)}</small>` : ""}</td>
-      <td class="rank">${u.scheduledTime ? escapeHtml(u.scheduledTime) : "—"}${u.heat ? `<br><small>Série ${escapeHtml(String(u.heat))}${u.lane ? `, couloir ${escapeHtml(String(u.lane))}` : ""}</small>` : ""}</td>
-      <td><div class="opponent-list">${opponents || "<span class=\"opp-club\">Liste de départ pas encore publiée</span>"}</div></td>
+      <td data-label="Date">${formatDate(u.date)}</td>
+      <td class="event" data-label="Compétition">${escapeHtml(u.competitionName || "")}${u.location ? `<br><small style="color:var(--text-muted)">${escapeHtml(u.location)}</small>` : ""}</td>
+      <td class="event" data-label="Épreuve">${escapeHtml(u.event || "")}${u.session ? `<br><small style="color:var(--text-muted)">${escapeHtml(u.session)}</small>` : ""}</td>
+      <td class="rank" data-label="Horaire">${u.scheduledTime ? escapeHtml(u.scheduledTime) : "—"}${u.heat ? `<br><small>Série ${escapeHtml(String(u.heat))}${u.lane ? `, couloir ${escapeHtml(String(u.lane))}` : ""}</small>` : ""}</td>
+      <td data-label="Adversaires"><div class="opponent-list">${opponents || "<span class=\"opp-club\">Liste de départ pas encore publiée</span>"}</div></td>
     </tr>`;
 }
 
