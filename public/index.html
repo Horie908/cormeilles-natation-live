@@ -4,24 +4,42 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cormeilles Natation Live</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b2036'/%3E%3Cpath d='M4 12c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2' stroke='%23e28d0f' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M4 19c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2 2 2 4 2' stroke='%231f8a86' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@500;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="topbar">
-  <a href="#/" class="brand">
-    <span class="brand-mark" aria-hidden="true"></span>
-    <span class="brand-text">
-      <strong>Cormeilles Natation</strong>
-      <small>Résultats &amp; live du club</small>
-    </span>
-  </a>
-  <div class="search-wrap">
-    <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
-      <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    </svg>
-    <input id="search" type="search" placeholder="Chercher un nageur (nom, prénom)…" autocomplete="off" />
+  <div class="topbar-inner">
+    <a href="#/" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="url(#g)"/>
+        <path d="M5 15c2.5 0 2.5-2.5 5-2.5S12.5 15 15 15s2.5-2.5 5-2.5S22.5 15 25 15s2.5-2.5 5-2.5S32.5 15 35 15" stroke="#0b2036" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <path d="M5 22c2.5 0 2.5-2.5 5-2.5S12.5 22 15 22s2.5-2.5 5-2.5S22.5 22 25 22s2.5-2.5 5-2.5S32.5 22 35 22" stroke="#0b2036" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.85"/>
+        <path d="M5 29c2.5 0 2.5-2.5 5-2.5S12.5 29 15 29s2.5-2.5 5-2.5S22.5 29 25 29s2.5-2.5 5-2.5S32.5 29 35 29" stroke="#0b2036" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="40" y2="40">
+            <stop offset="0" stop-color="#f5ab2e"/>
+            <stop offset="1" stop-color="#3fd6cf"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="brand-text">
+        <strong>Cormeilles Natation</strong>
+        <small>Résultats &amp; live du club</small>
+      </span>
+    </a>
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input id="search" type="search" placeholder="Chercher un nageur (nom, prénom)…" autocomplete="off" />
+    </div>
   </div>
+  <div class="lane-strip" aria-hidden="true"></div>
 </header>
 
 <main id="app" class="app"></main>

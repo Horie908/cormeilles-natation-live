@@ -33,15 +33,29 @@ function escapeHtml(str) {
   return String(str ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
+let clubInfo = null;
+
 async function loadClubInfo() {
   try {
-    const club = await fetchJson("/api/club");
-    lastUpdatedEl.textContent = club.lastUpdated
-      ? `Dernière actualisation : ${formatDateTime(club.lastUpdated)} · ${club.swimmerCount} nageur(s) suivis`
+    clubInfo = await fetchJson("/api/club");
+    lastUpdatedEl.textContent = clubInfo.lastUpdated
+      ? `Dernière actualisation : ${formatDateTime(clubInfo.lastUpdated)} · ${clubInfo.swimmerCount} nageur(s) suivis`
       : "Aucune donnée récupérée pour le moment";
+    renderStatsStrip();
   } catch {
     lastUpdatedEl.textContent = "Actualisation indisponible";
   }
+}
+
+function renderStatsStrip() {
+  const el = document.getElementById("stats-strip");
+  if (!el || !clubInfo) return;
+  const last = clubInfo.lastCompetition;
+  el.innerHTML = `
+    <div class="stat"><strong>${clubInfo.swimmerCount}</strong><span>nageurs</span></div>
+    <div class="stat"><strong>${clubInfo.resultCount}</strong><span>résultats</span></div>
+    ${last ? `<div class="stat stat-wide"><strong>${escapeHtml(last.name || "")}</strong><span>${formatDate(last.date)}</span></div>` : ""}
+  `;
 }
 
 function swimmerCardHtml(s) {
@@ -73,6 +87,7 @@ function sortSwimmers(swimmers, mode) {
 
 async function renderHome(query) {
   app.innerHTML = `
+    <div id="stats-strip" class="stats-strip"></div>
     <div class="home-header">
       <h1 class="section-title">Nageurs du club</h1>
       <label class="sort-control">
@@ -84,6 +99,7 @@ async function renderHome(query) {
       </label>
     </div>
     <div id="grid" class="swimmer-grid"><div class="loading">Chargement des nageurs…</div></div>`;
+  renderStatsStrip();
   const grid = document.getElementById("grid");
   const sortSelect = document.getElementById("sort-select");
   sortSelect.value = sortMode;

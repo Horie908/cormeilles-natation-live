@@ -24,7 +24,14 @@ function normalize(str) {
 
 app.get("/api/club", (req, res) => {
   const { club, swimmers } = store.get();
-  res.json({ ...club, swimmerCount: swimmers.length });
+  const allResults = swimmers.flatMap((s) => s.results || []);
+  const lastResult = [...allResults].sort((a, b) => (b.date || "").localeCompare(a.date || ""))[0];
+  res.json({
+    ...club,
+    swimmerCount: swimmers.length,
+    resultCount: allResults.length,
+    lastCompetition: lastResult ? { name: lastResult.competitionName, date: lastResult.date } : null,
+  });
 });
 
 app.get("/api/swimmers", (req, res) => {
