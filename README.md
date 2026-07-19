@@ -1,6 +1,6 @@
 # Cormeilles Natation Live
 
-Site de résultats pour ACS Cormeilles Natation (club FFN id 733), avec recherche de nageur, historique des temps par compétition, et compétitions à venir avec adversaires/horaires quand la liste de départ est publiée. Données sourcées depuis ffn.extranat.fr (Fédération Française de Natation).
+Site de résultats pour ACS Cormeilles Natation (club FFN id 733), avec recherche de nageur, résultats de la saison en cours (les compétitions les plus récentes, pas l'historique complet des années précédentes), et compétitions à venir avec adversaires/horaires quand la liste de départ est publiée. Données sourcées depuis ffn.extranat.fr et liveffn.com (Fédération Française de Natation).
 
 ## Lancer en local
 

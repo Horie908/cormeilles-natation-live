@@ -73,16 +73,23 @@ async function renderHome(query) {
   }
 }
 
+function formatRank(rank) {
+  if (rank === null || rank === undefined || rank === "") return "—";
+  if (typeof rank === "number") return rank === 1 ? "1er" : `${rank}e`;
+  return String(rank);
+}
+
 function resultRowHtml(r) {
   const statusHtml =
     r.status === "OK"
       ? `<span class="status-pill status-ok">OK</span>`
       : `<span class="status-pill status-bad">${escapeHtml(r.status)}</span>`;
+  const roundOrSession = r.round || r.session;
   return `
     <tr>
-      <td>${formatDate(r.date)}</td>
-      <td class="event">${escapeHtml(r.event)}${r.round ? `<br><small style="color:var(--text-muted)">${escapeHtml(r.round)}</small>` : ""}</td>
-      <td class="rank">${escapeHtml(r.rank || "—")}</td>
+      <td class="date">${formatDate(r.date)}<br><small style="color:var(--text-muted)">${escapeHtml(r.competitionName || "")}${r.location ? ` · ${escapeHtml(r.location)}` : ""}</small></td>
+      <td class="event">${escapeHtml(r.event)}${roundOrSession ? `<br><small style="color:var(--text-muted)">${escapeHtml(roundOrSession)}</small>` : ""}</td>
+      <td class="rank">${escapeHtml(formatRank(r.rank))}</td>
       <td class="time">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
       <td>${statusHtml}</td>
     </tr>`;

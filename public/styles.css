@@ -219,7 +219,7 @@ table.results th, table.results td { padding: 10px 14px; text-align: left; borde
 table.results th { font-family: var(--font-display); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); background: var(--paper); position: sticky; top: 0; }
 table.results tbody tr:last-child td { border-bottom: none; }
 table.results tbody tr:hover { background: color-mix(in srgb, var(--lane) 6%, transparent); }
-td.event { white-space: normal; min-width: 180px; }
+td.event, td.date { white-space: normal; min-width: 180px; }
 td.time { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.95rem; }
 td.rank { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--text-muted); }
 

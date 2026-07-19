@@ -11,7 +11,8 @@ let state = {
 function load() {
   if (fs.existsSync(DATA_FILE)) {
     try {
-      state = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
+      const raw = fs.readFileSync(DATA_FILE, "utf8").replace(/^﻿/, ""); // tolere un BOM (ex: fichiers ecrits par PowerShell)
+      state = JSON.parse(raw);
     } catch (err) {
       console.error("Impossible de lire club_data.json :", err.message);
     }

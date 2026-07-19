@@ -1,45 +1,42 @@
 // Orchestre le scraping complet du club et sauvegarde data/club_data.json
 // Usage: node src/scraper/run.js
-const fs = require("fs");
-const path = require("path");
-const { BASE, CLUB_ID, fetchHtml, sleep } = require("./ffn");
+const { CLUB_ID } = require("./ffn");
 const { parseClubResultsHtml } = require("./parseResults");
+const { findClubCompetitions, getStartlistHtml } = require("./discover");
 const store = require("../store");
 
-const COMPETITIONS_FILE = path.join(__dirname, "..", "..", "data", "competitions.json");
-
-function loadKnownCompetitionIds() {
-  if (fs.existsSync(COMPETITIONS_FILE)) {
-    return JSON.parse(fs.readFileSync(COMPETITIONS_FILE, "utf8"));
-  }
-  // Liste de depart connue (a completer via la decouverte automatique des competitions du club)
-  return [{ id: "44045", name: null }];
-}
-
-async function scrapeCompetition(idcpt) {
-  const url = `${BASE}/resultats.php?idact=nat&idcpt=${idcpt}&go=res&idclb=${CLUB_ID}`;
-  const html = await fetchHtml(url);
-  return parseClubResultsHtml(html, idcpt);
-}
+const MAX_PAST_COMPETITIONS = 3; // on ne remonte pas l'historique complet, juste la saison en cours
+const MONTHS_BACK = 2;
+const MONTHS_FORWARD = 1;
 
 async function main() {
-  const competitions = loadKnownCompetitionIds();
+  console.log("Recherche des competitions recentes du club (departement + region)...");
+  const { past, future } = await findClubCompetitions({ monthsBack: MONTHS_BACK, monthsForward: MONTHS_FORWARD });
+  console.log(`Competitions passees avec le club : ${past.length} · a venir identifiees : ${future.length}`);
+
+  const selectedPast = past.slice(0, MAX_PAST_COMPETITIONS);
   const swimmersById = new Map();
 
-  for (const comp of competitions) {
-    try {
-      const swimmers = await scrapeCompetition(comp.id);
-      for (const sw of swimmers) {
-        if (!swimmersById.has(sw.id)) {
-          swimmersById.set(sw.id, { ...sw, results: [] });
-        }
-        swimmersById.get(sw.id).results.push(...sw.results);
+  for (const { meta, html } of selectedPast) {
+    const swimmers = parseClubResultsHtml(html, meta);
+    for (const sw of swimmers) {
+      if (!swimmersById.has(sw.id)) {
+        swimmersById.set(sw.id, { ...sw, results: [], upcoming: [] });
       }
-      console.log(`Competition ${comp.id} : ${swimmers.length} nageur(s) du club trouve(s)`);
-    } catch (err) {
-      console.error(`Erreur sur la competition ${comp.id} :`, err.message);
+      swimmersById.get(sw.id).results.push(...sw.results);
     }
-    await sleep(500); // on reste courtois avec le serveur de la FFN
+    console.log(`Competition ${meta.idcpt} (${meta.name}, ${meta.date}) : ${swimmers.length} nageur(s) du club`);
+  }
+
+  // Compétitions à venir : on ne remplit "upcoming" que si une vraie liste de départ est publiée
+  // (jamais de couloir/horaire/adversaire invente).
+  for (const { meta } of future) {
+    const startlistHtml = await getStartlistHtml(meta.idcpt);
+    if (!startlistHtml) {
+      console.log(`A venir ${meta.idcpt} (${meta.name}, ${meta.date}) : liste de depart pas encore publiee.`);
+      continue;
+    }
+    console.log(`A venir ${meta.idcpt} (${meta.name}, ${meta.date}) : liste de depart PUBLIEE mais parsing pas encore implemente pour ce format — a completer.`);
   }
 
   const data = {
@@ -48,7 +45,8 @@ async function main() {
   };
 
   store.save(data);
-  console.log(`Sauvegarde : ${data.swimmers.length} nageur(s), ${data.swimmers.reduce((n, s) => n + s.results.length, 0)} resultat(s) au total.`);
+  const totalResults = data.swimmers.reduce((n, s) => n + s.results.length, 0);
+  console.log(`Sauvegarde : ${data.swimmers.length} nageur(s), ${totalResults} resultat(s) au total.`);
 }
 
 if (require.main === module) {
@@ -58,4 +56,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main, scrapeCompetition };
+module.exports = { main };
