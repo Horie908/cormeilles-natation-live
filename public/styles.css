@@ -247,6 +247,7 @@ table.opp-table th { text-align: left; font-size: 0.7rem; text-transform: upperc
 table.opp-table td { padding: 4px 10px; font-size: 0.84rem; border-bottom: 1px dashed var(--border); white-space: nowrap; }
 table.opp-table tr:last-child td { border-bottom: none; }
 table.opp-table tr.opp-self td { background: rgba(226,141,15,0.12); font-weight: 700; border-radius: 4px; }
+table.opp-table tr.opp-teammate td { background: rgba(31,138,134,0.1); }
 table.opp-table tr.opp-gap td { color: var(--text-muted); text-align: center; padding: 2px; border-bottom: none; }
 .opp-club { color: var(--text-muted); }
 

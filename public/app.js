@@ -84,13 +84,17 @@ function opponentsDetailHtml(r, swimmerName) {
   const self = { name: swimmerName, club: "ACS CORMEILLES", time: r.time, rank: r.rank, isSelf: true };
   const field = [...r.opponents, self].sort((a, b) => (a.rank ?? 9999) - (b.rank ?? 9999));
 
-  // Podium + une fenetre de contexte autour du nageur (course a champ large : on n'affiche pas
-  // tout le monde, mais son vrai voisinage de classement, avec de vraies personnes/temps).
+  // Podium + tous les coequipiers du club present dans cette course + une fenetre de contexte
+  // autour du nageur (course a champ large : on n'affiche pas tout le monde, mais le podium,
+  // les copains de club, et le vrai voisinage de classement, avec de vraies personnes/temps).
   const selfIdx = field.findIndex((e) => e.isSelf);
   const windowStart = Math.max(0, selfIdx - 2);
   const windowEnd = Math.min(field.length, selfIdx + 3);
   const shown = new Map();
   field.slice(0, 3).forEach((e, i) => shown.set(i, e));
+  field.forEach((e, i) => {
+    if (e.club === "ACS CORMEILLES") shown.set(i, e);
+  });
   for (let i = windowStart; i < windowEnd; i++) shown.set(i, field[i]);
   const orderedIdx = Array.from(shown.keys()).sort((a, b) => a - b);
 
@@ -101,8 +105,9 @@ function opponentsDetailHtml(r, swimmerName) {
       rowsHtml += `<tr class="opp-gap"><td colspan="4">···</td></tr>`;
     }
     const e = shown.get(idx);
+    const rowClass = e.isSelf ? "opp-self" : e.club === "ACS CORMEILLES" ? "opp-teammate" : "";
     rowsHtml += `
-      <tr class="${e.isSelf ? "opp-self" : ""}">
+      <tr class="${rowClass}">
         <td class="rank">${escapeHtml(formatRank(e.rank))}</td>
         <td>${escapeHtml(e.name)}</td>
         <td class="opp-club">${escapeHtml(e.club || "")}</td>

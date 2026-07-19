@@ -2,8 +2,6 @@
 // autres nageurs (tous clubs confondus) qui ont couru la meme epreuve a la meme competition,
 // avec leur temps. Aucune donnee inventee : si le classement complet n'est pas trouve pour une
 // epreuve, "opponents" reste absent pour ce resultat plutot que d'etre devine.
-const fs = require("fs");
-const path = require("path");
 const { EXTRANAT_BASE, fetchHtml } = require("./ffn");
 const { parseEventLeaderboard } = require("./parseResults");
 const store = require("../store");
@@ -22,9 +20,9 @@ async function getLeaderboard(idcpt, idepr, eventName, roundHint, cache) {
   return parseEventLeaderboard(html, eventName, roundHint);
 }
 
-async function main() {
-  store.load();
-  const data = store.get();
+// Enrichit `data` (forme club_data.json) en place. Reutilisable depuis run.js pour que chaque
+// actualisation automatique garde cette fonctionnalite, pas seulement le scraping manuel.
+async function attachFreestyleOpponents(data) {
   const cache = new Map();
   let attached = 0;
   let skipped = 0;
@@ -46,15 +44,24 @@ async function main() {
       const mine = lb.entries.find((e) => e.id === swimmer.id);
       if (mine) result.rank = mine.rank; // recale sur le classement reel de l'epreuve complete
       attached++;
-      console.log(`OK ${swimmer.name} - ${result.event} (${result.time}) : ${result.opponents.length} adversaire(s) reel(s)`);
     }
   }
 
-  store.save(data);
-  console.log(`Termine : ${attached} resultat(s) enrichis, ${skipped} sans classement complet disponible.`);
+  console.log(`Adversaires 50 Nage Libre : ${attached} resultat(s) enrichis, ${skipped} sans classement complet disponible.`);
+  return data;
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+async function main() {
+  store.load();
+  const data = await attachFreestyleOpponents(store.get());
+  store.save(data);
+}
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
+
+module.exports = { attachFreestyleOpponents };

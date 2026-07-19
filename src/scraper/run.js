@@ -3,6 +3,7 @@
 const { CLUB_ID } = require("./ffn");
 const { parseClubResultsHtml } = require("./parseResults");
 const { findClubCompetitions, getStartlistHtml } = require("./discover");
+const { attachFreestyleOpponents } = require("./attachFreestyleOpponents");
 const store = require("../store");
 
 const MAX_PAST_COMPETITIONS = 3; // on ne remonte pas l'historique complet, juste la saison en cours
@@ -39,10 +40,13 @@ async function main() {
     console.log(`A venir ${meta.idcpt} (${meta.name}, ${meta.date}) : liste de depart PUBLIEE mais parsing pas encore implemente pour ce format — a completer.`);
   }
 
-  const data = {
+  let data = {
     club: { id: CLUB_ID, name: "ACS Cormeilles Natation", lastUpdated: new Date().toISOString() },
     swimmers: Array.from(swimmersById.values()).sort((a, b) => a.name.localeCompare(b.name, "fr")),
   };
+
+  console.log("Recherche des adversaires reels sur les 50 Nage Libre...");
+  data = await attachFreestyleOpponents(data);
 
   store.save(data);
   const totalResults = data.swimmers.reduce((n, s) => n + s.results.length, 0);
