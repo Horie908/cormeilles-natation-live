@@ -59,6 +59,7 @@ app.get("/api/swimmers/:id", (req, res) => {
 });
 
 app.get("/api/competitions", (req, res) => {
+  const q = normalize(req.query.q);
   const { swimmers } = store.get();
   const byId = new Map();
   for (const s of swimmers) {
@@ -79,6 +80,7 @@ app.get("/api/competitions", (req, res) => {
     }
   }
   const list = Array.from(byId.values())
+    .filter((c) => !q || normalize(c.name).includes(q) || normalize(c.location).includes(q))
     .map((c) => ({ id: c.id, name: c.name, date: c.date, location: c.location, swimmerCount: c.swimmerIds.size, resultCount: c.resultCount }))
     .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
   res.json(list);

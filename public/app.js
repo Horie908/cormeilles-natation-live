@@ -1,9 +1,34 @@
 const app = document.getElementById("app");
 const searchInput = document.getElementById("search");
 const lastUpdatedEl = document.getElementById("last-updated");
+const topbarEl = document.querySelector(".topbar");
 
 // Applique le theme choisi par le viewer (clair/sombre), pas de logique custom necessaire :
 // on s'appuie uniquement sur prefers-color-scheme via le CSS.
+
+// Cache l'entete (recherche incluse) quand on defile vers le bas, la fait reapparaitre des
+// qu'on remonte un peu — surtout utile sur mobile ou l'entete prend une bonne partie de l'ecran.
+// Le comportement visuel (translateY) n'est actif qu'en dessous de 640px via le CSS, mais on
+// laisse tourner la logique partout : inoffensif sur desktop.
+(() => {
+  let lastY = window.scrollY;
+  let ticking = false;
+  window.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      const goingDown = y > lastY;
+      if (y > 80 && goingDown) {
+        topbarEl.classList.add("header-hidden");
+      } else if (!goingDown) {
+        topbarEl.classList.remove("header-hidden");
+      }
+      lastY = y;
+      ticking = false;
+    });
+  }, { passive: true });
+})();
 
 async function fetchJson(url) {
   const res = await fetch(url);
@@ -155,16 +180,46 @@ function competitionCardHtml(c) {
     </a>`;
 }
 
+let competitionQuery = "";
+
 async function renderCompetitions() {
   updateActiveTab("competitions");
   setAppHtml(`
-    <h1 class="section-title">Compétitions</h1>
+    <div class="home-header">
+      <h1 class="section-title">Compétitions</h1>
+      <div class="comp-search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+          <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <input id="comp-search" type="search" placeholder="Chercher une compétition (nom, lieu)…" autocomplete="off" />
+      </div>
+    </div>
     <div id="comp-list" class="competitions-list"><div class="loading">Chargement des compétitions…</div></div>`);
+
+  const compSearchInput = document.getElementById("comp-search");
+  compSearchInput.value = competitionQuery;
+  compSearchInput.focus();
+  compSearchInput.setSelectionRange(competitionQuery.length, competitionQuery.length);
+  let debounce;
+  compSearchInput.addEventListener("input", () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      competitionQuery = compSearchInput.value.trim();
+      loadCompetitionsList(competitionQuery);
+    }, 150);
+  });
+
+  await loadCompetitionsList(competitionQuery);
+}
+
+async function loadCompetitionsList(query) {
   const list = document.getElementById("comp-list");
+  if (!list) return;
   try {
-    const competitions = await fetchJson("/api/competitions");
+    const competitions = await fetchJson(`/api/competitions?q=${encodeURIComponent(query || "")}`);
     if (!competitions.length) {
-      list.innerHTML = `<div class="empty-state">Aucune compétition trouvée pour l'instant.</div>`;
+      list.innerHTML = `<div class="empty-state">Aucune compétition ne correspond à « ${escapeHtml(query)} ».</div>`;
       return;
     }
     list.innerHTML = competitions.map(competitionCardHtml).join("");
