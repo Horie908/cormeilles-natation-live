@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: cormeilles-natation-live
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: REFRESH_TOKEN
+        generateValue: true
+      - key: REFRESH_CRON
+        value: "*/30 * * * *"

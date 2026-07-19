@@ -1,0 +1,19 @@
+{
+  "name": "cormeilles-natation-live",
+  "version": "1.0.0",
+  "description": "Site de resultats en direct pour ACS Cormeilles Natation, base sur les donnees officielles FFN (ffn.extranat.fr)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "scrape": "node src/scraper/run.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

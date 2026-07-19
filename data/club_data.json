@@ -1,0 +1,43 @@
+{
+  "club": { "id": 733, "name": "ACS Cormeilles Natation", "lastUpdated": null },
+  "swimmers": [
+    {
+      "id": "1995485",
+      "name": "BOUCHKI Jalil",
+      "birthYear": 2006,
+      "age": 11,
+      "gender": "M",
+      "results": [
+        {
+          "competitionId": "44045",
+          "event": "100 Nage Libre Messieurs",
+          "eventId": "52",
+          "round": "Séries : 11 ans",
+          "date": "2017-04-23",
+          "location": "Cormeilles-en-Parisis",
+          "rank": "9e",
+          "time": "01:47.54",
+          "timeCentiemes": 10754,
+          "status": "OK",
+          "points": "45 pts",
+          "isPB": true
+        },
+        {
+          "competitionId": "44045",
+          "event": "400 Nage Libre Messieurs",
+          "eventId": "54",
+          "round": "Séries : 11 ans",
+          "date": "2017-04-23",
+          "location": "Cormeilles-en-Parisis",
+          "rank": "10e",
+          "time": null,
+          "timeCentiemes": null,
+          "status": "DNS",
+          "points": null,
+          "isPB": false
+        }
+      ],
+      "upcoming": []
+    }
+  ]
+}

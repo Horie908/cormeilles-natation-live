@@ -1,0 +1,174 @@
+const app = document.getElementById("app");
+const searchInput = document.getElementById("search");
+const lastUpdatedEl = document.getElementById("last-updated");
+
+// Applique le theme choisi par le viewer (clair/sombre), pas de logique custom necessaire :
+// on s'appuie uniquement sur prefers-color-scheme via le CSS.
+
+async function fetchJson(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Erreur ${res.status}`);
+  return res.json();
+}
+
+function formatDate(iso) {
+  if (!iso) return "";
+  try {
+    return new Date(iso).toLocaleDateString("fr-FR", { day: "2-digit", month: "short", year: "numeric" });
+  } catch {
+    return iso;
+  }
+}
+
+function formatDateTime(iso) {
+  if (!iso) return "";
+  try {
+    return new Date(iso).toLocaleString("fr-FR", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" });
+  } catch {
+    return iso;
+  }
+}
+
+function escapeHtml(str) {
+  return String(str ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+async function loadClubInfo() {
+  try {
+    const club = await fetchJson("/api/club");
+    lastUpdatedEl.textContent = club.lastUpdated
+      ? `Dernière actualisation : ${formatDateTime(club.lastUpdated)} · ${club.swimmerCount} nageur(s) suivis`
+      : "Aucune donnée récupérée pour le moment";
+  } catch {
+    lastUpdatedEl.textContent = "Actualisation indisponible";
+  }
+}
+
+function swimmerCardHtml(s) {
+  const chipClass = s.gender === "F" ? "chip-f" : "chip-m";
+  const genderLabel = s.gender === "F" ? "Dame" : s.gender === "M" ? "Homme" : "";
+  return `
+    <a class="swimmer-card" href="#/nageur/${encodeURIComponent(s.id)}">
+      <span class="name">${escapeHtml(s.name)}</span>
+      <span class="meta">
+        ${s.birthYear ? `<span>${s.birthYear}</span>` : ""}
+        ${genderLabel ? `<span class="chip ${chipClass}">${genderLabel}</span>` : ""}
+      </span>
+      <span class="meta">${s.resultCount} résultat${s.resultCount > 1 ? "s" : ""}${s.upcomingCount ? ` · ${s.upcomingCount} à venir` : ""}</span>
+    </a>`;
+}
+
+async function renderHome(query) {
+  app.innerHTML = `<h1 class="section-title">Nageurs du club</h1><div id="grid" class="swimmer-grid"><div class="loading">Chargement des nageurs…</div></div>`;
+  const grid = document.getElementById("grid");
+  try {
+    const swimmers = await fetchJson(`/api/swimmers?q=${encodeURIComponent(query || "")}`);
+    if (!swimmers.length) {
+      grid.innerHTML = `<div class="empty-state">Aucun nageur ne correspond à « ${escapeHtml(query)} ».</div>`;
+      return;
+    }
+    grid.innerHTML = swimmers.map(swimmerCardHtml).join("");
+  } catch (err) {
+    grid.innerHTML = `<div class="error-state">Impossible de charger les nageurs (${escapeHtml(err.message)}).</div>`;
+  }
+}
+
+function resultRowHtml(r) {
+  const statusHtml =
+    r.status === "OK"
+      ? `<span class="status-pill status-ok">OK</span>`
+      : `<span class="status-pill status-bad">${escapeHtml(r.status)}</span>`;
+  return `
+    <tr>
+      <td>${formatDate(r.date)}</td>
+      <td class="event">${escapeHtml(r.event)}${r.round ? `<br><small style="color:var(--text-muted)">${escapeHtml(r.round)}</small>` : ""}</td>
+      <td class="rank">${escapeHtml(r.rank || "—")}</td>
+      <td class="time">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
+      <td>${statusHtml}</td>
+    </tr>`;
+}
+
+function upcomingRowHtml(u) {
+  const opponents = (u.opponents || [])
+    .map((o) => `<span>${escapeHtml(o.name)} <span class="opp-club">(${escapeHtml(o.club || "")}${o.lane ? `, couloir ${o.lane}` : ""})</span></span>`)
+    .join("");
+  return `
+    <tr>
+      <td>${formatDate(u.date)}</td>
+      <td class="event">${escapeHtml(u.competitionName || "")}${u.location ? `<br><small style="color:var(--text-muted)">${escapeHtml(u.location)}</small>` : ""}</td>
+      <td class="event">${escapeHtml(u.event || "")}${u.session ? `<br><small style="color:var(--text-muted)">${escapeHtml(u.session)}</small>` : ""}</td>
+      <td class="rank">${u.scheduledTime ? escapeHtml(u.scheduledTime) : "—"}${u.heat ? `<br><small>Série ${escapeHtml(String(u.heat))}${u.lane ? `, couloir ${escapeHtml(String(u.lane))}` : ""}</small>` : ""}</td>
+      <td><div class="opponent-list">${opponents || "<span class=\"opp-club\">Liste de départ pas encore publiée</span>"}</div></td>
+    </tr>`;
+}
+
+async function renderSwimmer(id) {
+  app.innerHTML = `<div class="loading">Chargement de la fiche nageur…</div>`;
+  try {
+    const s = await fetchJson(`/api/swimmers/${encodeURIComponent(id)}`);
+    const genderLabel = s.gender === "F" ? "Dame" : s.gender === "M" ? "Homme" : "";
+    const results = [...(s.results || [])].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    const upcoming = [...(s.upcoming || [])].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+
+    app.innerHTML = `
+      <a class="back-link" href="#/">&larr; Retour aux nageurs</a>
+      <div class="swimmer-header">
+        <h1>${escapeHtml(s.name)}</h1>
+        <span class="sub">${s.birthYear ? `${s.birthYear}` : ""}${genderLabel ? ` · ${genderLabel}` : ""}</span>
+      </div>
+
+      ${
+        upcoming.length
+          ? `<h2 class="block-title">Prochaines compétitions</h2>
+             <div class="upcoming-table-wrap">
+               <table class="results">
+                 <thead><tr><th>Date</th><th>Compétition</th><th>Épreuve</th><th>Horaire</th><th>Adversaires</th></tr></thead>
+                 <tbody>${upcoming.map(upcomingRowHtml).join("")}</tbody>
+               </table>
+             </div>`
+          : ""
+      }
+
+      <h2 class="block-title">Historique des résultats</h2>
+      ${
+        results.length
+          ? `<div class="results-table-wrap">
+               <table class="results">
+                 <thead><tr><th>Date</th><th>Épreuve</th><th>Rang</th><th>Temps</th><th>Statut</th></tr></thead>
+                 <tbody>${results.map(resultRowHtml).join("")}</tbody>
+               </table>
+             </div>`
+          : `<div class="empty-state">Aucun résultat enregistré pour l'instant.</div>`
+      }
+    `;
+  } catch (err) {
+    app.innerHTML = `<a class="back-link" href="#/">&larr; Retour aux nageurs</a><div class="error-state">Nageur introuvable (${escapeHtml(err.message)}).</div>`;
+  }
+}
+
+function currentQueryFromSearch() {
+  return searchInput.value.trim();
+}
+
+function router() {
+  const hash = location.hash || "#/";
+  const swimmerMatch = hash.match(/^#\/nageur\/(.+)$/);
+  if (swimmerMatch) {
+    renderSwimmer(decodeURIComponent(swimmerMatch[1]));
+  } else {
+    renderHome(currentQueryFromSearch());
+  }
+}
+
+let searchDebounce;
+searchInput.addEventListener("input", () => {
+  clearTimeout(searchDebounce);
+  searchDebounce = setTimeout(() => {
+    if ((location.hash || "#/") !== "#/") location.hash = "#/";
+    else renderHome(currentQueryFromSearch());
+  }, 150);
+});
+
+window.addEventListener("hashchange", router);
+loadClubInfo();
+router();
