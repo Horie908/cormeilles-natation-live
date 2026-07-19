@@ -9,4 +9,4 @@ services:
       - key: REFRESH_TOKEN
         generateValue: true
       - key: REFRESH_CRON
-        value: "*/30 * * * *"
+        value: "0 7,19 * * *"
