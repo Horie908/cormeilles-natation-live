@@ -11,18 +11,24 @@ const MONTHS_BACK = 5; // couvre mars -> aujourd'hui
 const MONTHS_FORWARD = 1;
 
 async function main() {
+  // On garde la trace de la premiere apparition de chaque nageur (pour le badge "Nouveau" sur
+  // le site) meme si ce scraping complet reconstruit tout le reste depuis zero a chaque fois.
+  store.load();
+  const previousFirstSeen = new Map(store.get().swimmers.map((s) => [s.id, s.firstSeen]).filter(([, v]) => v));
+
   console.log("Recherche des competitions recentes du club (departement + region)...");
   const { past, future } = await findClubCompetitions({ monthsBack: MONTHS_BACK, monthsForward: MONTHS_FORWARD });
   console.log(`Competitions passees avec le club : ${past.length} · a venir identifiees : ${future.length}`);
 
   const selectedPast = past.slice(0, MAX_PAST_COMPETITIONS);
   const swimmersById = new Map();
+  const now = new Date().toISOString();
 
   for (const { meta, html } of selectedPast) {
     const swimmers = parseClubResultsHtml(html, meta);
     for (const sw of swimmers) {
       if (!swimmersById.has(sw.id)) {
-        swimmersById.set(sw.id, { ...sw, results: [], upcoming: [] });
+        swimmersById.set(sw.id, { ...sw, results: [], upcoming: [], firstSeen: previousFirstSeen.get(sw.id) || now });
       }
       swimmersById.get(sw.id).results.push(...sw.results);
     }

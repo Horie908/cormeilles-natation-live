@@ -46,6 +46,7 @@ app.get("/api/swimmers", (req, res) => {
       gender: s.gender,
       resultCount: s.results.length,
       upcomingCount: (s.upcoming || []).length,
+      firstSeen: s.firstSeen || null,
     }));
   res.json(list);
 });
@@ -55,6 +56,48 @@ app.get("/api/swimmers/:id", (req, res) => {
   const swimmer = swimmers.find((s) => s.id === req.params.id);
   if (!swimmer) return res.status(404).json({ error: "Nageur introuvable" });
   res.json(swimmer);
+});
+
+app.get("/api/competitions", (req, res) => {
+  const { swimmers } = store.get();
+  const byId = new Map();
+  for (const s of swimmers) {
+    for (const r of s.results || []) {
+      if (!byId.has(r.competitionId)) {
+        byId.set(r.competitionId, {
+          id: r.competitionId,
+          name: r.competitionName,
+          date: r.date,
+          location: r.location,
+          swimmerIds: new Set(),
+          resultCount: 0,
+        });
+      }
+      const c = byId.get(r.competitionId);
+      c.swimmerIds.add(s.id);
+      c.resultCount++;
+    }
+  }
+  const list = Array.from(byId.values())
+    .map((c) => ({ id: c.id, name: c.name, date: c.date, location: c.location, swimmerCount: c.swimmerIds.size, resultCount: c.resultCount }))
+    .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  res.json(list);
+});
+
+app.get("/api/competitions/:id", (req, res) => {
+  const { swimmers } = store.get();
+  const results = [];
+  let meta = null;
+  for (const s of swimmers) {
+    for (const r of s.results || []) {
+      if (r.competitionId !== req.params.id) continue;
+      if (!meta) meta = { id: r.competitionId, name: r.competitionName, date: r.date, location: r.location };
+      results.push({ ...r, swimmerId: s.id, swimmerName: s.name });
+    }
+  }
+  if (!meta) return res.status(404).json({ error: "Compétition introuvable" });
+  results.sort((a, b) => a.swimmerName.localeCompare(b.swimmerName, "fr") || (a.event || "").localeCompare(b.event || "", "fr"));
+  res.json({ ...meta, results });
 });
 
 app.post("/api/refresh", async (req, res) => {

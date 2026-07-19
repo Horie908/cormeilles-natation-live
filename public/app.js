@@ -33,6 +33,27 @@ function escapeHtml(str) {
   return String(str ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
+// Remplace le contenu de #app et relance l'animation d'apparition (une classe CSS appliquee
+// deux fois de suite ne se re-declenche pas toute seule, d'ou le forcage de reflow).
+function setAppHtml(html) {
+  app.classList.remove("fade-in");
+  void app.offsetWidth;
+  app.innerHTML = html;
+  app.classList.add("fade-in");
+}
+
+function updateActiveTab(name) {
+  document.querySelectorAll("#main-tabs .tab").forEach((el) => {
+    el.classList.toggle("active", el.dataset.tab === name);
+  });
+}
+
+function isRecent(iso, days) {
+  if (!iso) return false;
+  const diffMs = Date.now() - new Date(iso).getTime();
+  return diffMs >= 0 && diffMs < days * 24 * 60 * 60 * 1000;
+}
+
 let clubInfo = null;
 
 async function loadClubInfo() {
@@ -61,8 +82,10 @@ function renderStatsStrip() {
 function swimmerCardHtml(s) {
   const chipClass = s.gender === "F" ? "chip-f" : "chip-m";
   const genderLabel = s.gender === "F" ? "Dame" : s.gender === "M" ? "Homme" : "";
+  const isNew = isRecent(s.firstSeen, 7);
   return `
     <a class="swimmer-card" href="#/nageur/${encodeURIComponent(s.id)}">
+      ${isNew ? `<span class="new-badge">Nouveau</span>` : ""}
       <span class="name">${escapeHtml(s.name)}</span>
       <span class="meta">
         ${s.birthYear ? `<span>${s.birthYear}</span>` : ""}
@@ -86,7 +109,8 @@ function sortSwimmers(swimmers, mode) {
 }
 
 async function renderHome(query) {
-  app.innerHTML = `
+  updateActiveTab("nageurs");
+  setAppHtml(`
     <div id="stats-strip" class="stats-strip"></div>
     <div class="home-header">
       <h1 class="section-title">Nageurs du club</h1>
@@ -98,7 +122,7 @@ async function renderHome(query) {
         </select>
       </label>
     </div>
-    <div id="grid" class="swimmer-grid"><div class="loading">Chargement des nageurs…</div></div>`;
+    <div id="grid" class="swimmer-grid"><div class="loading">Chargement des nageurs…</div></div>`);
   renderStatsStrip();
   const grid = document.getElementById("grid");
   const sortSelect = document.getElementById("sort-select");
@@ -117,6 +141,74 @@ async function renderHome(query) {
     grid.innerHTML = sortSwimmers(swimmers, sortMode).map(swimmerCardHtml).join("");
   } catch (err) {
     grid.innerHTML = `<div class="error-state">Impossible de charger les nageurs (${escapeHtml(err.message)}).</div>`;
+  }
+}
+
+function competitionCardHtml(c) {
+  return `
+    <a class="competition-card" href="#/competition/${encodeURIComponent(c.id)}">
+      <div>
+        <div class="comp-name">${escapeHtml(c.name || "Compétition")}</div>
+        <div class="comp-meta">${formatDate(c.date)}${c.location ? ` · ${escapeHtml(c.location)}` : ""}</div>
+      </div>
+      <div class="comp-count">${c.swimmerCount} nageur${c.swimmerCount > 1 ? "s" : ""} · ${c.resultCount} résultat${c.resultCount > 1 ? "s" : ""}</div>
+    </a>`;
+}
+
+async function renderCompetitions() {
+  updateActiveTab("competitions");
+  setAppHtml(`
+    <h1 class="section-title">Compétitions</h1>
+    <div id="comp-list" class="competitions-list"><div class="loading">Chargement des compétitions…</div></div>`);
+  const list = document.getElementById("comp-list");
+  try {
+    const competitions = await fetchJson("/api/competitions");
+    if (!competitions.length) {
+      list.innerHTML = `<div class="empty-state">Aucune compétition trouvée pour l'instant.</div>`;
+      return;
+    }
+    list.innerHTML = competitions.map(competitionCardHtml).join("");
+  } catch (err) {
+    list.innerHTML = `<div class="error-state">Impossible de charger les compétitions (${escapeHtml(err.message)}).</div>`;
+  }
+}
+
+function competitionResultRowHtml(r) {
+  const statusHtml =
+    r.status === "OK"
+      ? `<span class="status-pill status-ok">OK</span>`
+      : `<span class="status-pill status-bad">${escapeHtml(r.status)}</span>`;
+  return `
+    <tr>
+      <td><a href="#/nageur/${encodeURIComponent(r.swimmerId)}" class="swimmer-link">${escapeHtml(r.swimmerName)}</a></td>
+      <td class="event">${escapeHtml(r.event)}${r.session ? `<br><small style="color:var(--text-muted)">${escapeHtml(r.session)}</small>` : ""}</td>
+      <td class="rank">${escapeHtml(formatRank(r.rank))}</td>
+      <td class="time">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
+      <td>${statusHtml}</td>
+    </tr>`;
+}
+
+async function renderCompetition(id) {
+  setAppHtml(`<div class="loading">Chargement de la compétition…</div>`);
+  try {
+    const c = await fetchJson(`/api/competitions/${encodeURIComponent(id)}`);
+    const results = [...c.results].sort(
+      (a, b) => a.swimmerName.localeCompare(b.swimmerName, "fr") || (a.event || "").localeCompare(b.event || "", "fr")
+    );
+    setAppHtml(`
+      <a class="back-link" href="#/competitions">&larr; Retour aux compétitions</a>
+      <div class="swimmer-header">
+        <h1>${escapeHtml(c.name || "Compétition")}</h1>
+        <span class="sub">${formatDate(c.date)}${c.location ? ` · ${escapeHtml(c.location)}` : ""}</span>
+      </div>
+      <div class="results-table-wrap">
+        <table class="results">
+          <thead><tr><th>Nageur</th><th>Épreuve</th><th>Rang</th><th>Temps</th><th>Statut</th></tr></thead>
+          <tbody>${results.map(competitionResultRowHtml).join("")}</tbody>
+        </table>
+      </div>`);
+  } catch (err) {
+    setAppHtml(`<a class="back-link" href="#/competitions">&larr; Retour aux compétitions</a><div class="error-state">Compétition introuvable (${escapeHtml(err.message)}).</div>`);
   }
 }
 
@@ -208,14 +300,15 @@ function upcomingRowHtml(u) {
 }
 
 async function renderSwimmer(id) {
-  app.innerHTML = `<div class="loading">Chargement de la fiche nageur…</div>`;
+  updateActiveTab("nageurs");
+  setAppHtml(`<div class="loading">Chargement de la fiche nageur…</div>`);
   try {
     const s = await fetchJson(`/api/swimmers/${encodeURIComponent(id)}`);
     const genderLabel = s.gender === "F" ? "Dame" : s.gender === "M" ? "Homme" : "";
     const results = [...(s.results || [])].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
     const upcoming = [...(s.upcoming || [])].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
 
-    app.innerHTML = `
+    setAppHtml(`
       <a class="back-link" href="#/">&larr; Retour aux nageurs</a>
       <div class="swimmer-header">
         <h1>${escapeHtml(s.name)}</h1>
@@ -245,9 +338,9 @@ async function renderSwimmer(id) {
              </div>`
           : `<div class="empty-state">Aucun résultat enregistré pour l'instant.</div>`
       }
-    `;
+    `);
   } catch (err) {
-    app.innerHTML = `<a class="back-link" href="#/">&larr; Retour aux nageurs</a><div class="error-state">Nageur introuvable (${escapeHtml(err.message)}).</div>`;
+    setAppHtml(`<a class="back-link" href="#/">&larr; Retour aux nageurs</a><div class="error-state">Nageur introuvable (${escapeHtml(err.message)}).</div>`);
   }
 }
 
@@ -258,8 +351,13 @@ function currentQueryFromSearch() {
 function router() {
   const hash = location.hash || "#/";
   const swimmerMatch = hash.match(/^#\/nageur\/(.+)$/);
+  const competitionMatch = hash.match(/^#\/competition\/(.+)$/);
   if (swimmerMatch) {
     renderSwimmer(decodeURIComponent(swimmerMatch[1]));
+  } else if (competitionMatch) {
+    renderCompetition(decodeURIComponent(competitionMatch[1]));
+  } else if (hash === "#/competitions") {
+    renderCompetitions();
   } else {
     renderHome(currentQueryFromSearch());
   }

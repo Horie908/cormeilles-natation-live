@@ -80,7 +80,7 @@ async function main() {
     for (const fresh of freshSwimmers) {
       let existing = data.swimmers.find((s) => s.id === fresh.id);
       if (!existing) {
-        existing = { id: fresh.id, name: fresh.name, birthYear: fresh.birthYear, gender: fresh.gender, results: [], upcoming: [] };
+        existing = { id: fresh.id, name: fresh.name, birthYear: fresh.birthYear, gender: fresh.gender, results: [], upcoming: [], firstSeen: new Date().toISOString() };
         data.swimmers.push(existing);
       }
       existing.results.push(...fresh.results);
