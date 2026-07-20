@@ -58,8 +58,7 @@ app.get("/api/swimmers/:id", (req, res) => {
   res.json(swimmer);
 });
 
-app.get("/api/competitions", (req, res) => {
-  const q = normalize(req.query.q);
+function listCompetitions() {
   const { swimmers } = store.get();
   const byId = new Map();
   for (const s of swimmers) {
@@ -79,27 +78,54 @@ app.get("/api/competitions", (req, res) => {
       c.resultCount++;
     }
   }
-  const list = Array.from(byId.values())
-    .filter((c) => !q || normalize(c.name).includes(q) || normalize(c.location).includes(q))
+  return Array.from(byId.values())
     .map((c) => ({ id: c.id, name: c.name, date: c.date, location: c.location, swimmerCount: c.swimmerIds.size, resultCount: c.resultCount }))
     .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-  res.json(list);
-});
+}
 
-app.get("/api/competitions/:id", (req, res) => {
+function getCompetitionResults(id) {
   const { swimmers } = store.get();
   const results = [];
   let meta = null;
   for (const s of swimmers) {
     for (const r of s.results || []) {
-      if (r.competitionId !== req.params.id) continue;
+      if (r.competitionId !== id) continue;
       if (!meta) meta = { id: r.competitionId, name: r.competitionName, date: r.date, location: r.location };
       results.push({ ...r, swimmerId: s.id, swimmerName: s.name });
     }
   }
-  if (!meta) return res.status(404).json({ error: "Compétition introuvable" });
+  if (!meta) return null;
   results.sort((a, b) => a.swimmerName.localeCompare(b.swimmerName, "fr") || (a.event || "").localeCompare(b.event || "", "fr"));
-  res.json({ ...meta, results });
+  return { ...meta, results };
+}
+
+app.get("/api/competitions", (req, res) => {
+  const q = normalize(req.query.q);
+  const list = listCompetitions().filter((c) => !q || normalize(c.name).includes(q) || normalize(c.location).includes(q));
+  res.json(list);
+});
+
+app.get("/api/competitions/:id", (req, res) => {
+  const comp = getCompetitionResults(req.params.id);
+  if (!comp) return res.status(404).json({ error: "Compétition introuvable" });
+  res.json(comp);
+});
+
+// Vue "Live" : la competition du jour (si le club en a une) avec ses resultats, le planning
+// des prochaines competitions identifiees au calendrier, et la derniere competition passee (pour
+// verifier que l'affichage fonctionne meme quand aucune competition n'est en cours).
+app.get("/api/live", (req, res) => {
+  const today = new Date().toISOString().slice(0, 10);
+  const competitions = listCompetitions();
+  const liveMeta = competitions.find((c) => c.date === today);
+  const lastMeta = competitions[0] || null;
+
+  res.json({
+    today,
+    live: liveMeta ? getCompetitionResults(liveMeta.id) : null,
+    upcoming: store.get().upcomingCompetitions || [],
+    last: lastMeta ? getCompetitionResults(lastMeta.id) : null,
+  });
 });
 
 app.post("/api/refresh", async (req, res) => {

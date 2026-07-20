@@ -6,6 +6,7 @@ const DATA_FILE = path.join(__dirname, "..", "data", "club_data.json");
 let state = {
   club: { id: 733, name: "ACS Cormeilles Natation", lastUpdated: null },
   swimmers: [],
+  upcomingCompetitions: [],
 };
 
 function load() {

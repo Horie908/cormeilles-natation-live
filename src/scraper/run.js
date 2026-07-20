@@ -49,6 +49,12 @@ async function main() {
   let data = {
     club: { id: CLUB_ID, name: "ACS Cormeilles Natation", lastUpdated: new Date().toISOString() },
     swimmers: Array.from(swimmersById.values()).sort((a, b) => a.name.localeCompare(b.name, "fr")),
+    // Planning des competitions a venir identifiees au calendrier (meme sans liste de depart
+    // publiee) : permet d'afficher un planning meme quand les couloirs/horaires ne sont pas
+    // encore connus.
+    upcomingCompetitions: future
+      .map(({ meta }) => ({ id: meta.idcpt, name: meta.name, date: meta.date, location: meta.location }))
+      .sort((a, b) => (a.date || "").localeCompare(b.date || "")),
   };
 
   console.log("Recherche des adversaires reels sur les 50 Nage Libre...");

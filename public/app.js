@@ -242,6 +242,69 @@ function competitionResultRowHtml(r) {
     </tr>`;
 }
 
+function competitionResultsTableHtml(results, idPrefix) {
+  return `
+    <div class="results-table-wrap">
+      <table class="results">
+        <thead><tr><th>Nageur</th><th>Épreuve</th><th>Rang</th><th>Temps</th><th>Statut</th></tr></thead>
+        <tbody id="${idPrefix}-body">${results.map(competitionResultRowHtml).join("")}</tbody>
+      </table>
+    </div>`;
+}
+
+function planningCardHtml(c) {
+  return `
+    <div class="competition-card planning-card">
+      <div>
+        <div class="comp-name">${escapeHtml(c.name || "Compétition")}</div>
+        <div class="comp-meta">${c.location ? escapeHtml(c.location) : ""}</div>
+      </div>
+      <div class="comp-count">${formatDate(c.date)}</div>
+    </div>`;
+}
+
+async function renderLive() {
+  updateActiveTab("live");
+  setAppHtml(`<div class="loading">Chargement du live…</div>`);
+  try {
+    const data = await fetchJson("/api/live");
+    const sortedUpcoming = [...(data.upcoming || [])].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+
+    const liveSection = data.live
+      ? `<div class="live-banner">
+           <span class="live-dot" aria-hidden="true"></span>
+           <div>
+             <strong>En direct — ${escapeHtml(data.live.name || "Compétition")}</strong>
+             <div class="comp-meta">${formatDate(data.live.date)}${data.live.location ? ` · ${escapeHtml(data.live.location)}` : ""}</div>
+           </div>
+         </div>
+         ${competitionResultsTableHtml(data.live.results, "live-current")}`
+      : "";
+
+    setAppHtml(`
+      <h1 class="section-title">Live</h1>
+
+      ${liveSection}
+
+      <h2 class="block-title">Planning des prochaines compétitions</h2>
+      ${
+        sortedUpcoming.length
+          ? `<div class="competitions-list">${sortedUpcoming.map(planningCardHtml).join("")}</div>`
+          : `<div class="empty-state">Aucune compétition à venir programmée pour le moment.</div>`
+      }
+
+      ${
+        data.last
+          ? `<h2 class="block-title">Dernière compétition (${escapeHtml(data.last.name || "")}, ${formatDate(data.last.date)})</h2>
+             ${competitionResultsTableHtml(data.last.results, "live-last")}`
+          : ""
+      }
+    `);
+  } catch (err) {
+    setAppHtml(`<div class="error-state">Impossible de charger le live (${escapeHtml(err.message)}).</div>`);
+  }
+}
+
 async function renderCompetition(id) {
   setAppHtml(`<div class="loading">Chargement de la compétition…</div>`);
   try {
@@ -430,6 +493,8 @@ function router() {
     renderCompetition(decodeURIComponent(competitionMatch[1]));
   } else if (hash === "#/competitions") {
     renderCompetitions();
+  } else if (hash === "#/live") {
+    renderLive();
   } else {
     renderHome(currentQueryFromSearch());
   }
