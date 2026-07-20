@@ -1,8 +1,8 @@
 // Orchestre le scraping complet du club et sauvegarde data/club_data.json
 // Usage: node src/scraper/run.js
 const { CLUB_ID } = require("./ffn");
-const { parseClubResultsHtml } = require("./parseResults");
-const { findClubCompetitions, getStartlistHtml } = require("./discover");
+const { parseClubResultsHtml, parseProgramme } = require("./parseResults");
+const { findClubCompetitions, getProgrammeHtml } = require("./discover");
 const { attachFreestyleOpponents } = require("./attachFreestyleOpponents");
 const store = require("../store");
 
@@ -35,26 +35,33 @@ async function main() {
     console.log(`Competition ${meta.idcpt} (${meta.name}, ${meta.date}) : ${swimmers.length} nageur(s) du club`);
   }
 
-  // Compétitions à venir : on ne remplit "upcoming" que si une vraie liste de départ est publiée
-  // (jamais de couloir/horaire/adversaire invente).
+  // Compétitions à venir : le planning horaire (programme.php) est en general publie bien avant
+  // la liste de depart, donc on l'attache des qu'il est disponible (jamais de couloir/adversaire
+  // invente pour autant - la liste de depart, elle, reste a implementer separement).
+  const upcomingCompetitions = [];
   for (const { meta } of future) {
-    const startlistHtml = await getStartlistHtml(meta.idcpt);
-    if (!startlistHtml) {
-      console.log(`A venir ${meta.idcpt} (${meta.name}, ${meta.date}) : liste de depart pas encore publiee.`);
-      continue;
+    const entry = { id: meta.idcpt, name: meta.name, date: meta.date, location: meta.location, schedule: null };
+    const programmeHtml = await getProgrammeHtml(meta.idcpt);
+    if (programmeHtml) {
+      const sessions = parseProgramme(programmeHtml);
+      if (sessions.length) {
+        entry.schedule = sessions;
+        console.log(`A venir ${meta.idcpt} (${meta.name}, ${meta.date}) : planning recupere (${sessions.length} reunion(s)).`);
+      }
     }
-    console.log(`A venir ${meta.idcpt} (${meta.name}, ${meta.date}) : liste de depart PUBLIEE mais parsing pas encore implemente pour ce format — a completer.`);
+    if (!entry.schedule) {
+      console.log(`A venir ${meta.idcpt} (${meta.name}, ${meta.date}) : planning pas encore publie.`);
+    }
+    upcomingCompetitions.push(entry);
   }
 
   let data = {
     club: { id: CLUB_ID, name: "ACS Cormeilles Natation", lastUpdated: new Date().toISOString() },
     swimmers: Array.from(swimmersById.values()).sort((a, b) => a.name.localeCompare(b.name, "fr")),
-    // Planning des competitions a venir identifiees au calendrier (meme sans liste de depart
-    // publiee) : permet d'afficher un planning meme quand les couloirs/horaires ne sont pas
-    // encore connus.
-    upcomingCompetitions: future
-      .map(({ meta }) => ({ id: meta.idcpt, name: meta.name, date: meta.date, location: meta.location }))
-      .sort((a, b) => (a.date || "").localeCompare(b.date || "")),
+    // Planning des competitions a venir identifiees au calendrier (avec horaires quand le
+    // programme est deja publie) : permet d'afficher le planning meme quand la liste de depart
+    // (couloirs/adversaires) n'est pas encore connue.
+    upcomingCompetitions: upcomingCompetitions.sort((a, b) => (a.date || "").localeCompare(b.date || "")),
   };
 
   console.log("Recherche des adversaires reels sur les 50 Nage Libre...");

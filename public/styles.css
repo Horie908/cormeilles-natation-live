@@ -402,6 +402,81 @@ a { color: inherit; text-decoration: none; }
 .competition-card:active { transform: translateX(3px) scale(0.99); }
 .planning-card { cursor: default; }
 .planning-card:hover, .planning-card:active { transform: none; border-color: var(--border); }
+.planning-block { display: flex; flex-direction: column; gap: 6px; }
+.competitions-list .planning-block:nth-child(1)  { --i: 1; }
+.competitions-list .planning-block:nth-child(2)  { --i: 2; }
+.competitions-list .planning-block:nth-child(3)  { --i: 3; }
+.competitions-list .planning-block:nth-child(4)  { --i: 4; }
+.competitions-list .planning-block:nth-child(5)  { --i: 5; }
+.competitions-list .planning-block:nth-child(6)  { --i: 6; }
+.competitions-list .planning-block:nth-child(7)  { --i: 7; }
+.competitions-list .planning-block:nth-child(n+8) { --i: 8; }
+
+.schedule-pending {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: 4px 18px 2px;
+}
+.schedule-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 4px 4px;
+}
+.schedule-session {
+  background: var(--paper-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+.schedule-session summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.schedule-session summary::-webkit-details-marker { display: none; }
+.schedule-session summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--accent);
+  transition: transform 0.15s ease;
+}
+.schedule-session[open] summary::before { transform: rotate(90deg); }
+.schedule-doors {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--text-muted);
+}
+.schedule-list {
+  margin: 10px 0 2px;
+  padding: 10px 0 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.schedule-list li { display: flex; align-items: baseline; gap: 12px; font-size: 0.88rem; }
+.schedule-time {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--lane);
+  min-width: 52px;
+  flex-shrink: 0;
+}
+.schedule-event { color: var(--ink); }
 
 /* ===== Live ===== */
 .live-banner {

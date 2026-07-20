@@ -81,4 +81,20 @@ async function getStartlistHtml(idcpt) {
   }
 }
 
-module.exports = { findCompetitionIds, testClubParticipation, findClubCompetitions, getStartlistHtml, sleep };
+// Tente de recuperer le planning horaire (programme des reunions/epreuves) d'une competition
+// a venir, publie sur liveffn.com generalement des la creation de la competition (bien avant la
+// liste de depart). Renvoie null si non disponible - on n'invente jamais d'horaire.
+async function getProgrammeHtml(idcpt) {
+  const url = `${LIVEFFN_BASE}/programme.php?competition=${idcpt}&langue=fra`;
+  try {
+    const html = await fetchHtml(url, { retryOn429: false });
+    if (html.includes("n'est pas disponible actuellement") || html.includes("sera publiée")) {
+      return null;
+    }
+    return html;
+  } catch {
+    return null;
+  }
+}
+
+module.exports = { findCompetitionIds, testClubParticipation, findClubCompetitions, getStartlistHtml, getProgrammeHtml, sleep };

@@ -191,4 +191,62 @@ function parseEventLeaderboard(html, eventName, roundHint) {
   return { title: chosen.title, entries: parseLeaderboardRows($, chosen.$thead) };
 }
 
-module.exports = { parseClubResultsHtml, parseCompetitionMeta, parseEventLeaderboard, frenchDateToIso };
+// Parse la page programme.php?competition={idcpt} (liveffn.com) : le planning horaire de la
+// competition, reunion par reunion (ex: "Reunion N 1 : Vendredi 3 Juillet 2026"), avec pour
+// chaque epreuve son horaire de depart. Structure reelle observee (juillet 2026) :
+//   <div id="accordion">
+//     <h6><a>Reunion N 1 : Vendredi 3 Juillet 2026</a></h6>
+//     <div><ul class="reunion">
+//       <li class="debutEpreuve">...Ouverture des portes : 07h30</li>
+//       <li class="EventNonSportif">Defile des officiels</li>
+//       <li class="survol"><span class="time">09h00</span> - <span class="tooltip">400 4 Nages Messieurs Premieres series <b>1 serie / 4 participants ...</b></span></li>
+//       ...
+//     </ul></div>
+//     <h6>...reunion suivante...</h6>
+//     <div>...</div>
+//   </div>
+function parseProgramme(html) {
+  const $ = cheerio.load(html);
+  const sessions = [];
+  let current = null;
+
+  $("#accordion")
+    .children()
+    .each((_, el) => {
+      const $el = $(el);
+      if (el.tagName === "h6") {
+        const titleText = $el.find("a").text().trim().replace(/\s+/g, " ");
+        const [titlePart, datePart] = titleText.split(":").map((s) => s && s.trim());
+        current = { title: titlePart || titleText, date: frenchDateToIso(datePart || titleText), doorsOpen: null, events: [] };
+        sessions.push(current);
+      } else if (el.tagName === "div" && current) {
+        $el.find("li").each((__, liEl) => {
+          const $li = $(liEl);
+          const cls = $li.attr("class") || "";
+          if (cls.includes("debutEpreuve")) {
+            const m = $li.text().match(/Ouverture des portes\s*:\s*(\d{1,2}h\d{2})/);
+            if (m) current.doorsOpen = m[1];
+          } else if (cls.includes("survol")) {
+            const time = $li.find(".time").first().text().trim();
+            const $tooltip = $li.find(".tooltip").first().clone();
+            $tooltip.find("b").remove();
+            const name = $tooltip.text().trim().replace(/\s+/g, " ");
+            const detail = $li.find(".tooltip b").first().text().trim().replace(/\s+/g, " ");
+            const countsMatch = detail.match(/^(\d+)\s+séries?\s*\/\s*(\d+)\s+participant/);
+            if (time && name) {
+              current.events.push({
+                time,
+                name,
+                heats: countsMatch ? parseInt(countsMatch[1], 10) : null,
+                participants: countsMatch ? parseInt(countsMatch[2], 10) : null,
+              });
+            }
+          }
+        });
+      }
+    });
+
+  return sessions.filter((s) => s.events.length > 0);
+}
+
+module.exports = { parseClubResultsHtml, parseCompetitionMeta, parseEventLeaderboard, parseProgramme, frenchDateToIso };

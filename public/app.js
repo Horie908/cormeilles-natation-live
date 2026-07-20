@@ -252,14 +252,43 @@ function competitionResultsTableHtml(results, idPrefix) {
     </div>`;
 }
 
-function planningCardHtml(c) {
+function scheduleSessionHtml(session, i) {
   return `
-    <div class="competition-card planning-card">
-      <div>
-        <div class="comp-name">${escapeHtml(c.name || "Compétition")}</div>
-        <div class="comp-meta">${c.location ? escapeHtml(c.location) : ""}</div>
+    <details class="schedule-session"${i === 0 ? " open" : ""}>
+      <summary>
+        <span>${escapeHtml(session.title || "Réunion")}${session.date ? ` — ${formatDate(session.date)}` : ""}</span>
+        ${session.doorsOpen ? `<span class="schedule-doors">Ouverture des portes : ${escapeHtml(session.doorsOpen)}</span>` : ""}
+      </summary>
+      <ul class="schedule-list">
+        ${session.events
+          .map(
+            (e) => `
+          <li>
+            <span class="schedule-time">${escapeHtml(e.time)}</span>
+            <span class="schedule-event">${escapeHtml(e.name)}</span>
+          </li>`
+          )
+          .join("")}
+      </ul>
+    </details>`;
+}
+
+function planningCardHtml(c) {
+  const hasSchedule = Array.isArray(c.schedule) && c.schedule.length > 0;
+  return `
+    <div class="planning-block">
+      <div class="competition-card planning-card">
+        <div>
+          <div class="comp-name">${escapeHtml(c.name || "Compétition")}</div>
+          <div class="comp-meta">${c.location ? escapeHtml(c.location) : ""}</div>
+        </div>
+        <div class="comp-count">${formatDate(c.date)}</div>
       </div>
-      <div class="comp-count">${formatDate(c.date)}</div>
+      ${
+        hasSchedule
+          ? `<div class="schedule-block">${c.schedule.map(scheduleSessionHtml).join("")}</div>`
+          : `<div class="schedule-pending">Horaires pas encore publiés pour cette compétition.</div>`
+      }
     </div>`;
 }
 
