@@ -2,7 +2,7 @@
   "club": {
     "id": 733,
     "name": "ACS Cormeilles Natation",
-    "lastUpdated": "2026-07-20T17:00:43.741Z"
+    "lastUpdated": "2026-07-20T17:11:46.286Z"
   },
   "swimmers": [
     {
@@ -23,7 +23,8 @@
           "timeCentiemes": 2986,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 907
         },
         {
           "competitionId": "93951",
@@ -37,7 +38,8 @@
           "timeCentiemes": 6718,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 902
         },
         {
           "competitionId": "93951",
@@ -51,7 +53,8 @@
           "timeCentiemes": 14932,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 865
         },
         {
           "competitionId": "93611",
@@ -66,6 +69,7 @@
           "rank": 30,
           "status": "OK",
           "isPB": false,
+          "points": 917,
           "opponents": [
             {
               "name": "CASTERA Louis",
@@ -909,7 +913,8 @@
           "timeCentiemes": 6016,
           "rank": 16,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 925
         },
         {
           "competitionId": "93611",
@@ -923,7 +928,8 @@
           "timeCentiemes": 3417,
           "rank": 19,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 778
         },
         {
           "competitionId": "93611",
@@ -937,7 +943,8 @@
           "timeCentiemes": 3048,
           "rank": 24,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 870
         },
         {
           "competitionId": "93611",
@@ -951,7 +958,8 @@
           "timeCentiemes": 15512,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 791
         },
         {
           "competitionId": "93611",
@@ -965,7 +973,8 @@
           "timeCentiemes": 15657,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 773
         },
         {
           "competitionId": "92728",
@@ -979,7 +988,8 @@
           "timeCentiemes": 6784,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 885
         },
         {
           "competitionId": "92728",
@@ -993,7 +1003,8 @@
           "timeCentiemes": 6781,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 919
         },
         {
           "competitionId": "92728",
@@ -1007,7 +1018,8 @@
           "timeCentiemes": 14501,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 770
         },
         {
           "competitionId": "92074",
@@ -1022,6 +1034,7 @@
           "rank": 109,
           "status": "OK",
           "isPB": false,
+          "points": 861,
           "opponents": [
             {
               "name": "COSTES Romain",
@@ -2069,7 +2082,8 @@
           "timeCentiemes": 13770,
           "rank": 50,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 815
         },
         {
           "competitionId": "92074",
@@ -2083,7 +2097,8 @@
           "timeCentiemes": 3006,
           "rank": 57,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 895
         },
         {
           "competitionId": "92074",
@@ -2097,7 +2112,8 @@
           "timeCentiemes": 15538,
           "rank": 29,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 787
         }
       ],
       "upcoming": [],
@@ -2121,7 +2137,8 @@
           "timeCentiemes": 3099,
           "rank": 35,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -2135,7 +2152,8 @@
           "timeCentiemes": 3129,
           "rank": 39,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -2160,6 +2178,7 @@
           "rank": 142,
           "status": "OK",
           "isPB": false,
+          "points": 641,
           "opponents": [
             {
               "name": "COSTES Romain",
@@ -3207,7 +3226,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92074",
@@ -3221,7 +3241,8 @@
           "timeCentiemes": 16472,
           "rank": 77,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 475
         },
         {
           "competitionId": "92074",
@@ -3235,7 +3256,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92074",
@@ -3249,7 +3271,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -3273,7 +3296,8 @@
           "timeCentiemes": 2341,
           "rank": 23,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -3287,7 +3311,8 @@
           "timeCentiemes": 2809,
           "rank": 25,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -3301,7 +3326,8 @@
           "timeCentiemes": 3810,
           "rank": 30,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -3315,7 +3341,8 @@
           "timeCentiemes": 2631,
           "rank": 14,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -3329,7 +3356,8 @@
           "timeCentiemes": 2604,
           "rank": 9,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -3354,6 +3382,7 @@
           "rank": 31,
           "status": "OK",
           "isPB": false,
+          "points": 803,
           "opponents": [
             {
               "name": "FAE Matiss",
@@ -3675,7 +3704,8 @@
           "timeCentiemes": 6613,
           "rank": 24,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 752
         },
         {
           "competitionId": "93951",
@@ -3689,7 +3719,8 @@
           "timeCentiemes": 4117,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 628
         },
         {
           "competitionId": "93611",
@@ -3704,6 +3735,7 @@
           "rank": 53,
           "status": "OK",
           "isPB": false,
+          "points": 815,
           "opponents": [
             {
               "name": "CASTERA Louis",
@@ -4547,7 +4579,8 @@
           "timeCentiemes": 6771,
           "rank": 56,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 710
         },
         {
           "competitionId": "93611",
@@ -4561,7 +4594,8 @@
           "timeCentiemes": 4003,
           "rank": 40,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 674
         },
         {
           "competitionId": "93611",
@@ -4575,7 +4609,8 @@
           "timeCentiemes": 9225,
           "rank": 32,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 566
         },
         {
           "competitionId": "93611",
@@ -4589,7 +4624,8 @@
           "timeCentiemes": 3828,
           "rank": 73,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 472
         },
         {
           "competitionId": "92728",
@@ -4604,6 +4640,7 @@
           "rank": 12,
           "status": "OK",
           "isPB": false,
+          "points": 756,
           "opponents": [
             {
               "name": "CHELLY Adam",
@@ -4823,7 +4860,8 @@
           "timeCentiemes": 3876,
           "rank": 7,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 726
         },
         {
           "competitionId": "92728",
@@ -4837,7 +4875,8 @@
           "timeCentiemes": 14488,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 772
         },
         {
           "competitionId": "92074",
@@ -4852,6 +4891,7 @@
           "rank": 135,
           "status": "OK",
           "isPB": true,
+          "points": 726,
           "opponents": [
             {
               "name": "COSTES Romain",
@@ -5899,7 +5939,8 @@
           "timeCentiemes": 7298,
           "rank": 123,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 576
         },
         {
           "competitionId": "92074",
@@ -5913,7 +5954,8 @@
           "timeCentiemes": 16604,
           "rank": 79,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 461
         },
         {
           "competitionId": "92074",
@@ -5927,7 +5969,8 @@
           "timeCentiemes": 9313,
           "rank": 36,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 549
         },
         {
           "competitionId": "92074",
@@ -5941,7 +5984,8 @@
           "timeCentiemes": 4065,
           "rank": 98,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 376
         }
       ],
       "upcoming": [],
@@ -5965,7 +6009,8 @@
           "timeCentiemes": 10050,
           "rank": 21,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 105
         },
         {
           "competitionId": "93241",
@@ -5979,7 +6024,8 @@
           "timeCentiemes": 13713,
           "rank": 23,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 39
         },
         {
           "competitionId": "93241",
@@ -5993,7 +6039,8 @@
           "timeCentiemes": 14231,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 612
         },
         {
           "competitionId": "93241",
@@ -6007,7 +6054,8 @@
           "timeCentiemes": 37168,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 402
         }
       ],
       "upcoming": [],
@@ -6031,7 +6079,8 @@
           "timeCentiemes": 5131,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 288
         },
         {
           "competitionId": "94109",
@@ -6045,7 +6094,8 @@
           "timeCentiemes": 11185,
           "rank": 18,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 230
         },
         {
           "competitionId": "94109",
@@ -6059,7 +6109,8 @@
           "timeCentiemes": 18271,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 386
         },
         {
           "competitionId": "94109",
@@ -6073,7 +6124,8 @@
           "timeCentiemes": 20721,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 354
         },
         {
           "competitionId": "93028",
@@ -6087,7 +6139,8 @@
           "timeCentiemes": 11243,
           "rank": 11,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 227
         },
         {
           "competitionId": "93028",
@@ -6101,7 +6154,8 @@
           "timeCentiemes": 12634,
           "rank": 19,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 251
         },
         {
           "competitionId": "93028",
@@ -6115,7 +6169,8 @@
           "timeCentiemes": 12692,
           "rank": 13,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 63
         }
       ],
       "upcoming": [],
@@ -6139,7 +6194,8 @@
           "timeCentiemes": 2205,
           "rank": 18,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -6153,7 +6209,8 @@
           "timeCentiemes": 2439,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -6167,7 +6224,8 @@
           "timeCentiemes": 3418,
           "rank": 25,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -6181,7 +6239,8 @@
           "timeCentiemes": 2294,
           "rank": 2,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -6195,7 +6254,8 @@
           "timeCentiemes": 2459,
           "rank": 5,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -6220,6 +6280,7 @@
           "rank": 87,
           "status": "OK",
           "isPB": true,
+          "points": 620,
           "opponents": [
             {
               "name": "YU Shuier",
@@ -6769,7 +6830,8 @@
           "timeCentiemes": 3915,
           "rank": 48,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 726
         },
         {
           "competitionId": "94081",
@@ -6783,7 +6845,8 @@
           "timeCentiemes": 8213,
           "rank": 29,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 740
         },
         {
           "competitionId": "94081",
@@ -6797,7 +6860,8 @@
           "timeCentiemes": 17441,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 726
         },
         {
           "competitionId": "93618",
@@ -6812,6 +6876,7 @@
           "rank": 10,
           "status": "OK",
           "isPB": false,
+          "points": 656,
           "opponents": [
             {
               "name": "SALAM Meryam",
@@ -6989,7 +7054,8 @@
           "timeCentiemes": 16200,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 688
         },
         {
           "competitionId": "93618",
@@ -7003,7 +7069,8 @@
           "timeCentiemes": 71827,
           "rank": 2,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 600
         },
         {
           "competitionId": "93611",
@@ -7017,7 +7084,8 @@
           "timeCentiemes": 7643,
           "rank": 43,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 612
         },
         {
           "competitionId": "93611",
@@ -7031,7 +7099,8 @@
           "timeCentiemes": 3886,
           "rank": 19,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 739
         },
         {
           "competitionId": "93611",
@@ -7045,7 +7114,8 @@
           "timeCentiemes": 8244,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 733
         },
         {
           "competitionId": "93611",
@@ -7059,7 +7129,8 @@
           "timeCentiemes": 18524,
           "rank": 17,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 620
         },
         {
           "competitionId": "93611",
@@ -7073,7 +7144,8 @@
           "timeCentiemes": 3836,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 762
         },
         {
           "competitionId": "93611",
@@ -7087,7 +7159,8 @@
           "timeCentiemes": 8032,
           "rank": 1,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 780
         },
         {
           "competitionId": "93611",
@@ -7101,7 +7174,8 @@
           "timeCentiemes": 17058,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 768
         },
         {
           "competitionId": "93611",
@@ -7115,7 +7189,8 @@
           "timeCentiemes": 18753,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 596
         },
         {
           "competitionId": "93270",
@@ -7129,7 +7204,8 @@
           "timeCentiemes": 3709,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 820
         },
         {
           "competitionId": "93270",
@@ -7143,7 +7219,8 @@
           "timeCentiemes": 7936,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 801
         },
         {
           "competitionId": "93270",
@@ -7157,7 +7234,8 @@
           "timeCentiemes": 16780,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 800
         },
         {
           "competitionId": "93270",
@@ -7171,7 +7249,8 @@
           "timeCentiemes": 18504,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 622
         },
         {
           "competitionId": "93241",
@@ -7185,7 +7264,8 @@
           "timeCentiemes": 8155,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 752
         },
         {
           "competitionId": "93241",
@@ -7199,7 +7279,8 @@
           "timeCentiemes": 9428,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 465
         },
         {
           "competitionId": "93241",
@@ -7213,7 +7294,8 @@
           "timeCentiemes": 14937,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 711
         },
         {
           "competitionId": "93241",
@@ -7227,7 +7309,8 @@
           "timeCentiemes": 38774,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 500
         },
         {
           "competitionId": "92074",
@@ -7241,7 +7324,8 @@
           "timeCentiemes": 4035,
           "rank": 55,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 674
         },
         {
           "competitionId": "92074",
@@ -7255,7 +7339,8 @@
           "timeCentiemes": 17709,
           "rank": 27,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 697
         },
         {
           "competitionId": "92074",
@@ -7269,7 +7354,8 @@
           "timeCentiemes": 3943,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 714
         },
         {
           "competitionId": "92743",
@@ -7283,7 +7369,8 @@
           "timeCentiemes": 17007,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 774
         },
         {
           "competitionId": "92743",
@@ -7297,7 +7384,8 @@
           "timeCentiemes": 9749,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 409
         },
         {
           "competitionId": "92743",
@@ -7311,7 +7399,8 @@
           "timeCentiemes": 18927,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 579
         }
       ],
       "upcoming": [],
@@ -7335,7 +7424,8 @@
           "timeCentiemes": 4768,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 261
         },
         {
           "competitionId": "94109",
@@ -7349,7 +7439,8 @@
           "timeCentiemes": 9983,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 408
         },
         {
           "competitionId": "94109",
@@ -7363,7 +7454,8 @@
           "timeCentiemes": 18271,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 386
         },
         {
           "competitionId": "94109",
@@ -7377,7 +7469,8 @@
           "timeCentiemes": 20721,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 354
         },
         {
           "competitionId": "93410",
@@ -7391,7 +7484,8 @@
           "timeCentiemes": 1819,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -7405,7 +7499,8 @@
           "timeCentiemes": 2349,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -7419,7 +7514,8 @@
           "timeCentiemes": 2405,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -7433,7 +7529,8 @@
           "timeCentiemes": 2078,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -7447,7 +7544,8 @@
           "timeCentiemes": 10061,
           "rank": 5,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 392
         },
         {
           "competitionId": "93028",
@@ -7461,7 +7559,8 @@
           "timeCentiemes": 11218,
           "rank": 5,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 431
         },
         {
           "competitionId": "93028",
@@ -7475,7 +7574,8 @@
           "timeCentiemes": 10993,
           "rank": 5,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 226
         }
       ],
       "upcoming": [],
@@ -7499,7 +7599,8 @@
           "timeCentiemes": 4128,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 470
         },
         {
           "competitionId": "92728",
@@ -7513,7 +7614,8 @@
           "timeCentiemes": 4879,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 363
         },
         {
           "competitionId": "92728",
@@ -7527,7 +7629,8 @@
           "timeCentiemes": 14501,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 770
         }
       ],
       "upcoming": [],
@@ -7551,7 +7654,8 @@
           "timeCentiemes": 3913,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 344
         },
         {
           "competitionId": "94109",
@@ -7565,7 +7669,8 @@
           "timeCentiemes": 10350,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 209
         },
         {
           "competitionId": "94109",
@@ -7579,7 +7684,8 @@
           "timeCentiemes": 16365,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 397
         },
         {
           "competitionId": "94109",
@@ -7593,7 +7699,8 @@
           "timeCentiemes": 19127,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 349
         },
         {
           "competitionId": "93410",
@@ -7607,7 +7714,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -7621,7 +7729,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -7635,7 +7744,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -7649,7 +7759,8 @@
           "timeCentiemes": 11273,
           "rank": 15,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 122
         },
         {
           "competitionId": "93028",
@@ -7663,7 +7774,8 @@
           "timeCentiemes": 11344,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 240
         },
         {
           "competitionId": "93028",
@@ -7677,7 +7789,8 @@
           "timeCentiemes": 11144,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 121
         }
       ],
       "upcoming": [],
@@ -7702,6 +7815,7 @@
           "rank": 113,
           "status": "OK",
           "isPB": false,
+          "points": 841,
           "opponents": [
             {
               "name": "PROUFF Faustine",
@@ -8425,7 +8539,8 @@
           "timeCentiemes": 6846,
           "rank": 84,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 835
         },
         {
           "competitionId": "94055",
@@ -8439,7 +8554,8 @@
           "timeCentiemes": 15980,
           "rank": 61,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 715
         },
         {
           "competitionId": "94093",
@@ -8454,6 +8570,7 @@
           "rank": 47,
           "status": "OK",
           "isPB": false,
+          "points": 908,
           "opponents": [
             {
               "name": "OUERFELLI Nesrine",
@@ -8943,7 +9060,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "94093",
@@ -8957,7 +9075,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93951",
@@ -8971,7 +9090,8 @@
           "timeCentiemes": 6836,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 838
         },
         {
           "competitionId": "93951",
@@ -8985,7 +9105,8 @@
           "timeCentiemes": 15398,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 789
         },
         {
           "competitionId": "93951",
@@ -8999,7 +9120,8 @@
           "timeCentiemes": 17818,
           "rank": 16,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 696
         },
         {
           "competitionId": "93611",
@@ -9014,6 +9136,7 @@
           "rank": 14,
           "status": "OK",
           "isPB": false,
+          "points": 879,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -9683,7 +9806,8 @@
           "timeCentiemes": 6975,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 797
         },
         {
           "competitionId": "93611",
@@ -9697,7 +9821,8 @@
           "timeCentiemes": 3948,
           "rank": 24,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 712
         },
         {
           "competitionId": "93611",
@@ -9711,7 +9836,8 @@
           "timeCentiemes": 4329,
           "rank": 23,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 706
         },
         {
           "competitionId": "93611",
@@ -9725,7 +9851,8 @@
           "timeCentiemes": 3733,
           "rank": 33,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 674
         },
         {
           "competitionId": "93611",
@@ -9740,6 +9867,7 @@
           "rank": 5,
           "status": "OK",
           "isPB": false,
+          "points": 853,
           "opponents": [
             {
               "name": "OSSOU Shaydene",
@@ -9797,7 +9925,8 @@
           "timeCentiemes": 7015,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 785
         },
         {
           "competitionId": "93611",
@@ -9811,7 +9940,8 @@
           "timeCentiemes": 3937,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 717
         },
         {
           "competitionId": "93611",
@@ -9825,7 +9955,8 @@
           "timeCentiemes": 4328,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 706
         },
         {
           "competitionId": "93275",
@@ -9840,6 +9971,7 @@
           "rank": 30,
           "status": "OK",
           "isPB": false,
+          "points": 953,
           "opponents": [
             {
               "name": "PROUFF Faustine",
@@ -10221,7 +10353,8 @@
           "timeCentiemes": 6602,
           "rank": 25,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 910
         },
         {
           "competitionId": "92728",
@@ -10236,6 +10369,7 @@
           "rank": 4,
           "status": "OK",
           "isPB": false,
+          "points": 929,
           "opponents": [
             {
               "name": "SAUSSEREAU Ethel",
@@ -10425,7 +10559,8 @@
           "timeCentiemes": 15094,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 828
         },
         {
           "competitionId": "92728",
@@ -10439,7 +10574,8 @@
           "timeCentiemes": 13827,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 851
         },
         {
           "competitionId": "92074",
@@ -10453,7 +10589,8 @@
           "timeCentiemes": 6996,
           "rank": 69,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 790
         },
         {
           "competitionId": "92074",
@@ -10467,7 +10604,8 @@
           "timeCentiemes": 3938,
           "rank": 71,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 577
         },
         {
           "competitionId": "92074",
@@ -10481,7 +10619,8 @@
           "timeCentiemes": 18648,
           "rank": 58,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 607
         }
       ],
       "upcoming": [],
@@ -10505,7 +10644,8 @@
           "timeCentiemes": 1922,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -10519,7 +10659,8 @@
           "timeCentiemes": 2451,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -10533,7 +10674,8 @@
           "timeCentiemes": 2335,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -10547,7 +10689,8 @@
           "timeCentiemes": 2267,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -10561,7 +10704,8 @@
           "timeCentiemes": 11739,
           "rank": 13,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 171
         },
         {
           "competitionId": "93028",
@@ -10575,7 +10719,8 @@
           "timeCentiemes": 11486,
           "rank": 10,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 393
         },
         {
           "competitionId": "93028",
@@ -10589,7 +10734,8 @@
           "timeCentiemes": 12538,
           "rank": 12,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 74
         }
       ],
       "upcoming": [],
@@ -10613,7 +10759,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93611",
@@ -10627,7 +10774,8 @@
           "timeCentiemes": 3004,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 1143
         }
       ],
       "upcoming": [],
@@ -10652,6 +10800,7 @@
           "rank": 79,
           "status": "OK",
           "isPB": false,
+          "points": 921,
           "opponents": [
             {
               "name": "CHATEAUVIEUX Léon",
@@ -11285,7 +11434,8 @@
           "timeCentiemes": 5882,
           "rank": 34,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 966
         },
         {
           "competitionId": "93275",
@@ -11299,7 +11449,8 @@
           "timeCentiemes": 13228,
           "rank": 30,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 894
         },
         {
           "competitionId": "93275",
@@ -11313,7 +11464,8 @@
           "timeCentiemes": 3440,
           "rank": 23,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 923
         },
         {
           "competitionId": "93275",
@@ -11327,7 +11479,8 @@
           "timeCentiemes": 7634,
           "rank": 15,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 901
         },
         {
           "competitionId": "92728",
@@ -11341,7 +11494,8 @@
           "timeCentiemes": 3273,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 850
         },
         {
           "competitionId": "92728",
@@ -11355,7 +11509,8 @@
           "timeCentiemes": 3398,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 943
         },
         {
           "competitionId": "92728",
@@ -11369,7 +11524,8 @@
           "timeCentiemes": 13827,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 851
         }
       ],
       "upcoming": [],
@@ -11393,7 +11549,8 @@
           "timeCentiemes": 2174,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -11407,7 +11564,8 @@
           "timeCentiemes": 2274,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -11421,7 +11579,8 @@
           "timeCentiemes": 2961,
           "rank": 9,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -11435,7 +11594,8 @@
           "timeCentiemes": 2460,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -11449,7 +11609,8 @@
           "timeCentiemes": 2226,
           "rank": 1,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -11474,6 +11635,7 @@
           "rank": 6,
           "status": "OK",
           "isPB": false,
+          "points": 731,
           "opponents": [
             {
               "name": "SALAM Meryam",
@@ -11651,7 +11813,8 @@
           "timeCentiemes": 7356,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 689
         },
         {
           "competitionId": "93618",
@@ -11665,7 +11828,8 @@
           "timeCentiemes": 16085,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 702
         },
         {
           "competitionId": "93611",
@@ -11680,6 +11844,7 @@
           "rank": 50,
           "status": "OK",
           "isPB": false,
+          "points": 716,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -12349,7 +12514,8 @@
           "timeCentiemes": 7626,
           "rank": 41,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 617
         },
         {
           "competitionId": "93611",
@@ -12363,7 +12529,8 @@
           "timeCentiemes": 3961,
           "rank": 44,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 567
         },
         {
           "competitionId": "93611",
@@ -12377,7 +12544,8 @@
           "timeCentiemes": 19006,
           "rank": 20,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 571
         },
         {
           "competitionId": "93611",
@@ -12391,7 +12559,8 @@
           "timeCentiemes": 16502,
           "rank": 3,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 652
         },
         {
           "competitionId": "93611",
@@ -12405,7 +12574,8 @@
           "timeCentiemes": 3893,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 598
         },
         {
           "competitionId": "93611",
@@ -12419,7 +12589,8 @@
           "timeCentiemes": 18806,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 591
         },
         {
           "competitionId": "93270",
@@ -12434,6 +12605,7 @@
           "rank": 13,
           "status": "OK",
           "isPB": false,
+          "points": 727,
           "opponents": [
             {
               "name": "BEREAU Lisa",
@@ -12743,7 +12915,8 @@
           "timeCentiemes": 16266,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 680
         },
         {
           "competitionId": "93270",
@@ -12757,7 +12930,8 @@
           "timeCentiemes": 4597,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 597
         },
         {
           "competitionId": "93270",
@@ -12771,7 +12945,8 @@
           "timeCentiemes": 9375,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 475
         },
         {
           "competitionId": "93270",
@@ -12785,7 +12960,8 @@
           "timeCentiemes": 18365,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 637
         },
         {
           "competitionId": "93241",
@@ -12799,7 +12975,8 @@
           "timeCentiemes": 7725,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 591
         },
         {
           "competitionId": "93241",
@@ -12813,7 +12990,8 @@
           "timeCentiemes": 9572,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 439
         },
         {
           "competitionId": "93241",
@@ -12827,7 +13005,8 @@
           "timeCentiemes": 14937,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 711
         },
         {
           "competitionId": "93241",
@@ -12841,7 +13020,8 @@
           "timeCentiemes": 38774,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 500
         },
         {
           "competitionId": "92074",
@@ -12855,7 +13035,8 @@
           "timeCentiemes": 4005,
           "rank": 72,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 547
         },
         {
           "competitionId": "92074",
@@ -12869,7 +13050,8 @@
           "timeCentiemes": 19240,
           "rank": 61,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 547
         },
         {
           "competitionId": "92074",
@@ -12883,7 +13065,8 @@
           "timeCentiemes": 3871,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 608
         },
         {
           "competitionId": "92743",
@@ -12898,6 +13081,7 @@
           "rank": 3,
           "status": "OK",
           "isPB": false,
+          "points": 657,
           "opponents": [
             {
               "name": "ETIENNE Sybille",
@@ -12979,7 +13163,8 @@
           "timeCentiemes": 17165,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 577
         },
         {
           "competitionId": "92743",
@@ -12993,7 +13178,8 @@
           "timeCentiemes": 3981,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 558
         }
       ],
       "upcoming": [],
@@ -13017,7 +13203,8 @@
           "timeCentiemes": 5166,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 282
         },
         {
           "competitionId": "94109",
@@ -13031,7 +13218,8 @@
           "timeCentiemes": 11137,
           "rank": 20,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 120
         },
         {
           "competitionId": "94109",
@@ -13045,7 +13233,8 @@
           "timeCentiemes": 16365,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 397
         },
         {
           "competitionId": "94109",
@@ -13059,7 +13248,8 @@
           "timeCentiemes": 19127,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 349
         },
         {
           "competitionId": "93410",
@@ -13073,7 +13263,8 @@
           "timeCentiemes": 1927,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -13087,7 +13278,8 @@
           "timeCentiemes": 2443,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -13101,7 +13293,8 @@
           "timeCentiemes": 2375,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -13115,7 +13308,8 @@
           "timeCentiemes": 2309,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -13129,7 +13323,8 @@
           "timeCentiemes": 11928,
           "rank": 18,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 69
         },
         {
           "competitionId": "93028",
@@ -13143,7 +13338,8 @@
           "timeCentiemes": 11297,
           "rank": 3,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 246
         },
         {
           "competitionId": "93028",
@@ -13157,7 +13353,8 @@
           "timeCentiemes": 12210,
           "rank": 11,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 41
         }
       ],
       "upcoming": [],
@@ -13181,7 +13378,8 @@
           "timeCentiemes": 5051,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 184
         },
         {
           "competitionId": "94109",
@@ -13195,7 +13393,8 @@
           "timeCentiemes": 11058,
           "rank": 18,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 128
         },
         {
           "competitionId": "94109",
@@ -13209,7 +13408,8 @@
           "timeCentiemes": 17357,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 313
         },
         {
           "competitionId": "94109",
@@ -13223,7 +13423,8 @@
           "timeCentiemes": 21269,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 211
         },
         {
           "competitionId": "93028",
@@ -13237,7 +13438,8 @@
           "timeCentiemes": 10477,
           "rank": 8,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 208
         },
         {
           "competitionId": "93028",
@@ -13251,7 +13453,8 @@
           "timeCentiemes": 11701,
           "rank": 9,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 199
         },
         {
           "competitionId": "93028",
@@ -13265,7 +13468,8 @@
           "timeCentiemes": 12287,
           "rank": 12,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 37
         }
       ],
       "upcoming": [],
@@ -13289,7 +13493,8 @@
           "timeCentiemes": 3078,
           "rank": 34,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -13303,7 +13508,8 @@
           "timeCentiemes": 2881,
           "rank": 22,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -13328,6 +13534,7 @@
           "rank": 20,
           "status": "OK",
           "isPB": false,
+          "points": 512,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -13481,7 +13688,8 @@
           "timeCentiemes": 8606,
           "rank": 23,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 389
         },
         {
           "competitionId": "93951",
@@ -13495,7 +13703,8 @@
           "timeCentiemes": 4709,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 555
         },
         {
           "competitionId": "93611",
@@ -13510,6 +13719,7 @@
           "rank": 87,
           "status": "OK",
           "isPB": true,
+          "points": 491,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -14179,7 +14389,8 @@
           "timeCentiemes": 8792,
           "rank": 74,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 352
         },
         {
           "competitionId": "93611",
@@ -14193,7 +14404,8 @@
           "timeCentiemes": 4782,
           "rank": 40,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 528
         },
         {
           "competitionId": "93611",
@@ -14207,7 +14419,8 @@
           "timeCentiemes": 10762,
           "rank": 38,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 499
         },
         {
           "competitionId": "93611",
@@ -14221,7 +14434,8 @@
           "timeCentiemes": 4810,
           "rank": 73,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 249
         },
         {
           "competitionId": "93611",
@@ -14235,7 +14449,8 @@
           "timeCentiemes": 4732,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 546
         },
         {
           "competitionId": "92728",
@@ -14249,7 +14464,8 @@
           "timeCentiemes": 4841,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 506
         },
         {
           "competitionId": "92728",
@@ -14263,7 +14479,8 @@
           "timeCentiemes": 10363,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 563
         },
         {
           "competitionId": "92728",
@@ -14277,7 +14494,8 @@
           "timeCentiemes": 14587,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 760
         },
         {
           "competitionId": "92074",
@@ -14291,7 +14509,8 @@
           "timeCentiemes": 4916,
           "rank": 43,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 480
         },
         {
           "competitionId": "92074",
@@ -14305,7 +14524,8 @@
           "timeCentiemes": 11000,
           "rank": 57,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 463
         },
         {
           "competitionId": "92074",
@@ -14319,7 +14539,8 @@
           "timeCentiemes": 23907,
           "rank": 22,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 392
         },
         {
           "competitionId": "92074",
@@ -14333,7 +14554,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DSQ",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92074",
@@ -14347,7 +14569,8 @@
           "timeCentiemes": 22876,
           "rank": 67,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 249
         }
       ],
       "upcoming": [],
@@ -14371,7 +14594,8 @@
           "timeCentiemes": 6777,
           "rank": 8,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 17
         },
         {
           "competitionId": "94109",
@@ -14385,7 +14609,8 @@
           "timeCentiemes": 13016,
           "rank": 33,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 7
         },
         {
           "competitionId": "94109",
@@ -14399,7 +14624,8 @@
           "timeCentiemes": 17357,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 313
         },
         {
           "competitionId": "94109",
@@ -14413,7 +14639,8 @@
           "timeCentiemes": 21269,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 211
         },
         {
           "competitionId": "93410",
@@ -14427,7 +14654,8 @@
           "timeCentiemes": 2046,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -14441,7 +14669,8 @@
           "timeCentiemes": 2510,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -14455,7 +14684,8 @@
           "timeCentiemes": 3291,
           "rank": 12,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -14469,7 +14699,8 @@
           "timeCentiemes": 2253,
           "rank": 1,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -14483,7 +14714,8 @@
           "timeCentiemes": 2579,
           "rank": 5,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -14507,7 +14739,8 @@
           "timeCentiemes": 5172,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 395
         },
         {
           "competitionId": "94109",
@@ -14521,7 +14754,8 @@
           "timeCentiemes": 11766,
           "rank": 22,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 162
         },
         {
           "competitionId": "94109",
@@ -14535,7 +14769,8 @@
           "timeCentiemes": 18251,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 387
         },
         {
           "competitionId": "94109",
@@ -14549,7 +14784,8 @@
           "timeCentiemes": 20689,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 357
         },
         {
           "competitionId": "93028",
@@ -14563,7 +14799,8 @@
           "timeCentiemes": 11146,
           "rank": 10,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 239
         },
         {
           "competitionId": "93028",
@@ -14577,7 +14814,8 @@
           "timeCentiemes": 11284,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 421
         },
         {
           "competitionId": "93028",
@@ -14591,7 +14829,8 @@
           "timeCentiemes": 16566,
           "rank": 18,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 1
         }
       ],
       "upcoming": [],
@@ -14615,7 +14854,8 @@
           "timeCentiemes": 3450,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 762
         },
         {
           "competitionId": "92728",
@@ -14629,7 +14869,8 @@
           "timeCentiemes": 7520,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 731
         },
         {
           "competitionId": "92728",
@@ -14643,7 +14884,8 @@
           "timeCentiemes": 14488,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 772
         },
         {
           "competitionId": "92074",
@@ -14658,6 +14900,7 @@
           "rank": 99,
           "status": "OK",
           "isPB": false,
+          "points": 880,
           "opponents": [
             {
               "name": "COSTES Romain",
@@ -15705,7 +15948,8 @@
           "timeCentiemes": 7928,
           "rank": 64,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 632
         },
         {
           "competitionId": "92074",
@@ -15719,7 +15963,8 @@
           "timeCentiemes": 3130,
           "rank": 75,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 823
         },
         {
           "competitionId": "92074",
@@ -15733,7 +15978,8 @@
           "timeCentiemes": 7970,
           "rank": 69,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 607
         },
         {
           "competitionId": "92074",
@@ -15747,7 +15993,8 @@
           "timeCentiemes": 17209,
           "rank": 43,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 593
         }
       ],
       "upcoming": [],
@@ -15772,6 +16019,7 @@
           "rank": 7,
           "status": "OK",
           "isPB": false,
+          "points": 678,
           "opponents": [
             {
               "name": "BRÉBANT Corentin",
@@ -15985,7 +16233,8 @@
           "timeCentiemes": 7320,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 571
         },
         {
           "competitionId": "93618",
@@ -15999,7 +16248,8 @@
           "timeCentiemes": 15549,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 581
         },
         {
           "competitionId": "93611",
@@ -16014,6 +16264,7 @@
           "rank": 82,
           "status": "OK",
           "isPB": false,
+          "points": 657,
           "opponents": [
             {
               "name": "CASTERA Louis",
@@ -16857,7 +17108,8 @@
           "timeCentiemes": 7279,
           "rank": 77,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 581
         },
         {
           "competitionId": "93611",
@@ -16871,7 +17123,8 @@
           "timeCentiemes": 3803,
           "rank": 34,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 601
         },
         {
           "competitionId": "93611",
@@ -16885,7 +17138,8 @@
           "timeCentiemes": 8348,
           "rank": 24,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 546
         },
         {
           "competitionId": "93611",
@@ -16899,7 +17153,8 @@
           "timeCentiemes": 17726,
           "rank": 23,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 539
         },
         {
           "competitionId": "93611",
@@ -16914,6 +17169,7 @@
           "rank": 8,
           "status": "OK",
           "isPB": false,
+          "points": 607,
           "opponents": [
             {
               "name": "MEALHA Gary",
@@ -16971,7 +17227,8 @@
           "timeCentiemes": 7192,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 602
         },
         {
           "competitionId": "93611",
@@ -16985,7 +17242,8 @@
           "timeCentiemes": 3859,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 577
         },
         {
           "competitionId": "93611",
@@ -16999,7 +17257,8 @@
           "timeCentiemes": 8197,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 576
         },
         {
           "competitionId": "93611",
@@ -17013,7 +17272,8 @@
           "timeCentiemes": 17682,
           "rank": 3,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 543
         },
         {
           "competitionId": "93270",
@@ -17028,6 +17288,7 @@
           "rank": 9,
           "status": "OK",
           "isPB": false,
+          "points": 649,
           "opponents": [
             {
               "name": "BRÉBANT Corentin",
@@ -17307,7 +17568,8 @@
           "timeCentiemes": 7192,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 602
         },
         {
           "competitionId": "93270",
@@ -17321,7 +17583,8 @@
           "timeCentiemes": 15464,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 592
         },
         {
           "competitionId": "93270",
@@ -17335,7 +17598,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DSQ",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93270",
@@ -17349,7 +17613,8 @@
           "timeCentiemes": 8214,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 557
         },
         {
           "competitionId": "93241",
@@ -17363,7 +17628,8 @@
           "timeCentiemes": 7916,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 634
         },
         {
           "competitionId": "93241",
@@ -17377,7 +17643,8 @@
           "timeCentiemes": 8276,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 544
         },
         {
           "competitionId": "93241",
@@ -17391,7 +17658,8 @@
           "timeCentiemes": 14231,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 612
         },
         {
           "competitionId": "93241",
@@ -17405,7 +17673,8 @@
           "timeCentiemes": 37168,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 402
         },
         {
           "competitionId": "92074",
@@ -17420,6 +17689,7 @@
           "rank": 149,
           "status": "OK",
           "isPB": false,
+          "points": 571,
           "opponents": [
             {
               "name": "COSTES Romain",
@@ -18467,7 +18737,8 @@
           "timeCentiemes": 8681,
           "rank": 70,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 483
         },
         {
           "competitionId": "92074",
@@ -18482,6 +18753,7 @@
           "rank": 5,
           "status": "OK",
           "isPB": true,
+          "points": 619,
           "opponents": [
             {
               "name": "GADALLAH Fares",
@@ -18539,7 +18811,8 @@
           "timeCentiemes": 8385,
           "rank": 1,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 539
         },
         {
           "competitionId": "92743",
@@ -18553,7 +18826,8 @@
           "timeCentiemes": 8456,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 525
         },
         {
           "competitionId": "92743",
@@ -18567,7 +18841,8 @@
           "timeCentiemes": 17798,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 531
         },
         {
           "competitionId": "92743",
@@ -18581,7 +18856,8 @@
           "timeCentiemes": 18725,
           "rank": 2,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 441
         }
       ],
       "upcoming": [],
@@ -18606,6 +18882,7 @@
           "rank": 4,
           "status": "OK",
           "isPB": false,
+          "points": 212,
           "opponents": [
             {
               "name": "PERDRIX Olivia",
@@ -18663,7 +18940,8 @@
           "timeCentiemes": 11708,
           "rank": 21,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 168
         },
         {
           "competitionId": "94109",
@@ -18677,7 +18955,8 @@
           "timeCentiemes": 18251,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 387
         },
         {
           "competitionId": "94109",
@@ -18691,7 +18970,8 @@
           "timeCentiemes": 20689,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 357
         },
         {
           "competitionId": "93410",
@@ -18706,6 +18986,7 @@
           "rank": 4,
           "status": "OK",
           "isPB": false,
+          "points": 246,
           "opponents": [
             {
               "name": "TCHATAT Camille",
@@ -18799,7 +19080,8 @@
           "timeCentiemes": 5613,
           "rank": 7,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 170
         },
         {
           "competitionId": "93410",
@@ -18813,7 +19095,8 @@
           "timeCentiemes": 5944,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 189
         },
         {
           "competitionId": "93410",
@@ -18827,7 +19110,8 @@
           "timeCentiemes": 5657,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 60
         },
         {
           "competitionId": "93028",
@@ -18841,7 +19125,8 @@
           "timeCentiemes": 11915,
           "rank": 14,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 153
         },
         {
           "competitionId": "93028",
@@ -18855,7 +19140,8 @@
           "timeCentiemes": 13043,
           "rank": 21,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 208
         },
         {
           "competitionId": "93028",
@@ -18869,7 +19155,8 @@
           "timeCentiemes": 13544,
           "rank": 16,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 19
         }
       ],
       "upcoming": [],
@@ -18894,6 +19181,7 @@
           "rank": null,
           "status": "DNS",
           "isPB": false,
+          "points": null,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -19047,7 +19335,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93951",
@@ -19061,7 +19350,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93611",
@@ -19076,6 +19366,7 @@
           "rank": 73,
           "status": "OK",
           "isPB": false,
+          "points": 582,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -19745,7 +20036,8 @@
           "timeCentiemes": 7905,
           "rank": 52,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 547
         },
         {
           "competitionId": "93611",
@@ -19759,7 +20051,8 @@
           "timeCentiemes": 17099,
           "rank": 14,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 584
         },
         {
           "competitionId": "93611",
@@ -19773,7 +20066,8 @@
           "timeCentiemes": 36246,
           "rank": 18,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 548
         },
         {
           "competitionId": "93611",
@@ -19787,7 +20081,8 @@
           "timeCentiemes": 4231,
           "rank": 59,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 452
         },
         {
           "competitionId": "92728",
@@ -19802,6 +20097,7 @@
           "rank": 14,
           "status": "OK",
           "isPB": false,
+          "points": 583,
           "opponents": [
             {
               "name": "SAUSSEREAU Ethel",
@@ -19991,7 +20287,8 @@
           "timeCentiemes": 5067,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 429
         },
         {
           "competitionId": "92728",
@@ -20005,7 +20302,8 @@
           "timeCentiemes": 14488,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 772
         },
         {
           "competitionId": "92074",
@@ -20020,6 +20318,7 @@
           "rank": 103,
           "status": "OK",
           "isPB": false,
+          "points": 467,
           "opponents": [
             {
               "name": "FALLET Grace",
@@ -20695,7 +20994,8 @@
           "timeCentiemes": 18682,
           "rank": 62,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 421
         },
         {
           "competitionId": "92074",
@@ -20709,7 +21009,8 @@
           "timeCentiemes": 11616,
           "rank": 59,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 375
         },
         {
           "competitionId": "92074",
@@ -20723,7 +21024,8 @@
           "timeCentiemes": 4335,
           "rank": 75,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 411
         },
         {
           "competitionId": "92074",
@@ -20737,7 +21039,8 @@
           "timeCentiemes": 22187,
           "rank": 66,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 297
         }
       ],
       "upcoming": [],
@@ -20761,7 +21064,8 @@
           "timeCentiemes": 2294,
           "rank": 21,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -20775,7 +21079,8 @@
           "timeCentiemes": 2802,
           "rank": 24,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -20789,7 +21094,8 @@
           "timeCentiemes": 3327,
           "rank": 20,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -20803,7 +21109,8 @@
           "timeCentiemes": 2487,
           "rank": 10,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -20817,7 +21124,8 @@
           "timeCentiemes": 2638,
           "rank": 12,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -20842,6 +21150,7 @@
           "rank": 9,
           "status": "OK",
           "isPB": true,
+          "points": 121,
           "opponents": [
             {
               "name": "TCHATAT Camille",
@@ -20935,7 +21244,8 @@
           "timeCentiemes": 7040,
           "rank": 9,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 26
         }
       ],
       "upcoming": [],
@@ -20959,7 +21269,8 @@
           "timeCentiemes": 2676,
           "rank": 34,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -20973,7 +21284,8 @@
           "timeCentiemes": 3070,
           "rank": 37,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -20987,7 +21299,8 @@
           "timeCentiemes": 3409,
           "rank": 23,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -21001,7 +21314,8 @@
           "timeCentiemes": 2911,
           "rank": 26,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -21015,7 +21329,8 @@
           "timeCentiemes": 2920,
           "rank": 25,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -21040,6 +21355,7 @@
           "rank": 3,
           "status": "OK",
           "isPB": false,
+          "points": 337,
           "opponents": [
             {
               "name": "PERDRIX Olivia",
@@ -21097,7 +21413,8 @@
           "timeCentiemes": 10902,
           "rank": 15,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 267
         },
         {
           "competitionId": "94109",
@@ -21111,7 +21428,8 @@
           "timeCentiemes": 18271,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 386
         },
         {
           "competitionId": "94109",
@@ -21125,7 +21443,8 @@
           "timeCentiemes": 20721,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 354
         },
         {
           "competitionId": "93410",
@@ -21140,6 +21459,7 @@
           "rank": 6,
           "status": "OK",
           "isPB": false,
+          "points": 225,
           "opponents": [
             {
               "name": "TCHATAT Camille",
@@ -21233,7 +21553,8 @@
           "timeCentiemes": 5044,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 313
         },
         {
           "competitionId": "93410",
@@ -21247,7 +21568,8 @@
           "timeCentiemes": 5659,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 257
         },
         {
           "competitionId": "93410",
@@ -21261,7 +21583,8 @@
           "timeCentiemes": 5490,
           "rank": 3,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 87
         },
         {
           "competitionId": "93028",
@@ -21275,7 +21598,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -21289,7 +21613,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -21303,7 +21628,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -21327,7 +21653,8 @@
           "timeCentiemes": 2383,
           "rank": 25,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -21341,7 +21668,8 @@
           "timeCentiemes": 2762,
           "rank": 21,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -21355,7 +21683,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DSQ",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -21369,7 +21698,8 @@
           "timeCentiemes": 2480,
           "rank": 7,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -21383,7 +21713,8 @@
           "timeCentiemes": 2718,
           "rank": 14,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -21408,6 +21739,7 @@
           "rank": 2,
           "status": "OK",
           "isPB": false,
+          "points": 370,
           "opponents": [
             {
               "name": "PERDRIX Olivia",
@@ -21465,7 +21797,8 @@
           "timeCentiemes": 10826,
           "rank": 14,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 278
         },
         {
           "competitionId": "94109",
@@ -21479,7 +21812,8 @@
           "timeCentiemes": 17929,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 415
         },
         {
           "competitionId": "94109",
@@ -21493,7 +21827,8 @@
           "timeCentiemes": 20801,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 349
         },
         {
           "competitionId": "93410",
@@ -21508,6 +21843,7 @@
           "rank": 2,
           "status": "OK",
           "isPB": false,
+          "points": 319,
           "opponents": [
             {
               "name": "TCHATAT Camille",
@@ -21601,7 +21937,8 @@
           "timeCentiemes": 5241,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 258
         },
         {
           "competitionId": "93410",
@@ -21615,7 +21952,8 @@
           "timeCentiemes": 5462,
           "rank": 3,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 309
         },
         {
           "competitionId": "93410",
@@ -21629,7 +21967,8 @@
           "timeCentiemes": 5659,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 60
         },
         {
           "competitionId": "93028",
@@ -21643,7 +21982,8 @@
           "timeCentiemes": 11334,
           "rank": 12,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 216
         },
         {
           "competitionId": "93028",
@@ -21657,7 +21997,8 @@
           "timeCentiemes": 11940,
           "rank": 14,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 333
         },
         {
           "competitionId": "93028",
@@ -21671,7 +22012,8 @@
           "timeCentiemes": 13083,
           "rank": 15,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 40
         }
       ],
       "upcoming": [],
@@ -21696,6 +22038,7 @@
           "rank": 15,
           "status": "OK",
           "isPB": true,
+          "points": 15,
           "opponents": [
             {
               "name": "MAES LABBOZ BUTTIGIEG Raphaël",
@@ -21831,7 +22174,8 @@
           "timeCentiemes": 7132,
           "rank": 13,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 2
         },
         {
           "competitionId": "92843",
@@ -21845,7 +22189,8 @@
           "timeCentiemes": 2269,
           "rank": 3,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -21859,7 +22204,8 @@
           "timeCentiemes": 2800,
           "rank": 14,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -21883,7 +22229,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "94093",
@@ -21897,7 +22244,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93951",
@@ -21911,7 +22259,8 @@
           "timeCentiemes": 6893,
           "rank": 32,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 677
         },
         {
           "competitionId": "93951",
@@ -21925,7 +22274,8 @@
           "timeCentiemes": 7913,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 619
         },
         {
           "competitionId": "93951",
@@ -21939,7 +22289,8 @@
           "timeCentiemes": 16811,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 637
         },
         {
           "competitionId": "93611",
@@ -21954,6 +22305,7 @@
           "rank": 67,
           "status": "OK",
           "isPB": false,
+          "points": 763,
           "opponents": [
             {
               "name": "CASTERA Louis",
@@ -22797,7 +23149,8 @@
           "timeCentiemes": 6865,
           "rank": 60,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 685
         },
         {
           "competitionId": "93611",
@@ -22811,7 +23164,8 @@
           "timeCentiemes": 4097,
           "rank": 48,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 636
         },
         {
           "competitionId": "93611",
@@ -22825,7 +23179,8 @@
           "timeCentiemes": 3157,
           "rank": 35,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 807
         },
         {
           "competitionId": "93611",
@@ -22839,7 +23194,8 @@
           "timeCentiemes": 7418,
           "rank": 14,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 730
         },
         {
           "competitionId": "93611",
@@ -22853,7 +23209,8 @@
           "timeCentiemes": 3131,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 822
         },
         {
           "competitionId": "93611",
@@ -22867,7 +23224,8 @@
           "timeCentiemes": 7437,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 725
         },
         {
           "competitionId": "92728",
@@ -22882,6 +23240,7 @@
           "rank": null,
           "status": "DSQ",
           "isPB": false,
+          "points": null,
           "opponents": [
             {
               "name": "CHELLY Adam",
@@ -23101,7 +23460,8 @@
           "timeCentiemes": 14854,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 668
         },
         {
           "competitionId": "92728",
@@ -23115,7 +23475,8 @@
           "timeCentiemes": 14587,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 760
         },
         {
           "competitionId": "92074",
@@ -23130,6 +23491,7 @@
           "rank": 131,
           "status": "OK",
           "isPB": false,
+          "points": 765,
           "opponents": [
             {
               "name": "COSTES Romain",
@@ -24177,7 +24539,8 @@
           "timeCentiemes": 7036,
           "rank": 117,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 641
         },
         {
           "competitionId": "92074",
@@ -24191,7 +24554,8 @@
           "timeCentiemes": 15700,
           "rank": 73,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 563
         },
         {
           "competitionId": "92074",
@@ -24205,7 +24569,8 @@
           "timeCentiemes": 33942,
           "rank": 29,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 501
         },
         {
           "competitionId": "92074",
@@ -24219,7 +24584,8 @@
           "timeCentiemes": 3758,
           "rank": 58,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 621
         },
         {
           "competitionId": "92074",
@@ -24233,7 +24599,8 @@
           "timeCentiemes": 17295,
           "rank": 44,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 584
         }
       ],
       "upcoming": [],
@@ -24257,7 +24624,8 @@
           "timeCentiemes": 2406,
           "rank": 15,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -24271,7 +24639,8 @@
           "timeCentiemes": 3053,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -24285,7 +24654,8 @@
           "timeCentiemes": 3497,
           "rank": 15,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -24299,7 +24669,8 @@
           "timeCentiemes": 2476,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -24313,7 +24684,8 @@
           "timeCentiemes": 2789,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -24337,7 +24709,8 @@
           "timeCentiemes": 4925,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 216
         },
         {
           "competitionId": "94109",
@@ -24351,7 +24724,8 @@
           "timeCentiemes": 10906,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 144
         },
         {
           "competitionId": "94109",
@@ -24365,7 +24739,8 @@
           "timeCentiemes": 16365,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 397
         },
         {
           "competitionId": "94109",
@@ -24379,7 +24754,8 @@
           "timeCentiemes": 19127,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 349
         },
         {
           "competitionId": "93410",
@@ -24393,7 +24769,8 @@
           "timeCentiemes": 1866,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -24407,7 +24784,8 @@
           "timeCentiemes": 2461,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -24421,7 +24799,8 @@
           "timeCentiemes": 2831,
           "rank": 8,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -24435,7 +24814,8 @@
           "timeCentiemes": 2360,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -24449,7 +24829,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DSQ",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -24463,7 +24844,8 @@
           "timeCentiemes": 13375,
           "rank": 19,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 57
         },
         {
           "competitionId": "93028",
@@ -24477,7 +24859,8 @@
           "timeCentiemes": 12410,
           "rank": 13,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 31
         }
       ],
       "upcoming": [],
@@ -24501,7 +24884,8 @@
           "timeCentiemes": 3074,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 1106
         },
         {
           "competitionId": "93611",
@@ -24515,7 +24899,8 @@
           "timeCentiemes": 3027,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 1131
         }
       ],
       "upcoming": [],
@@ -24539,7 +24924,8 @@
           "timeCentiemes": 14444,
           "rank": 15,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 917
         },
         {
           "competitionId": "94093",
@@ -24553,7 +24939,8 @@
           "timeCentiemes": 30657,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 886
         },
         {
           "competitionId": "94093",
@@ -24567,7 +24954,8 @@
           "timeCentiemes": 16591,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 838
         },
         {
           "competitionId": "94093",
@@ -24581,7 +24969,8 @@
           "timeCentiemes": 33953,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 881
         },
         {
           "competitionId": "93951",
@@ -24595,7 +24984,8 @@
           "timeCentiemes": 6890,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 822
         },
         {
           "competitionId": "93951",
@@ -24609,7 +24999,8 @@
           "timeCentiemes": 14438,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 918
         },
         {
           "competitionId": "93951",
@@ -24623,7 +25014,8 @@
           "timeCentiemes": 16659,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 830
         },
         {
           "competitionId": "93611",
@@ -24637,7 +25029,8 @@
           "timeCentiemes": 31045,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 860
         },
         {
           "competitionId": "93611",
@@ -24651,7 +25044,8 @@
           "timeCentiemes": 3588,
           "rank": 23,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 748
         },
         {
           "competitionId": "93611",
@@ -24665,7 +25059,8 @@
           "timeCentiemes": 17094,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 778
         },
         {
           "competitionId": "93611",
@@ -24679,7 +25074,8 @@
           "timeCentiemes": 16860,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 806
         },
         {
           "competitionId": "93611",
@@ -24693,7 +25089,8 @@
           "timeCentiemes": 35145,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 809
         },
         {
           "competitionId": "93611",
@@ -24707,7 +25104,8 @@
           "timeCentiemes": 3528,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 779
         },
         {
           "competitionId": "93611",
@@ -24721,7 +25119,8 @@
           "timeCentiemes": 17520,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 704
         },
         {
           "competitionId": "93275",
@@ -24735,7 +25134,8 @@
           "timeCentiemes": 14390,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 924
         },
         {
           "competitionId": "93275",
@@ -24749,7 +25149,8 @@
           "timeCentiemes": 3456,
           "rank": 27,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 818
         },
         {
           "competitionId": "93275",
@@ -24763,7 +25164,8 @@
           "timeCentiemes": 34087,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 873
         },
         {
           "competitionId": "92728",
@@ -24777,7 +25179,8 @@
           "timeCentiemes": 14481,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 912
         },
         {
           "competitionId": "92728",
@@ -24791,7 +25194,8 @@
           "timeCentiemes": 7800,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 804
         },
         {
           "competitionId": "92728",
@@ -24805,7 +25209,8 @@
           "timeCentiemes": 14501,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 770
         },
         {
           "competitionId": "92074",
@@ -24820,6 +25225,7 @@
           "rank": 76,
           "status": "OK",
           "isPB": false,
+          "points": 772,
           "opponents": [
             {
               "name": "FALLET Grace",
@@ -25495,7 +25901,8 @@
           "timeCentiemes": 14974,
           "rank": 26,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 844
         },
         {
           "competitionId": "92074",
@@ -25509,7 +25916,8 @@
           "timeCentiemes": 31542,
           "rank": 30,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 827
         },
         {
           "competitionId": "92074",
@@ -25523,7 +25931,8 @@
           "timeCentiemes": 17599,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 696
         },
         {
           "competitionId": "92074",
@@ -25537,7 +25946,8 @@
           "timeCentiemes": 17938,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 658
         },
         {
           "competitionId": "92074",
@@ -25551,7 +25961,8 @@
           "timeCentiemes": 17567,
           "rank": 46,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 724
         },
         {
           "competitionId": "92621",
@@ -25566,6 +25977,7 @@
           "rank": 62,
           "status": "OK",
           "isPB": false,
+          "points": 784,
           "opponents": [
             {
               "name": "PROUFF Faustine",
@@ -25965,7 +26377,8 @@
           "timeCentiemes": 14649,
           "rank": 21,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 888
         },
         {
           "competitionId": "92621",
@@ -25979,7 +26392,8 @@
           "timeCentiemes": 30500,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 897
         },
         {
           "competitionId": "92621",
@@ -25993,7 +26407,8 @@
           "timeCentiemes": 3474,
           "rank": 30,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 808
         },
         {
           "competitionId": "92621",
@@ -26007,7 +26422,8 @@
           "timeCentiemes": 17235,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 737
         },
         {
           "competitionId": "92621",
@@ -26021,7 +26437,8 @@
           "timeCentiemes": 16681,
           "rank": 16,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 827
         }
       ],
       "upcoming": [],
@@ -26045,7 +26462,8 @@
           "timeCentiemes": 3691,
           "rank": 29,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -26059,7 +26477,8 @@
           "timeCentiemes": 3585,
           "rank": 23,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -26073,7 +26492,8 @@
           "timeCentiemes": 3550,
           "rank": 16,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -26098,6 +26518,7 @@
           "rank": 9,
           "status": "OK",
           "isPB": false,
+          "points": 685,
           "opponents": [
             {
               "name": "SALAM Meryam",
@@ -26275,7 +26696,8 @@
           "timeCentiemes": 7467,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 659
         },
         {
           "competitionId": "93618",
@@ -26289,7 +26711,8 @@
           "timeCentiemes": 16306,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 676
         },
         {
           "competitionId": "93611",
@@ -26304,6 +26727,7 @@
           "rank": 57,
           "status": "OK",
           "isPB": false,
+          "points": 668,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -26973,7 +27397,8 @@
           "timeCentiemes": 7524,
           "rank": 35,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 643
         },
         {
           "competitionId": "93611",
@@ -26987,7 +27412,8 @@
           "timeCentiemes": 17177,
           "rank": 15,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 575
         },
         {
           "competitionId": "93611",
@@ -27001,7 +27427,8 @@
           "timeCentiemes": 3860,
           "rank": 36,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 613
         },
         {
           "competitionId": "93611",
@@ -27015,7 +27442,8 @@
           "timeCentiemes": 19079,
           "rank": 21,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 563
         },
         {
           "competitionId": "93611",
@@ -27029,7 +27457,8 @@
           "timeCentiemes": 3714,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 684
         },
         {
           "competitionId": "93611",
@@ -27043,7 +27472,8 @@
           "timeCentiemes": 18914,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 580
         }
       ],
       "upcoming": [],
@@ -27067,7 +27497,8 @@
           "timeCentiemes": 6770,
           "rank": 7,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 52
         },
         {
           "competitionId": "94109",
@@ -27081,7 +27512,8 @@
           "timeCentiemes": 14812,
           "rank": 29,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 1
         },
         {
           "competitionId": "94109",
@@ -27095,7 +27527,8 @@
           "timeCentiemes": 17929,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 415
         },
         {
           "competitionId": "94109",
@@ -27109,7 +27542,8 @@
           "timeCentiemes": 20801,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 349
         }
       ],
       "upcoming": [],
@@ -27133,7 +27567,8 @@
           "timeCentiemes": 5323,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 237
         },
         {
           "competitionId": "94109",
@@ -27147,7 +27582,8 @@
           "timeCentiemes": 12108,
           "rank": 26,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 128
         },
         {
           "competitionId": "94109",
@@ -27161,7 +27597,8 @@
           "timeCentiemes": 18251,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 387
         },
         {
           "competitionId": "94109",
@@ -27175,7 +27612,8 @@
           "timeCentiemes": 20689,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 357
         },
         {
           "competitionId": "93410",
@@ -27189,7 +27627,8 @@
           "timeCentiemes": 2028,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -27203,7 +27642,8 @@
           "timeCentiemes": 2457,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -27217,7 +27657,8 @@
           "timeCentiemes": 3361,
           "rank": 21,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -27231,7 +27672,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DSQ",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -27245,7 +27687,8 @@
           "timeCentiemes": 12101,
           "rank": 15,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 135
         },
         {
           "competitionId": "93028",
@@ -27259,7 +27702,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DSQ",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -27273,7 +27717,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DSQ",
-          "isPB": false
+          "isPB": false,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -27298,6 +27743,7 @@
           "rank": 42,
           "status": "OK",
           "isPB": false,
+          "points": 694,
           "opponents": [
             {
               "name": "FAE Matiss",
@@ -27619,7 +28065,8 @@
           "timeCentiemes": 6951,
           "rank": 34,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 662
         },
         {
           "competitionId": "93951",
@@ -27633,7 +28080,8 @@
           "timeCentiemes": 3454,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 648
         },
         {
           "competitionId": "93611",
@@ -27648,6 +28096,7 @@
           "rank": 87,
           "status": "OK",
           "isPB": false,
+          "points": 647,
           "opponents": [
             {
               "name": "CASTERA Louis",
@@ -28491,7 +28940,8 @@
           "timeCentiemes": 7280,
           "rank": 78,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 581
         },
         {
           "competitionId": "93611",
@@ -28505,7 +28955,8 @@
           "timeCentiemes": 4022,
           "rank": 42,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 511
         },
         {
           "competitionId": "93611",
@@ -28519,7 +28970,8 @@
           "timeCentiemes": 4257,
           "rank": 59,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 574
         },
         {
           "competitionId": "93611",
@@ -28533,7 +28985,8 @@
           "timeCentiemes": 3612,
           "rank": 59,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 570
         },
         {
           "competitionId": "92728",
@@ -28547,7 +29000,8 @@
           "timeCentiemes": 4175,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 605
         },
         {
           "competitionId": "92728",
@@ -28561,7 +29015,8 @@
           "timeCentiemes": 8654,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 471
         },
         {
           "competitionId": "92728",
@@ -28575,7 +29030,8 @@
           "timeCentiemes": 13827,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 851
         }
       ],
       "upcoming": [],
@@ -28599,7 +29055,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -28613,7 +29070,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -28637,7 +29095,8 @@
           "timeCentiemes": 2018,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -28651,7 +29110,8 @@
           "timeCentiemes": 2414,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -28665,7 +29125,8 @@
           "timeCentiemes": 3316,
           "rank": 13,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -28679,7 +29140,8 @@
           "timeCentiemes": 2260,
           "rank": 2,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -28693,7 +29155,8 @@
           "timeCentiemes": 2370,
           "rank": 2,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -28718,6 +29181,7 @@
           "rank": 10,
           "status": "OK",
           "isPB": false,
+          "points": 586,
           "opponents": [
             {
               "name": "BRÉBANT Corentin",
@@ -28931,7 +29395,8 @@
           "timeCentiemes": 7484,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 532
         },
         {
           "competitionId": "93618",
@@ -28945,7 +29410,8 @@
           "timeCentiemes": 16061,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 521
         },
         {
           "competitionId": "93611",
@@ -28960,6 +29426,7 @@
           "rank": 95,
           "status": "OK",
           "isPB": false,
+          "points": 592,
           "opponents": [
             {
               "name": "CASTERA Louis",
@@ -29803,7 +30270,8 @@
           "timeCentiemes": 7425,
           "rank": 83,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 546
         },
         {
           "competitionId": "93611",
@@ -29817,7 +30285,8 @@
           "timeCentiemes": 4076,
           "rank": 45,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 489
         },
         {
           "competitionId": "93611",
@@ -29831,7 +30300,8 @@
           "timeCentiemes": 8690,
           "rank": 29,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 481
         },
         {
           "competitionId": "93611",
@@ -29845,7 +30315,8 @@
           "timeCentiemes": 18995,
           "rank": 30,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 416
         },
         {
           "competitionId": "93611",
@@ -29859,7 +30330,8 @@
           "timeCentiemes": 4105,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 478
         },
         {
           "competitionId": "93611",
@@ -29873,7 +30345,8 @@
           "timeCentiemes": 18812,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 433
         },
         {
           "competitionId": "93270",
@@ -29888,6 +30361,7 @@
           "rank": 11,
           "status": "OK",
           "isPB": false,
+          "points": 628,
           "opponents": [
             {
               "name": "BRÉBANT Corentin",
@@ -30167,7 +30641,8 @@
           "timeCentiemes": 15936,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 536
         },
         {
           "competitionId": "93270",
@@ -30181,7 +30656,8 @@
           "timeCentiemes": 4609,
           "rank": 20,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 449
         },
         {
           "competitionId": "93270",
@@ -30195,7 +30671,8 @@
           "timeCentiemes": 9267,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 363
         },
         {
           "competitionId": "93270",
@@ -30209,7 +30686,8 @@
           "timeCentiemes": 18440,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 468
         },
         {
           "competitionId": "93241",
@@ -30223,7 +30701,8 @@
           "timeCentiemes": 8676,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 483
         },
         {
           "competitionId": "93241",
@@ -30237,7 +30716,8 @@
           "timeCentiemes": 9764,
           "rank": 18,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 287
         },
         {
           "competitionId": "93241",
@@ -30251,7 +30731,8 @@
           "timeCentiemes": 14231,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 612
         },
         {
           "competitionId": "93241",
@@ -30265,7 +30746,8 @@
           "timeCentiemes": 37168,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 402
         },
         {
           "competitionId": "92074",
@@ -30280,6 +30762,7 @@
           "rank": 158,
           "status": "OK",
           "isPB": false,
+          "points": 466,
           "opponents": [
             {
               "name": "COSTES Romain",
@@ -31327,7 +31810,8 @@
           "timeCentiemes": 17308,
           "rank": 82,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 389
         },
         {
           "competitionId": "92743",
@@ -31341,7 +31825,8 @@
           "timeCentiemes": 3432,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 554
         },
         {
           "competitionId": "92743",
@@ -31355,7 +31840,8 @@
           "timeCentiemes": 16779,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 443
         },
         {
           "competitionId": "92743",
@@ -31369,7 +31855,8 @@
           "timeCentiemes": 4278,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 298
         }
       ],
       "upcoming": [],
@@ -31393,7 +31880,8 @@
           "timeCentiemes": 7513,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 2
         },
         {
           "competitionId": "94109",
@@ -31407,7 +31895,8 @@
           "timeCentiemes": 15252,
           "rank": 30,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 1
         },
         {
           "competitionId": "94109",
@@ -31421,7 +31910,8 @@
           "timeCentiemes": 18271,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 386
         },
         {
           "competitionId": "94109",
@@ -31435,7 +31925,8 @@
           "timeCentiemes": 20721,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 354
         },
         {
           "competitionId": "93410",
@@ -31450,6 +31941,7 @@
           "rank": 10,
           "status": "OK",
           "isPB": true,
+          "points": 81,
           "opponents": [
             {
               "name": "TCHATAT Camille",
@@ -31543,7 +32035,8 @@
           "timeCentiemes": 7932,
           "rank": 10,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 1
         },
         {
           "competitionId": "92843",
@@ -31557,7 +32050,8 @@
           "timeCentiemes": 2480,
           "rank": 7,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -31571,7 +32065,8 @@
           "timeCentiemes": 2681,
           "rank": 13,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -31595,7 +32090,8 @@
           "timeCentiemes": 4660,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 296
         },
         {
           "competitionId": "94109",
@@ -31609,7 +32105,8 @@
           "timeCentiemes": 10310,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 355
         },
         {
           "competitionId": "94109",
@@ -31623,7 +32120,8 @@
           "timeCentiemes": 18251,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 387
         },
         {
           "competitionId": "94109",
@@ -31637,7 +32135,8 @@
           "timeCentiemes": 20689,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 357
         },
         {
           "competitionId": "93410",
@@ -31652,6 +32151,7 @@
           "rank": 5,
           "status": "OK",
           "isPB": false,
+          "points": 233,
           "opponents": [
             {
               "name": "TCHATAT Camille",
@@ -31745,7 +32245,8 @@
           "timeCentiemes": 5177,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 276
         },
         {
           "competitionId": "93410",
@@ -31759,7 +32260,8 @@
           "timeCentiemes": 5372,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 335
         },
         {
           "competitionId": "93410",
@@ -31773,7 +32275,8 @@
           "timeCentiemes": 5004,
           "rank": 2,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 194
         },
         {
           "competitionId": "93028",
@@ -31787,7 +32290,8 @@
           "timeCentiemes": 10334,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 350
         },
         {
           "competitionId": "93028",
@@ -31801,7 +32305,8 @@
           "timeCentiemes": 11608,
           "rank": 12,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 377
         },
         {
           "competitionId": "93028",
@@ -31815,7 +32320,8 @@
           "timeCentiemes": 12350,
           "rank": 11,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 88
         }
       ],
       "upcoming": [],
@@ -31839,7 +32345,8 @@
           "timeCentiemes": 2447,
           "rank": 27,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -31853,7 +32360,8 @@
           "timeCentiemes": 2738,
           "rank": 20,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -31867,7 +32375,8 @@
           "timeCentiemes": 3807,
           "rank": 29,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -31881,7 +32390,8 @@
           "timeCentiemes": 2804,
           "rank": 22,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -31895,7 +32405,8 @@
           "timeCentiemes": 2758,
           "rank": 17,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -31920,6 +32431,7 @@
           "rank": null,
           "status": "DNS",
           "isPB": false,
+          "points": null,
           "opponents": [
             {
               "name": "OUERFELLI Nesrine",
@@ -32409,7 +32921,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "94093",
@@ -32423,7 +32936,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "94093",
@@ -32437,7 +32951,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93951",
@@ -32451,7 +32966,8 @@
           "timeCentiemes": 6595,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 912
         },
         {
           "competitionId": "93951",
@@ -32465,7 +32981,8 @@
           "timeCentiemes": 14988,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 843
         },
         {
           "competitionId": "93951",
@@ -32479,7 +32996,8 @@
           "timeCentiemes": 17052,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 783
         },
         {
           "competitionId": "93611",
@@ -32494,6 +33012,7 @@
           "rank": 11,
           "status": "OK",
           "isPB": false,
+          "points": 888,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -33163,7 +33682,8 @@
           "timeCentiemes": 6794,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 851
         },
         {
           "competitionId": "93611",
@@ -33177,7 +33697,8 @@
           "timeCentiemes": 6719,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 874
         },
         {
           "competitionId": "93611",
@@ -33191,7 +33712,8 @@
           "timeCentiemes": 3696,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 827
         },
         {
           "competitionId": "93611",
@@ -33205,7 +33727,8 @@
           "timeCentiemes": 7946,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 799
         },
         {
           "competitionId": "93611",
@@ -33220,6 +33743,7 @@
           "rank": 1,
           "status": "OK",
           "isPB": false,
+          "points": 886,
           "opponents": [
             {
               "name": "GROS Lily",
@@ -33277,7 +33801,8 @@
           "timeCentiemes": 15443,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 783
         },
         {
           "competitionId": "93611",
@@ -33291,7 +33816,8 @@
           "timeCentiemes": 3644,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 851
         },
         {
           "competitionId": "93275",
@@ -33306,6 +33832,7 @@
           "rank": 33,
           "status": "OK",
           "isPB": false,
+          "points": 938,
           "opponents": [
             {
               "name": "PROUFF Faustine",
@@ -33687,7 +34214,8 @@
           "timeCentiemes": 6675,
           "rank": 28,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 887
         },
         {
           "competitionId": "93275",
@@ -33701,7 +34229,8 @@
           "timeCentiemes": 14385,
           "rank": 16,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 925
         },
         {
           "competitionId": "93275",
@@ -33715,7 +34244,8 @@
           "timeCentiemes": 3536,
           "rank": 16,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 904
         },
         {
           "competitionId": "93275",
@@ -33729,7 +34259,8 @@
           "timeCentiemes": 9294,
           "rank": 26,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 753
         },
         {
           "competitionId": "92728",
@@ -33744,6 +34275,7 @@
           "rank": 2,
           "status": "OK",
           "isPB": false,
+          "points": 957,
           "opponents": [
             {
               "name": "SAUSSEREAU Ethel",
@@ -33933,7 +34465,8 @@
           "timeCentiemes": 7830,
           "rank": 2,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 854
         },
         {
           "competitionId": "92728",
@@ -33947,7 +34480,8 @@
           "timeCentiemes": 14488,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 772
         },
         {
           "competitionId": "92074",
@@ -33962,6 +34496,7 @@
           "rank": 38,
           "status": "OK",
           "isPB": false,
+          "points": 918,
           "opponents": [
             {
               "name": "FALLET Grace",
@@ -34637,7 +35172,8 @@
           "timeCentiemes": 6835,
           "rank": 54,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 838
         },
         {
           "competitionId": "92074",
@@ -34651,7 +35187,8 @@
           "timeCentiemes": 3719,
           "rank": 41,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 816
         },
         {
           "competitionId": "92074",
@@ -34665,7 +35202,8 @@
           "timeCentiemes": 8263,
           "rank": 40,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 729
         },
         {
           "competitionId": "92074",
@@ -34679,7 +35217,8 @@
           "timeCentiemes": 17978,
           "rank": 53,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 678
         },
         {
           "competitionId": "92621",
@@ -34694,6 +35233,7 @@
           "rank": 35,
           "status": "OK",
           "isPB": false,
+          "points": 952,
           "opponents": [
             {
               "name": "PROUFF Faustine",
@@ -35093,7 +35633,8 @@
           "timeCentiemes": 14524,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 906
         },
         {
           "competitionId": "92621",
@@ -35107,7 +35648,8 @@
           "timeCentiemes": 31941,
           "rank": 19,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 801
         },
         {
           "competitionId": "92621",
@@ -35121,7 +35663,8 @@
           "timeCentiemes": 3642,
           "rank": 26,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 852
         },
         {
           "competitionId": "92621",
@@ -35135,7 +35678,8 @@
           "timeCentiemes": 4094,
           "rank": 22,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 808
         },
         {
           "competitionId": "92621",
@@ -35149,7 +35693,8 @@
           "timeCentiemes": 3505,
           "rank": 31,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 791
         }
       ],
       "upcoming": [],
@@ -35174,6 +35719,7 @@
           "rank": 24,
           "status": "OK",
           "isPB": false,
+          "points": 291,
           "opponents": [
             {
               "name": "SALAM Meryam",
@@ -35351,7 +35897,8 @@
           "timeCentiemes": 4916,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 351
         },
         {
           "competitionId": "93618",
@@ -35365,7 +35912,8 @@
           "timeCentiemes": 5573,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 279
         },
         {
           "competitionId": "93241",
@@ -35379,7 +35927,8 @@
           "timeCentiemes": 10389,
           "rank": 23,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 341
         },
         {
           "competitionId": "93241",
@@ -35393,7 +35942,8 @@
           "timeCentiemes": 12827,
           "rank": 25,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 230
         },
         {
           "competitionId": "93241",
@@ -35407,7 +35957,8 @@
           "timeCentiemes": 14937,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 711
         },
         {
           "competitionId": "93241",
@@ -35421,7 +35972,8 @@
           "timeCentiemes": 38774,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 500
         },
         {
           "competitionId": "92743",
@@ -35436,6 +35988,7 @@
           "rank": 11,
           "status": "OK",
           "isPB": false,
+          "points": 253,
           "opponents": [
             {
               "name": "ETIENNE Sybille",
@@ -35517,7 +36070,8 @@
           "timeCentiemes": 21501,
           "rank": 8,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 197
         },
         {
           "competitionId": "92743",
@@ -35531,7 +36085,8 @@
           "timeCentiemes": 5549,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 77
         }
       ],
       "upcoming": [],
@@ -35555,7 +36110,8 @@
           "timeCentiemes": 8582,
           "rank": 17,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 394
         },
         {
           "competitionId": "93241",
@@ -35569,7 +36125,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DSQ",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93241",
@@ -35583,7 +36140,8 @@
           "timeCentiemes": 14937,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 711
         },
         {
           "competitionId": "93241",
@@ -35597,7 +36155,8 @@
           "timeCentiemes": 38774,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 500
         }
       ],
       "upcoming": [],
@@ -35621,7 +36180,8 @@
           "timeCentiemes": 4071,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 286
         },
         {
           "competitionId": "94109",
@@ -35635,7 +36195,8 @@
           "timeCentiemes": 10310,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 214
         },
         {
           "competitionId": "94109",
@@ -35649,7 +36210,8 @@
           "timeCentiemes": 17357,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 313
         },
         {
           "competitionId": "94109",
@@ -35663,7 +36225,8 @@
           "timeCentiemes": 21269,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 211
         },
         {
           "competitionId": "93028",
@@ -35677,7 +36240,8 @@
           "timeCentiemes": 10781,
           "rank": 9,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 172
         },
         {
           "competitionId": "93028",
@@ -35691,7 +36255,8 @@
           "timeCentiemes": 11647,
           "rank": 8,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 205
         },
         {
           "competitionId": "93028",
@@ -35705,7 +36270,8 @@
           "timeCentiemes": 11743,
           "rank": 9,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 71
         }
       ],
       "upcoming": [],
@@ -35729,7 +36295,8 @@
           "timeCentiemes": 3979,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 683
         },
         {
           "competitionId": "93618",
@@ -35743,7 +36310,8 @@
           "timeCentiemes": 8892,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 629
         },
         {
           "competitionId": "93618",
@@ -35757,7 +36325,8 @@
           "timeCentiemes": 37650,
           "rank": 1,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 506
         },
         {
           "competitionId": "93611",
@@ -35772,6 +36341,7 @@
           "rank": 92,
           "status": "OK",
           "isPB": true,
+          "points": 609,
           "opponents": [
             {
               "name": "CASTERA Louis",
@@ -36615,7 +37185,8 @@
           "timeCentiemes": 4058,
           "rank": 43,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 651
         },
         {
           "competitionId": "93611",
@@ -36629,7 +37200,8 @@
           "timeCentiemes": 8998,
           "rank": 26,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 609
         },
         {
           "competitionId": "93611",
@@ -36643,7 +37215,8 @@
           "timeCentiemes": 4317,
           "rank": 90,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 285
         },
         {
           "competitionId": "93611",
@@ -36657,7 +37230,8 @@
           "timeCentiemes": 4095,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 637
         },
         {
           "competitionId": "93611",
@@ -36671,7 +37245,8 @@
           "timeCentiemes": 8953,
           "rank": 5,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 618
         },
         {
           "competitionId": "93611",
@@ -36685,7 +37260,8 @@
           "timeCentiemes": 19450,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 559
         },
         {
           "competitionId": "93270",
@@ -36699,7 +37275,8 @@
           "timeCentiemes": 4037,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 660
         },
         {
           "competitionId": "93270",
@@ -36713,7 +37290,8 @@
           "timeCentiemes": 8988,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 611
         },
         {
           "competitionId": "93270",
@@ -36727,7 +37305,8 @@
           "timeCentiemes": 19399,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 564
         },
         {
           "competitionId": "93270",
@@ -36741,7 +37320,8 @@
           "timeCentiemes": 18340,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 478
         },
         {
           "competitionId": "93241",
@@ -36755,7 +37335,8 @@
           "timeCentiemes": 7661,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 492
         },
         {
           "competitionId": "93241",
@@ -36769,7 +37350,8 @@
           "timeCentiemes": 9221,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 566
         },
         {
           "competitionId": "93241",
@@ -36783,7 +37365,8 @@
           "timeCentiemes": 14231,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 612
         },
         {
           "competitionId": "93241",
@@ -36797,7 +37380,8 @@
           "timeCentiemes": 37168,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 402
         },
         {
           "competitionId": "92074",
@@ -36811,7 +37395,8 @@
           "timeCentiemes": 4040,
           "rank": 55,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 659
         },
         {
           "competitionId": "92074",
@@ -36825,7 +37410,8 @@
           "timeCentiemes": 20201,
           "rank": 33,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 492
         },
         {
           "competitionId": "92074",
@@ -36839,7 +37425,8 @@
           "timeCentiemes": 4101,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 634
         },
         {
           "competitionId": "92743",
@@ -36853,7 +37440,8 @@
           "timeCentiemes": 17779,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 344
         },
         {
           "competitionId": "92743",
@@ -36867,7 +37455,8 @@
           "timeCentiemes": 19973,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 512
         },
         {
           "competitionId": "92743",
@@ -36881,7 +37470,8 @@
           "timeCentiemes": 19097,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 407
         }
       ],
       "upcoming": [],
@@ -36905,7 +37495,8 @@
           "timeCentiemes": 4522,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 220
         },
         {
           "competitionId": "94109",
@@ -36919,7 +37510,8 @@
           "timeCentiemes": 10339,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 210
         },
         {
           "competitionId": "94109",
@@ -36933,7 +37525,8 @@
           "timeCentiemes": 16365,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 397
         },
         {
           "competitionId": "94109",
@@ -36947,7 +37540,8 @@
           "timeCentiemes": 19127,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 349
         }
       ],
       "upcoming": [],
@@ -36971,7 +37565,8 @@
           "timeCentiemes": 2850,
           "rank": 13,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -36985,7 +37580,8 @@
           "timeCentiemes": 2958,
           "rank": 21,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -37009,7 +37605,8 @@
           "timeCentiemes": 4840,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 375
         },
         {
           "competitionId": "94109",
@@ -37023,7 +37620,8 @@
           "timeCentiemes": 11137,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 236
         },
         {
           "competitionId": "94109",
@@ -37037,7 +37635,8 @@
           "timeCentiemes": 17929,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 415
         },
         {
           "competitionId": "94109",
@@ -37051,7 +37650,8 @@
           "timeCentiemes": 20801,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 349
         },
         {
           "competitionId": "93410",
@@ -37066,6 +37666,7 @@
           "rank": 3,
           "status": "OK",
           "isPB": false,
+          "points": 281,
           "opponents": [
             {
               "name": "TCHATAT Camille",
@@ -37159,7 +37760,8 @@
           "timeCentiemes": 4938,
           "rank": 2,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 345
         },
         {
           "competitionId": "93410",
@@ -37173,7 +37775,8 @@
           "timeCentiemes": 6064,
           "rank": 7,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 164
         },
         {
           "competitionId": "93410",
@@ -37187,7 +37790,8 @@
           "timeCentiemes": 5621,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 65
         },
         {
           "competitionId": "93028",
@@ -37201,7 +37805,8 @@
           "timeCentiemes": 11045,
           "rank": 9,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 251
         },
         {
           "competitionId": "93028",
@@ -37215,7 +37820,8 @@
           "timeCentiemes": 13354,
           "rank": 25,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 178
         },
         {
           "competitionId": "93028",
@@ -37229,7 +37835,8 @@
           "timeCentiemes": 13082,
           "rank": 14,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 40
         }
       ],
       "upcoming": [],
@@ -37253,7 +37860,8 @@
           "timeCentiemes": 7687,
           "rank": 93,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 487
         },
         {
           "competitionId": "93611",
@@ -37267,7 +37875,8 @@
           "timeCentiemes": 4513,
           "rank": 70,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 481
         },
         {
           "competitionId": "93611",
@@ -37281,7 +37890,8 @@
           "timeCentiemes": 3925,
           "rank": 79,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 431
         },
         {
           "competitionId": "92728",
@@ -37295,7 +37905,8 @@
           "timeCentiemes": 3773,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 614
         },
         {
           "competitionId": "92728",
@@ -37309,7 +37920,8 @@
           "timeCentiemes": 4417,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 515
         },
         {
           "competitionId": "92728",
@@ -37323,7 +37935,8 @@
           "timeCentiemes": 14587,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 760
         }
       ],
       "upcoming": [],
@@ -37348,6 +37961,7 @@
           "rank": 15,
           "status": "OK",
           "isPB": false,
+          "points": 738,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -37501,7 +38115,8 @@
           "timeCentiemes": 3802,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 641
         },
         {
           "competitionId": "93611",
@@ -37515,7 +38130,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93611",
@@ -37529,7 +38145,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93611",
@@ -37543,7 +38160,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93611",
@@ -37557,7 +38175,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93611",
@@ -37571,7 +38190,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92074",
@@ -37585,7 +38205,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92074",
@@ -37599,7 +38220,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "92074",
@@ -37613,7 +38235,8 @@
           "timeCentiemes": null,
           "rank": null,
           "status": "DNS",
-          "isPB": false
+          "isPB": false,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -37638,6 +38261,7 @@
           "rank": 13,
           "status": "OK",
           "isPB": false,
+          "points": 740,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -37791,7 +38415,8 @@
           "timeCentiemes": 7541,
           "rank": 19,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 639
         },
         {
           "competitionId": "93951",
@@ -37805,7 +38430,8 @@
           "timeCentiemes": 3765,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 659
         },
         {
           "competitionId": "93611",
@@ -37820,6 +38446,7 @@
           "rank": 43,
           "status": "OK",
           "isPB": false,
+          "points": 727,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -38489,7 +39116,8 @@
           "timeCentiemes": 7641,
           "rank": 42,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 613
         },
         {
           "competitionId": "93611",
@@ -38503,7 +39131,8 @@
           "timeCentiemes": 17347,
           "rank": 16,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 557
         },
         {
           "competitionId": "93611",
@@ -38517,7 +39146,8 @@
           "timeCentiemes": 3657,
           "rank": 29,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 712
         },
         {
           "competitionId": "93611",
@@ -38531,7 +39161,8 @@
           "timeCentiemes": 8899,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 565
         },
         {
           "competitionId": "93611",
@@ -38545,7 +39176,8 @@
           "timeCentiemes": 8906,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 563
         },
         {
           "competitionId": "92728",
@@ -38560,6 +39192,7 @@
           "rank": 11,
           "status": "OK",
           "isPB": false,
+          "points": 761,
           "opponents": [
             {
               "name": "SAUSSEREAU Ethel",
@@ -38749,7 +39382,8 @@
           "timeCentiemes": 16120,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 698
         },
         {
           "competitionId": "92728",
@@ -38763,7 +39397,8 @@
           "timeCentiemes": 14501,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 770
         },
         {
           "competitionId": "92074",
@@ -38778,6 +39413,7 @@
           "rank": 89,
           "status": "OK",
           "isPB": false,
+          "points": 691,
           "opponents": [
             {
               "name": "FALLET Grace",
@@ -39453,7 +40089,8 @@
           "timeCentiemes": 8053,
           "rank": 102,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 511
         },
         {
           "competitionId": "92074",
@@ -39467,7 +40104,8 @@
           "timeCentiemes": 17901,
           "rank": 58,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 498
         },
         {
           "competitionId": "92074",
@@ -39481,7 +40119,8 @@
           "timeCentiemes": 3870,
           "rank": 68,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 609
         },
         {
           "competitionId": "92074",
@@ -39495,7 +40134,8 @@
           "timeCentiemes": 20695,
           "rank": 64,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 414
         }
       ],
       "upcoming": [],
@@ -39519,7 +40159,8 @@
           "timeCentiemes": 4378,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 395
         },
         {
           "competitionId": "94109",
@@ -39533,7 +40174,8 @@
           "timeCentiemes": 9886,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 425
         },
         {
           "competitionId": "94109",
@@ -39547,7 +40189,8 @@
           "timeCentiemes": 17929,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 415
         },
         {
           "competitionId": "94109",
@@ -39561,7 +40204,8 @@
           "timeCentiemes": 20801,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 349
         },
         {
           "competitionId": "93410",
@@ -39576,6 +40220,7 @@
           "rank": 1,
           "status": "OK",
           "isPB": false,
+          "points": 495,
           "opponents": [
             {
               "name": "HILPRON Athénaïs",
@@ -39669,7 +40314,8 @@
           "timeCentiemes": 4781,
           "rank": 1,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 394
         },
         {
           "competitionId": "93410",
@@ -39683,7 +40329,8 @@
           "timeCentiemes": 5191,
           "rank": 1,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 389
         },
         {
           "competitionId": "93410",
@@ -39697,7 +40344,8 @@
           "timeCentiemes": 4785,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 256
         },
         {
           "competitionId": "93028",
@@ -39711,7 +40359,8 @@
           "timeCentiemes": 10453,
           "rank": 7,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 332
         },
         {
           "competitionId": "93028",
@@ -39725,7 +40374,8 @@
           "timeCentiemes": 11343,
           "rank": 8,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 413
         },
         {
           "competitionId": "93028",
@@ -39739,7 +40389,8 @@
           "timeCentiemes": 11188,
           "rank": 8,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 202
         }
       ],
       "upcoming": [],
@@ -39764,6 +40415,7 @@
           "rank": 22,
           "status": "OK",
           "isPB": false,
+          "points": 953,
           "opponents": [
             {
               "name": "OUERFELLI Nesrine",
@@ -40253,7 +40905,8 @@
           "timeCentiemes": 6466,
           "rank": 10,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 953
         },
         {
           "competitionId": "94093",
@@ -40267,7 +40920,8 @@
           "timeCentiemes": 14228,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 947
         },
         {
           "competitionId": "94093",
@@ -40281,7 +40935,8 @@
           "timeCentiemes": 29581,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 961
         },
         {
           "competitionId": "94093",
@@ -40295,7 +40950,8 @@
           "timeCentiemes": 33638,
           "rank": 1,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 901
         },
         {
           "competitionId": "93951",
@@ -40309,7 +40965,8 @@
           "timeCentiemes": 6443,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 961
         },
         {
           "competitionId": "93951",
@@ -40323,7 +40980,8 @@
           "timeCentiemes": 14282,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 939
         },
         {
           "competitionId": "93951",
@@ -40337,7 +40995,8 @@
           "timeCentiemes": 16026,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 908
         },
         {
           "competitionId": "93611",
@@ -40352,6 +41011,7 @@
           "rank": 9,
           "status": "OK",
           "isPB": false,
+          "points": 902,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -41021,7 +41681,8 @@
           "timeCentiemes": 3250,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 933
         },
         {
           "competitionId": "93611",
@@ -41035,7 +41696,8 @@
           "timeCentiemes": 3215,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 953
         },
         {
           "competitionId": "93611",
@@ -41049,7 +41711,8 @@
           "timeCentiemes": 16707,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 824
         },
         {
           "competitionId": "93611",
@@ -41063,7 +41726,8 @@
           "timeCentiemes": 16449,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 855
         },
         {
           "competitionId": "93611",
@@ -41077,7 +41741,8 @@
           "timeCentiemes": 14183,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 953
         },
         {
           "competitionId": "93611",
@@ -41091,7 +41756,8 @@
           "timeCentiemes": 17723,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 682
         },
         {
           "competitionId": "93275",
@@ -41106,6 +41772,7 @@
           "rank": 46,
           "status": "OK",
           "isPB": false,
+          "points": 906,
           "opponents": [
             {
               "name": "PROUFF Faustine",
@@ -41487,7 +42154,8 @@
           "timeCentiemes": 6524,
           "rank": 19,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 935
         },
         {
           "competitionId": "93275",
@@ -41501,7 +42169,8 @@
           "timeCentiemes": 14109,
           "rank": 9,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 964
         },
         {
           "competitionId": "93275",
@@ -41515,7 +42184,8 @@
           "timeCentiemes": 3220,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 950
         },
         {
           "competitionId": "93275",
@@ -41529,7 +42199,8 @@
           "timeCentiemes": 16716,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 798
         },
         {
           "competitionId": "92728",
@@ -41543,7 +42214,8 @@
           "timeCentiemes": 13985,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 982
         },
         {
           "competitionId": "92728",
@@ -41557,7 +42229,8 @@
           "timeCentiemes": 7296,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 927
         },
         {
           "competitionId": "92728",
@@ -41571,7 +42244,8 @@
           "timeCentiemes": 14587,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 760
         },
         {
           "competitionId": "92074",
@@ -41586,6 +42260,7 @@
           "rank": 67,
           "status": "OK",
           "isPB": false,
+          "points": 813,
           "opponents": [
             {
               "name": "FALLET Grace",
@@ -42261,7 +42936,8 @@
           "timeCentiemes": 14728,
           "rank": 23,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 878
         },
         {
           "competitionId": "92074",
@@ -42275,7 +42951,8 @@
           "timeCentiemes": 31144,
           "rank": 28,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 853
         },
         {
           "competitionId": "92074",
@@ -42289,7 +42966,8 @@
           "timeCentiemes": 17428,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 715
         },
         {
           "competitionId": "92074",
@@ -42303,7 +42981,8 @@
           "timeCentiemes": 17918,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 660
         },
         {
           "competitionId": "92074",
@@ -42317,7 +42996,8 @@
           "timeCentiemes": 16722,
           "rank": 34,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 822
         },
         {
           "competitionId": "92621",
@@ -42332,6 +43012,7 @@
           "rank": 38,
           "status": "OK",
           "isPB": false,
+          "points": 946,
           "opponents": [
             {
               "name": "PROUFF Faustine",
@@ -42731,7 +43412,8 @@
           "timeCentiemes": 14428,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 919
         },
         {
           "competitionId": "92621",
@@ -42745,7 +43427,8 @@
           "timeCentiemes": 30311,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 910
         },
         {
           "competitionId": "92621",
@@ -42759,7 +43442,8 @@
           "timeCentiemes": 3267,
           "rank": 21,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 923
         },
         {
           "competitionId": "92621",
@@ -42773,7 +43457,8 @@
           "timeCentiemes": 17543,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 702
         },
         {
           "competitionId": "92621",
@@ -42787,7 +43472,8 @@
           "timeCentiemes": 16361,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 866
         }
       ],
       "upcoming": [],
@@ -42811,7 +43497,8 @@
           "timeCentiemes": 2490,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -42825,7 +43512,8 @@
           "timeCentiemes": 2628,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -42839,7 +43527,8 @@
           "timeCentiemes": 3769,
           "rank": 18,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -42853,7 +43542,8 @@
           "timeCentiemes": 2479,
           "rank": 6,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         },
         {
           "competitionId": "92843",
@@ -42867,7 +43557,8 @@
           "timeCentiemes": 2718,
           "rank": 9,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": null
         }
       ],
       "upcoming": [],
@@ -42891,7 +43582,8 @@
           "timeCentiemes": 4488,
           "rank": 4,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 230
         },
         {
           "competitionId": "94109",
@@ -42905,7 +43597,8 @@
           "timeCentiemes": 9519,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 329
         },
         {
           "competitionId": "94109",
@@ -42919,7 +43612,8 @@
           "timeCentiemes": 17357,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 313
         },
         {
           "competitionId": "94109",
@@ -42933,7 +43627,8 @@
           "timeCentiemes": 21269,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 211
         },
         {
           "competitionId": "93410",
@@ -42947,7 +43642,8 @@
           "timeCentiemes": 1797,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -42961,7 +43657,8 @@
           "timeCentiemes": 2107,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -42975,7 +43672,8 @@
           "timeCentiemes": 2394,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93410",
@@ -42989,7 +43687,8 @@
           "timeCentiemes": 2006,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": null
         },
         {
           "competitionId": "93028",
@@ -43003,7 +43702,8 @@
           "timeCentiemes": 9556,
           "rank": 3,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 334
         },
         {
           "competitionId": "93028",
@@ -43017,7 +43717,8 @@
           "timeCentiemes": 11327,
           "rank": 5,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 242
         },
         {
           "competitionId": "93028",
@@ -43031,7 +43732,8 @@
           "timeCentiemes": 11427,
           "rank": 5,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 96
         }
       ],
       "upcoming": [],
@@ -43056,6 +43758,7 @@
           "rank": 30,
           "status": "OK",
           "isPB": false,
+          "points": 788,
           "opponents": [
             {
               "name": "BOURI Laura",
@@ -43725,7 +44428,8 @@
           "timeCentiemes": 7108,
           "rank": 17,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 758
         },
         {
           "competitionId": "93611",
@@ -43739,7 +44443,8 @@
           "timeCentiemes": 15805,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 737
         },
         {
           "competitionId": "93611",
@@ -43753,7 +44458,8 @@
           "timeCentiemes": 3992,
           "rank": 26,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 693
         },
         {
           "competitionId": "93611",
@@ -43767,7 +44473,8 @@
           "timeCentiemes": 8649,
           "rank": 19,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 648
         },
         {
           "competitionId": "93611",
@@ -43781,7 +44488,8 @@
           "timeCentiemes": 7300,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 704
         },
         {
           "competitionId": "93611",
@@ -43795,7 +44503,8 @@
           "timeCentiemes": 4002,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 688
         },
         {
           "competitionId": "93611",
@@ -43809,7 +44518,8 @@
           "timeCentiemes": 8645,
           "rank": 4,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 648
         },
         {
           "competitionId": "92728",
@@ -43824,6 +44534,7 @@
           "rank": 9,
           "status": "OK",
           "isPB": false,
+          "points": 809,
           "opponents": [
             {
               "name": "SAUSSEREAU Ethel",
@@ -44013,7 +44724,8 @@
           "timeCentiemes": 4666,
           "rank": 8,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 571
         },
         {
           "competitionId": "92728",
@@ -44027,7 +44739,8 @@
           "timeCentiemes": 13827,
           "rank": 2,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 851
         },
         {
           "competitionId": "92074",
@@ -44042,6 +44755,7 @@
           "rank": 72,
           "status": "OK",
           "isPB": false,
+          "points": 782,
           "opponents": [
             {
               "name": "FALLET Grace",
@@ -44717,7 +45431,8 @@
           "timeCentiemes": 7078,
           "rank": 73,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 767
         },
         {
           "competitionId": "92074",
@@ -44731,7 +45446,8 @@
           "timeCentiemes": 3939,
           "rank": 52,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 716
         },
         {
           "competitionId": "92074",
@@ -44745,7 +45461,8 @@
           "timeCentiemes": 8601,
           "rank": 45,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 657
         },
         {
           "competitionId": "92074",
@@ -44759,7 +45476,8 @@
           "timeCentiemes": 18557,
           "rank": 30,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 610
         }
       ],
       "upcoming": [],
@@ -44784,6 +45502,7 @@
           "rank": 168,
           "status": "OK",
           "isPB": false,
+          "points": 922,
           "opponents": [
             {
               "name": "MATTIUSSI Erling",
@@ -46077,7 +46796,8 @@
           "timeCentiemes": 13845,
           "rank": 93,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 805
         },
         {
           "competitionId": "94055",
@@ -46091,7 +46811,8 @@
           "timeCentiemes": 7021,
           "rank": 104,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 825
         },
         {
           "competitionId": "94093",
@@ -46106,6 +46827,7 @@
           "rank": 66,
           "status": "OK",
           "isPB": false,
+          "points": 919,
           "opponents": [
             {
               "name": "BEDAGUE Clément",
@@ -46709,7 +47431,8 @@
           "timeCentiemes": 5983,
           "rank": 45,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 935
         },
         {
           "competitionId": "94093",
@@ -46723,7 +47446,8 @@
           "timeCentiemes": 12941,
           "rank": 19,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 938
         },
         {
           "competitionId": "94093",
@@ -46737,7 +47461,8 @@
           "timeCentiemes": 3027,
           "rank": 43,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 882
         },
         {
           "competitionId": "94093",
@@ -46751,7 +47476,8 @@
           "timeCentiemes": 6908,
           "rank": 19,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 853
         },
         {
           "competitionId": "94093",
@@ -46765,7 +47491,8 @@
           "timeCentiemes": 14887,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 856
         },
         {
           "competitionId": "94093",
@@ -46779,7 +47506,8 @@
           "timeCentiemes": 14756,
           "rank": 12,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 888
         },
         {
           "competitionId": "93611",
@@ -46793,7 +47521,8 @@
           "timeCentiemes": 3082,
           "rank": 29,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 850
         },
         {
           "competitionId": "93611",
@@ -46807,7 +47536,8 @@
           "timeCentiemes": 7344,
           "rank": 13,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 747
         },
         {
           "competitionId": "93611",
@@ -46821,7 +47551,8 @@
           "timeCentiemes": 15255,
           "rank": 7,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 823
         },
         {
           "competitionId": "93611",
@@ -46835,7 +47566,8 @@
           "timeCentiemes": 13684,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 828
         },
         {
           "competitionId": "93611",
@@ -46849,7 +47581,8 @@
           "timeCentiemes": 3040,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 875
         },
         {
           "competitionId": "93611",
@@ -46863,7 +47596,8 @@
           "timeCentiemes": 16242,
           "rank": 1,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 693
         },
         {
           "competitionId": "92074",
@@ -46878,6 +47612,7 @@
           "rank": 78,
           "status": "OK",
           "isPB": false,
+          "points": 933,
           "opponents": [
             {
               "name": "COSTES Romain",
@@ -47925,7 +48660,8 @@
           "timeCentiemes": 7079,
           "rank": 55,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 811
         },
         {
           "competitionId": "92074",
@@ -47939,7 +48675,8 @@
           "timeCentiemes": 16357,
           "rank": 6,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 680
         },
         {
           "competitionId": "92074",
@@ -47953,7 +48690,8 @@
           "timeCentiemes": 15847,
           "rank": 14,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 739
         },
         {
           "competitionId": "92074",
@@ -47967,7 +48705,8 @@
           "timeCentiemes": 15191,
           "rank": 22,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 831
         },
         {
           "competitionId": "92074",
@@ -47981,7 +48720,8 @@
           "timeCentiemes": 33206,
           "rank": 20,
           "status": "OK",
-          "isPB": true
+          "isPB": true,
+          "points": 751
         },
         {
           "competitionId": "92074",
@@ -47995,7 +48735,8 @@
           "timeCentiemes": 15235,
           "rank": 5,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 826
         },
         {
           "competitionId": "92621",
@@ -48010,6 +48751,7 @@
           "rank": 66,
           "status": "OK",
           "isPB": false,
+          "points": 937,
           "opponents": [
             {
               "name": "CUVELIER Timothée",
@@ -48571,7 +49313,8 @@
           "timeCentiemes": 13341,
           "rank": 29,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 878
         },
         {
           "competitionId": "92621",
@@ -48585,7 +49328,8 @@
           "timeCentiemes": 28627,
           "rank": 11,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 839
         },
         {
           "competitionId": "92621",
@@ -48599,7 +49343,8 @@
           "timeCentiemes": 3012,
           "rank": 50,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 891
         },
         {
           "competitionId": "92621",
@@ -48613,7 +49358,8 @@
           "timeCentiemes": 15258,
           "rank": 3,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 810
         },
         {
           "competitionId": "92621",
@@ -48627,7 +49373,8 @@
           "timeCentiemes": 15093,
           "rank": 16,
           "status": "OK",
-          "isPB": false
+          "isPB": false,
+          "points": 844
         }
       ],
       "upcoming": [],

@@ -565,6 +565,7 @@ table.results tbody tr:hover { background: color-mix(in srgb, var(--lane) 6%, tr
 td.event, td.date { white-space: normal; min-width: 180px; }
 td.time { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.95rem; }
 td.rank { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--text-muted); }
+td.points { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--accent-ink); font-weight: 600; }
 
 /* Sur mobile, la table de resultats devient une liste de cartes empilees (une par ligne) au
    lieu d'un tableau large qu'il faut balayer horizontalement pour tout lire. */

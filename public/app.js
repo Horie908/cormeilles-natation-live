@@ -421,7 +421,7 @@ function opponentsDetailHtml(r, swimmerName) {
 
   return `
     <tr class="opp-details-row">
-      <td colspan="5">
+      <td colspan="6">
         <details>
           <summary>Voir les adversaires de cette course (${field.length} nageurs au départ)</summary>
           <table class="opp-table">
@@ -445,6 +445,7 @@ function resultRowHtml(r, swimmerName) {
       <td class="event" data-label="Épreuve">${escapeHtml(r.event)}${roundOrSession ? `<br><small style="color:var(--text-muted)">${escapeHtml(roundOrSession)}</small>` : ""}</td>
       <td class="rank" data-label="Rang">${escapeHtml(formatRank(r.rank))}</td>
       <td class="time" data-label="Temps">${r.time ? escapeHtml(r.time) : "—"} ${r.isPB ? `<span class="pb-badge">PB</span>` : ""}</td>
+      <td class="points" data-label="Points">${r.points != null ? escapeHtml(String(r.points)) : "—"}</td>
       <td data-label="Statut">${statusHtml}</td>
     </tr>${opponentsDetailHtml(r, swimmerName)}`;
 }
@@ -496,7 +497,7 @@ async function renderSwimmer(id) {
         results.length
           ? `<div class="results-table-wrap">
                <table class="results">
-                 <thead><tr><th>Date</th><th>Épreuve</th><th>Rang</th><th>Temps</th><th>Statut</th></tr></thead>
+                 <thead><tr><th>Date</th><th>Épreuve</th><th>Rang</th><th>Temps</th><th>Points</th><th>Statut</th></tr></thead>
                  <tbody>${results.map((r) => resultRowHtml(r, s.name)).join("")}</tbody>
                </table>
              </div>`

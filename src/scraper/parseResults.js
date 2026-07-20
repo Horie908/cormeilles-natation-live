@@ -99,6 +99,8 @@ function parseClubResultsHtml(html, competitionMeta) {
       const rankMatch = rankRaw.match(/^\d+/);
       const rank = rankMatch ? parseInt(rankMatch[0], 10) : null;
       const isPB = $node.find('[data-tippy-content*="Nouvelle performance"]').length > 0;
+      const pointsMatch = $(tds[6]).text().trim().match(/(\d+)\s*pts?/i);
+      const points = pointsMatch ? parseInt(pointsMatch[1], 10) : null;
 
       if (event) {
         swimmers.get(idnat).results.push({
@@ -114,6 +116,7 @@ function parseClubResultsHtml(html, competitionMeta) {
           rank,
           status,
           isPB,
+          points,
         });
       }
     });
